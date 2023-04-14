@@ -1,5 +1,5 @@
-/* //RE_STAA
-Instance: HospitalNotification-TestScript-RE_STAA
+//RE_STAA
+Instance: HospitalNotification_TestScript_RE_STAA
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-re-staa"
@@ -11,7 +11,7 @@ InstanceOf: TestScript
 
 
 //RE_STIN
-Instance: HospitalNotification-TestScript-RE_STIN
+Instance: HospitalNotification_TestScript_RE_STIN
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-re-stin"
@@ -22,7 +22,7 @@ InstanceOf: TestScript
 * insert createMessage(RE-STIN, 02, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, revise-admit-inpatient, IMP, in-progress, revision, messageHeaderid-STIN, 2, episodeOfCareID-STIN)
 
 //RE_STOR
-Instance: HospitalNotification-TestScript-RE_STOR
+Instance: HospitalNotification_TestScript_RE_STOR
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-re-stor"
@@ -34,7 +34,7 @@ InstanceOf: TestScript
 * insert createMessage(RE-STOR, 03, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, revise-start-leave-inpatient, IMP, onleave, revision, messageHeaderid-STOR, 3, episodeOfCareID-STOR)
 
 //RE_SLOR
-Instance: HospitalNotification-TestScript-RE_SLOR
+Instance: HospitalNotification_TestScript_RE_SLOR
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-re-slor"
@@ -47,7 +47,7 @@ InstanceOf: TestScript
 * insert createMessage(RE-SLOR, 04, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, revise-end-leave-inpatient, IMP, in-progress, revision, messageHeaderid-SLOR, 4, episodeOfCareID-SLOR)
 
 //RE_SLHJ - IMP
-Instance: HospitalNotification-TestScript-RE_SLHJ-imp
+Instance: HospitalNotification_TestScript_RE_SLHJ-imp
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-re-slhj-imp"
@@ -60,7 +60,7 @@ InstanceOf: TestScript
 
 
 //RE_SLHJ - EMER
-Instance: HospitalNotification-TestScript-RE_SLHJ-emer
+Instance: HospitalNotification_TestScript_RE_SLHJ-emer
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-re-slhj-emer"
@@ -75,7 +75,7 @@ InstanceOf: TestScript
 
 
  //RE-MORS - EMER
-Instance: HospitalNotification-TestScript-RE-MORS-emer
+Instance: HospitalNotification_TestScript_RE-MORS-emer
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-re-mors-emer"
@@ -87,7 +87,7 @@ InstanceOf: TestScript
 * insert createMessageDeceased(RE-MORS, 03, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-emergency, EMER, finished, revision, true, messageHeaderid-MORS, 3, episodeOfCareID-MORS)
 
 //RE-MORS
-Instance: HospitalNotification-TestScript-RE-MORS
+Instance: HospitalNotification_TestScript_RE-MORS
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-re-mors"
@@ -99,7 +99,7 @@ InstanceOf: TestScript
 
 
  //RE-MORS - IMP
-Instance: HospitalNotification-TestScript-RE-MORS-STOR
+Instance: HospitalNotification_TestScript_RE-MORS-STOR
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-re-mors-stor"
@@ -112,7 +112,7 @@ InstanceOf: TestScript
 * insert createMessageDeceased(RE-MORS, 04, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, start-leave-inpatient, IMP, finished, revision, true, messageHeaderid-MORS, 4, episodeOfCareID-MORS)
 
  //RE-MORS - IMP
-Instance: HospitalNotification-TestScript-RE-MORS-IMP
+Instance: HospitalNotification_TestScript_RE-MORS-IMP
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-re-mors-imp"
@@ -122,4 +122,3 @@ InstanceOf: TestScript
 * insert createInitialMessage(STIN, 01, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, true)
 * insert createMessageDeceased(MORS, 02, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, finished, revision, true, messageHeaderid-STIN, 2, episodeOfCareID-STIN)
 * insert createMessageDeceased(RE-MORS, 03, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, finished, revision, true, messageHeaderid-MORS, 3, episodeOfCareID-MORS)
- */

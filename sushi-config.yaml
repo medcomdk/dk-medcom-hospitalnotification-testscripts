@@ -6,7 +6,7 @@
 id: medcom.fhir.dk.testscripts.hospitalnotification
 canonical: http://example.org/fhir/fish #http://medcomfhir.dk/ig/testscript/hospitalnotification
 version: 1.0.0-b1
-name: Hospitalnotification Testscripts
+name: HospitalNotification Testscripts
 title: HospitalNotification Testscripts
 status: draft
 publisher: MedCom
@@ -15,7 +15,7 @@ contact:
     telecom:
       - system: email
         value: fhir@medcom.dk
-description: Testscripts for HospitalNotification
+description: Testscripts for HospitalNotification v. 3.0.0
 license: CC0-1.0
 fhirVersion: 4.0.1
 parameters:

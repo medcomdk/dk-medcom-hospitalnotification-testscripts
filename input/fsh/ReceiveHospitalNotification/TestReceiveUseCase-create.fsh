@@ -1,29 +1,5 @@
-/* EKSTRA 2
-Instance: HospitalNotification-TestScript-receive-STIN
-InstanceOf: TestScript
-* insert Metadata
-* id = "hospitalnotification-receive-stin"
-* name = "Receive: Start hospital stay - admitted"
-* title = "Receive: Start hospital stay - admitted - STIN"
-* description = "Test of receiving of HospitalNotification Message."
-// Fixturen indeholder en placeholder ved MessageHeader.destination.endpoint.
-* insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture-STIN.xml, destinationUri-STIN)
-* insert readMessage(STIN, 01, destinationUri-STIN, bundleid-STIN)
-
-//Get STOR
-Instance: HospitalNotification-TestScript-receive-STOR
-InstanceOf: TestScript
-* insert Metadata
-* id = "hospitalnotification-receive-stor"
-* name = "Receive: Start leave"
-* title = "Receive: Start leave - STOR"
-* description = "Test of receiving of HospitalNotification Message."
-* insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture-STIN.xml, destinationUri-STIN)
-* insert createMessageSetup(STOR, 02, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture-STOR.xml, destinationUri-STOR)
-* insert readMessage(STIN, 01, destinationUri-STIN, bundleid-STIN)
-* insert readMessage(STOR, 02, destinationUri-STOR, bundleid-STOR) */
-/* //Get STIN
-Instance: HospitalNotification-TestScript-receive-STIN
+/*  //Get STIN
+Instance: HospitalNotification_TestScript_receive-STIN
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-stin"
@@ -35,7 +11,7 @@ InstanceOf: TestScript
 * insert readMessage(STIN, 01, destinationUri-STIN)
 
 //Get STIN
-Instance: HospitalNotification-TestScript-receive-STIN-A1
+Instance: HospitalNotification_TestScript_receive-STIN-A1
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-stin-a1"
@@ -47,7 +23,7 @@ InstanceOf: TestScript
 * insert readMessage(STIN, 01, destinationUri-STIN)
 
 //Get SLHJ-imp
-Instance: HospitalNotification-TestScript-receive-SLHJ-imp
+Instance: HospitalNotification_TestScript_receive-SLHJ-imp
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-slhj-imp"
@@ -61,7 +37,7 @@ InstanceOf: TestScript
 
 
 //Get STAA
-Instance: HospitalNotification-TestScript-receive-STAA
+Instance: HospitalNotification_TestScript_receive-STAA
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-staa"
@@ -72,7 +48,7 @@ InstanceOf: TestScript
 * insert readMessage(STAA, 01, destinationUri-STAA)
 
 //Get SLHJ-emer
-Instance: HospitalNotification-TestScript-receive-SLHJ-emer
+Instance: HospitalNotification_TestScript_receive-SLHJ-emer
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-slhj-emer"
@@ -85,7 +61,7 @@ InstanceOf: TestScript
 * insert readMessage(SLHJ, 02, destinationUri-SLHJ)
 
 //Get STOR
-Instance: HospitalNotification-TestScript-receive-STOR
+Instance: HospitalNotification_TestScript_receive-STOR
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-stor"
@@ -98,7 +74,7 @@ InstanceOf: TestScript
 * insert readMessage(STOR, 02, destinationUri-STOR)
 
 //Get SLOR
-Instance: HospitalNotification-TestScript-receive-SLOR
+Instance: HospitalNotification_TestScript_receive-SLOR
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-slor"
@@ -113,7 +89,7 @@ InstanceOf: TestScript
 * insert readMessage(SLOR, 03, destinationUri-SLOR)
 
 //Get MORS
-Instance: HospitalNotification-TestScript-receive-MORS
+Instance: HospitalNotification_TestScript_receive-MORS
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-mors"
@@ -124,7 +100,7 @@ InstanceOf: TestScript
 * insert readMessage(MORS, 01, destinationUri-MORS)
 
 //Get MORS-imp
-Instance: HospitalNotification-TestScript-receive-MORS-imp
+Instance: HospitalNotification_TestScript_receive-MORS-imp
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-mors-imp"
@@ -137,7 +113,7 @@ InstanceOf: TestScript
 * insert readMessage(MORS, 02, destinationUri-MORS)
 
 //Get MORS-emer
-Instance: HospitalNotification-TestScript-receive-MORS-emer
+Instance: HospitalNotification_TestScript_receive-MORS-emer
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-mors-emer"
@@ -150,7 +126,7 @@ InstanceOf: TestScript
 * insert readMessage(MORS, 02, destinationUri-MORS)
 
 //Get MORS_STOR
-Instance: HospitalNotification-TestScript-receive-MORS-STOR
+Instance: HospitalNotification_TestScript_receive-MORS-STOR
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-mors-stor"
@@ -162,4 +138,4 @@ InstanceOf: TestScript
 * insert createMessageSetup(MORS, 03, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture-MORS-STOR.xml, destinationUri-MORS)
 * insert readMessage(STIN, 01, destinationUri-STIN)
 * insert readMessage(STOR, 02, destinationUri-STOR)
-* insert readMessage(MORS, 03, destinationUri-MORS) */
+* insert readMessage(MORS, 03, destinationUri-MORS)  */

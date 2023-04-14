@@ -4,7 +4,28 @@
     "type" : "ImplementationGuide",
     "url" : "http://example.org/fhir/fish/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification",
     "version" : "1.0.0-b1",
-    "name" : "HospitalnotificationTestscripts"
+    "name" : "HospitalNotificationTestscripts"
+  },
+  {
+    "id" : "hospitalnotification-PF-send-emer-01",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Admit patient, correct message due to incorrect time of admission."
+  },
+  {
+    "id" : "hospitalnotification-PF-send-emer-02",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Admit patient, correct message due to incorrect hospital department. Evaluation is based on SOR number."
+  },
+  {
+    "id" : "hospitalnotification-PF-send-emer-imp-01",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Admit patient as emergency, Admit patient as inpatient, discharge patient"
   },
   {
     "id" : "hospitalnotification-PF-send-imp-01",
@@ -39,6 +60,251 @@
     "type" : "TestScript",
     "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
     "version" : "1.0.0-b1",
-    "name" : "Send: Admit patient, correct message due to incorrect hospital department"
+    "name" : "Send: Admit patient, correct message due to incorrect hospital department. Evaluation is based on SOR number."
+  },
+  {
+    "id" : "hospitalnotification-PF-send-imp-06",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Admit patient, correct message due to incorrect time of admission."
+  },
+  {
+    "id" : "hospitalnotification-PF-send-tec-01",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancel a corrected admission: Admit patient, correct admit patient and cancel the correction"
+  },
+  {
+    "id" : "hospitalnotification-PF-send-tec-03",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Send max dublets, due to no acknowledgement of the messages: Send admit patient, admit patient, admit patient. Ids are handled correct"
+  },
+  {
+    "id" : "hospitalnotification-send-an-mors-emer",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation Deceased - dies during acute ambulant"
+  },
+  {
+    "id" : "hospitalnotification-send-an-mors-imp",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation Deceased - dies during admission"
+  },
+  {
+    "id" : "hospitalnotification-send-an-mors-stor",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation Deceased - dies during a period of leave"
+  },
+  {
+    "id" : "hospitalnotification-send-an-mors",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation Deceased - dead at arrival to the hospital"
+  },
+  {
+    "id" : "hospitalnotification-send-an-slhj-emer",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation End hospital stay - patient completed to home/primary sector"
+  },
+  {
+    "id" : "hospitalnotification-send-an-slhj-imp",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation End hospital stay - patient completed to home/primary sector"
+  },
+  {
+    "id" : "hospitalnotification-send-an-slor",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation End leave"
+  },
+  {
+    "id" : "hospitalnotification-send-an-staa",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation Start hospital stay - acute ambulant"
+  },
+  {
+    "id" : "hospitalnotification-send-an-stin",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation Start hospital stay - admitted - AN_STIN"
+  },
+  {
+    "id" : "hospitalnotification-send-an-stor",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation Start leave - AN_STOR"
+  },
+  {
+    "id" : "hospitalnotification-send-mors-emer",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Deceased -  dies during hospital stay"
+  },
+  {
+    "id" : "hospitalnotification-send-mors-imp",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Deceased - deceased during admission"
+  },
+  {
+    "id" : "hospitalnotification-send-mors-stor",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Deceased - dies during a period of leave"
+  },
+  {
+    "id" : "hospitalnotification-send-mors",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Deceased - dead at arrival to the hospital."
+  },
+  {
+    "id" : "hospitalnotification-send-re-mors-emer",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update Deceased - deceased during acute ambulant"
+  },
+  {
+    "id" : "hospitalnotification-send-re-mors-imp",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update Deceased - dies during admission"
+  },
+  {
+    "id" : "hospitalnotification-send-re-mors-stor",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update Deceased - dies during a period of leave"
+  },
+  {
+    "id" : "hospitalnotification-send-re-mors",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update Deceased - dead at arrival to the hospital"
+  },
+  {
+    "id" : "hospitalnotification-send-re-slhj-emer",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update End hospital stay - patient completed to home/primary sector"
+  },
+  {
+    "id" : "hospitalnotification-send-re-slhj-imp",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update End hospital stay - patient completed to home/primary sector"
+  },
+  {
+    "id" : "hospitalnotification-send-re-slor",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update End leave"
+  },
+  {
+    "id" : "hospitalnotification-send-re-staa",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update Start hospital stay - acute ambulant"
+  },
+  {
+    "id" : "hospitalnotification-send-re-stin",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update Start hospital stay - admitted"
+  },
+  {
+    "id" : "hospitalnotification-send-re-stor",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update Start leave"
+  },
+  {
+    "id" : "hospitalnotification-send-slhj-emer",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: End hospital stay - patient completed to home/primary sector"
+  },
+  {
+    "id" : "hospitalnotification-send-slhj-imp-timestamptest",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: End hospital stay - patient completed to home/primary sector"
+  },
+  {
+    "id" : "hospitalnotification-send-slhj-imp",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: End hospital stay - patient completed to home/primary sector"
+  },
+  {
+    "id" : "hospitalnotification-send-slor",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: End leave"
+  },
+  {
+    "id" : "hospitalnotification-send-staa",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Start hospital stay - acute ambulant."
+  },
+  {
+    "id" : "hospitalnotification-send-stin-a1",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Start hospital stay - admitted, without request for a reportOfAdmission."
+  },
+  {
+    "id" : "hospitalnotification-send-stin",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Start hospital stay - admitted."
+  },
+  {
+    "id" : "hospitalnotification-send-stor",
+    "type" : "TestScript",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Start leave"
   }
 ]

@@ -1,7 +1,8 @@
 ### Background
 
-In this Implementation Guide (IG), testscripts for sending and receiving [HospitalNotifications](https://medcomdk.github.io/dk-medcom-hospitalnotification) are included.
-The testscripts are created by MedCom for testing in [Touchstone](https://touchstone.aegis.net/touchstone/) during MedCom test and certification, both self- and livetest. However, they may be used locally by vendors in their own testsetup. 
+In this Implementation Guide (IG), testscripts for sending and receiving [HospitalNotifications](https://medcomdk.github.io/dk-medcom-hospitalnotification) ([link to HospitalNotification IG](https://medcomfhir.dk/ig/hospitalnotification/)) v. 3.0.0 are included. 
+
+The testscripts are created by MedCom for testing in [Touchstone](https://touchstone.aegis.net/touchstone/) during MedCom test and certification, both self- and livetest. However, the testscripts may be used locally by vendors in their own testsetup. 
 
 Testscripts presented in this IG are all based on the [Testscript FHIR resource](https://www.hl7.org/fhir/testscript.html). They are profiled by MedCom using FSH and published using the FHIR publisher. 
 
@@ -9,25 +10,28 @@ Testscripts presented in this IG are all based on the [Testscript FHIR resource]
 
 Use cases described in the [use case document](https://medcomdk.github.io/dk-medcom-hospitalnotification/#12-use-cases) will be referenced throughout this IG and they are the basis for the tests. 
 
-As a supplementary for testscripts based on the use cases, testscripts testing **Patient flows** are included. These testscripts will test different and in some cases extended flows of the HospitalNotification, that hasn't been tested in the use cases. They will of course only test within the boundaries of the HospitalNotification standard and governance. 
+As a supplementary for testscripts based on the use cases, testscripts testing **Patient flows** are included. These testscripts will test different, and in some cases extended flows of the HospitalNotification, that hasn't been tested in the use cases. They will of course only test within the boundaries of the HospitalNotification standard and governance. 
 
 #### TouchStone and API
-Before getting started with testscript execution, it is nessecary to have an account on TouchStone and to create a testsystem. Please follow [this guide to steup an account and testsystem](https://medcomdk.github.io/MedComLandingPage/assets/documents/TouchStoneGettingStarted.html).
+Before getting started with testscript execution, it is nessecary to have an account on TouchStone and to create a testsystem. Please follow [this guide to setup an account and testsystem](https://medcomdk.github.io/MedComLandingPage/assets/documents/TouchStoneGettingStarted.html).
 
 #### Abbreviations and naming
+
+**Abbreviations:**
+
 The term 'inpatient' and abbreviation 'imp' refers to a patient that is hospitalised as an inpatient (Danish: indlagt) and the term 'emergency' or abbreviation 'emer' refers to a patient that is hospitalised as acute ambulant (Danish: akut ambulant).
 
-The abbreviation 'tec' is used when testing the patient flow, to indicate that the testscript has a tecnical character. 
+The abbreviation 'tec' is used when testing the patient flow, to indicate that the testscript has a technical character. 
 
 The system under test is abbreviated 'SUT'.
 
 **Testscript naming:**
 
-**Use cases:** Most of the send testscripts requires that SUT has executed one or more use cases in advance. These use cases are listed in the 'Precondition' columns in the tables. 
-The name of the testscripts are constituted by HospitalNotification-[send/receive]-[type]-[imp/emer or alternative flow or precondition], describing the type of messaging being sent, or receveived. 'HospitalNotifciation-' is not shown in the naming below.
+Most of the send testscripts requires that SUT has executed one or more use cases in advance. These use cases are listed in the 'Precondition' columns in the tables. 
 
-**Patient flow:** These will be named HospitalNotification-PF-[send/receive]-[imp/emer/tec]-[number]. 'HospitalNotifciation-' is not shown in the naming below. 
+**Use cases:** The name of the testscripts is constituted by HospitalNotification_Testscript_[send/receive]-[type]-[imp/emer or alternative flow or precondition], describing the type of messaging being sent, or receveived. 'HospitalNotifciation_Testscript_[send/receive]' is not shown in the naming below.
 
+**Patient flow:** These will be named HospitalNotification_Testscript_PF-[send/receive]-[imp/emer/tec]-[number]. 'HospitalNotifciation_Testscript_[send/receive]' is not shown in the naming below. 
 
 ### Send Hospitalnotification testscripts
 When sending a HospitalNotification, a POST operation is required for all types of messages, valid for both the precondition messages and actual messages being tested. 
@@ -81,7 +85,7 @@ When sending a HospitalNotification, a POST operation is required for all types 
 |---|---|---|
 | **Inpatient** |  |  |
 | PF-send-imp-01 | Admit patient, register patient as being on leave, register patient as returned from leave, discharge patient. | STIN, STOR, SLOR, SLHJ |
-| PF-send-imp-02 | Admit patient, register patient as being on leave, patient doesn’t return from leave, discharge patient. | STIN, STOR, SLHJ |
+| PF-send-imp-02 | Admit patient, register patient as being on leave, patient doesn’t return from leave, discharge patient.[^1] | STIN, STOR, SLHJ |
 | PF-send-imp-03 | Admit patient, register patient as being on leave, patient returns from leave, patient dies | STIN, STOR, SLOR, MORS |
 | PF-send-imp-04 | Admit patient, *register patient as being on leave, patient returns from leave*, * to * x2  | STIN,  STOR, SLOR, STOR, SLOR |
 | PF-send-imp-05 | Admit patient, correct message due to incorrect hospital department | STIN, RE_STIN |
@@ -96,29 +100,42 @@ When sending a HospitalNotification, a POST operation is required for all types 
 | PF-send-tec-02 | Cancel a correction: Admit patient, correct admit patient and cancel the correction | STIN, RE_STIN, AN_STIN |
 | PF-send-tec-03 | Evaluating on included MustSuppot elements | STIN |
 
+[^1]: In this flow it is allowed to add a SLOR-message between STOR and SLHJ. In case the system does so, please skip this testscript.
 
 
 ### Receive HospitalNotification message
 When receiving a HospitalNotification, a GET operation is required for all types of messages, valid for both the precondition messages and actual messages being tested. 
 
 **Test examples:**
-Test examples are, in TouchStone testing, called fixtures. These fixtures are uploaded to TouchStone and during setup of the testscript, all relevant fixtures will be uploadet to the server. 
+Test examples are, in TouchStone testing, called fixtures. These fixtures are uploaded to TouchStone and during setup of a testscript, all relevant fixtures will be uploadet to the server. From a client it is possible to request a relevant fixture.
 
 **HospitalNotifications:** 
 The timestamps in the Encounter, Provenance and Bundle, are between the 28th of feburary 2023 and 7th of march 2023. All revise and cancellation messages are sent one hour after the message it revises or cancels.
 
 #### Placeholders
-[Placeholders](https://touchstone.aegis.net/touchstone/userguide/html/testscript-authoring/placeholders.html?highlight=placeholder) are used in the fixtures. Placeholders are use to ensure uniqueness in the fixture and to ensure that vendors testing at the same time wont interfere with eachother. 
+[Placeholders](https://touchstone.aegis.net/touchstone/userguide/html/testscript-authoring/placeholders.html?highlight=placeholder) are used in the fixtures. Placeholders are use to ensure uniqueness in the fixture, and to ensure that vendors testing at the same time won't interfere with eachother. 
 
 **UUID:**
 Bundle.id will be generate during the test setup. The following line is included in the fixtures.
   `<id value="${UUID}"/>`
+Which results in the following being generated during setup: 
+  `<id value="b9b4818e-02de-4cc4-b418-d20cbc399006"/>`
 
-**Placeholder:**
-MessageHeader.destination.endpoint and id of the MessageHeader, used in the elements MessageHeader.id, Provenance.target and Provenance.entity.what includes the placeholder D6. 
+**Digits:**
+MessageHeader.destination.endpoint and id of the MessageHeader, used in the elements MessageHeader.id, Provenance.target and Provenance.entity.what, includes the placeholder D6. 
 The following line is included in the fixtures.
-  `<id value="hefc6d95-6161-4493-99c9-f35948${D6}"/>`
+  `<id value="hefc6d95-6161-4493-99c9-f35948${D6}"/>` or `<endpoint value="https://sor2.sum.dsdn.dk/#id=953741000016009${D6}"/>`
 
+Which results in the following being generated during setup: 
+  `<id value="b9b4818e-02de-4cc4-b418-d20cbc399006"/>` or `<endpoint value="https://sor2.sum.dsdn.dk/#id=953741000016009399006"/>`
+
+#### GET operation
+When searching for a HospitalNotification message, the GET operation requires a variable to search for a specific message. The variable used in the request is constituted by client information and two search parameteres 1) the destination endpoint with placeholder ${D6}, and 2) the Bundle.id. 
+
+In the testscript the search parameter migth be e.g.: 
+  `"params": "?message.destination-uri=${destinationUri-STIN}&amp;member._id=${bundleid-STIN}"`
+Which results in the following variable to be used in the GET operation: 
+  `http://touchstone.aegis.net:49917/fhir4-0-1/Bundle?message.destination-uri=https://sor2.sum.dsdn.dk/#id=953741000016009399006&amp;member._id=b9b4818e-02de-4cc4-b418-d20cbc399006`
 
 #### Use Cases
 

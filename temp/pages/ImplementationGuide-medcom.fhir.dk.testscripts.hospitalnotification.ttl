@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "medcom.fhir.dk.testscripts.hospitalnotification"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HospitalnotificationTestscripts</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/fhir/fish/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification</pre><div><p>Testscripts for HospitalNotification</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HospitalNotificationTestscripts</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/fhir/fish/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification</pre><div><p>Testscripts for HospitalNotification v. 3.0.0</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://example.org/fhir/fish/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0-b1"] ; # 
-  fhir:name [ fhir:v "HospitalnotificationTestscripts"] ; # 
+  fhir:name [ fhir:v "HospitalNotificationTestscripts"] ; # 
   fhir:title [ fhir:v "HospitalNotification Testscripts"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-03-21T14:28:49+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-14T12:59:27+02:00"^^xsd:dateTime] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MedCom" ] ;
      fhir:telecom ( [
@@ -25,7 +25,7 @@
        fhir:value [ fhir:v "fhir@medcom.dk" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Testscripts for HospitalNotification"] ; # 
+  fhir:description [ fhir:v "Testscripts for HospitalNotification v. 3.0.0"] ; # 
   fhir:packageId [ fhir:v "medcom.fhir.dk.testscripts.hospitalnotification"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
@@ -500,10 +500,46 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-PF-send-emer-01> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-emer-01" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-emer-01" ] ;
+       fhir:description [ fhir:v "Testing correct use of send HospitalNotification" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-PF-send-emer-02> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-emer-02" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-emer-02" ] ;
+       fhir:description [ fhir:v "Testing correct use of send HospitalNotification" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-PF-send-emer-imp-01> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-emer-imp-01" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-emer-imp-01" ] ;
+       fhir:description [ fhir:v "Testing correct use of send HospitalNotification" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-PF-send-imp-01> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-imp-01" ]
        ] ;
-       fhir:name [ fhir:v "HospitalNotification-TestScript-PF-send-imp-01" ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-imp-01" ] ;
        fhir:description [ fhir:v "Testing correct use of send HospitalNotification" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
@@ -515,7 +551,7 @@
          fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-PF-send-imp-02> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-imp-02" ]
        ] ;
-       fhir:name [ fhir:v "HospitalNotification-TestScript-PF-send-imp-02" ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-imp-02" ] ;
        fhir:description [ fhir:v "Testing correct use of send HospitalNotification" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
@@ -527,7 +563,7 @@
          fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-PF-send-imp-03> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-imp-03" ]
        ] ;
-       fhir:name [ fhir:v "HospitalNotification-TestScript-PF-send-imp-03" ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-imp-03" ] ;
        fhir:description [ fhir:v "Testing correct use of send HospitalNotification - deceased" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
@@ -539,7 +575,7 @@
          fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-PF-send-imp-04> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-imp-04" ]
        ] ;
-       fhir:name [ fhir:v "HospitalNotification-TestScript-PF-send-imp-04" ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-imp-04" ] ;
        fhir:description [ fhir:v "Testing correct use of send HospitalNotification" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
@@ -551,20 +587,429 @@
          fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-PF-send-imp-05> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-imp-05" ]
        ] ;
-       fhir:name [ fhir:v "HospitalNotification-TestScript-PF-send-imp-05" ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-imp-05" ] ;
        fhir:description [ fhir:v "Testing correct use of send HospitalNotification" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Bundle" ]
+         fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/fhir/fish/Bundle/a5e5b880-c087-4055-b9ec-99108695f81d> ;
-         fhir:reference [ fhir:v "Bundle/a5e5b880-c087-4055-b9ec-99108695f81d" ]
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-PF-send-imp-06> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-imp-06" ]
        ] ;
-       fhir:name [ fhir:v "a5e5b880-c087-4055-b9ec-99108695f81d" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
+       fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-imp-06" ] ;
+       fhir:description [ fhir:v "Testing correct use of send HospitalNotification" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-PF-send-tec-01> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-tec-01" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-tec-01" ] ;
+       fhir:description [ fhir:v "Testing correct use of send HospitalNotification" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-PF-send-tec-03> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-tec-03" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-tec-03" ] ;
+       fhir:description [ fhir:v "Testing correct use of send HospitalNotification" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-an-mors> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-mors" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_AN_MORS" ] ;
+       fhir:description [ fhir:v "Testing correct use of cancellation of deceased inpatient before arrival at the hospital - deceased" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-an-mors-emer> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-mors-emer" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_AN_MORS-emer" ] ;
+       fhir:description [ fhir:v "Testing correct use of cancellation of End hospital Stay - deceased" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-an-mors-imp> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-mors-imp" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_AN_MORS-IMP" ] ;
+       fhir:description [ fhir:v "Testing correct use of cancellation of End hospital Stay - deceased" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-an-mors-stor> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-mors-stor" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_AN_MORS-STOR" ] ;
+       fhir:description [ fhir:v "Testing correct use of cancellation of deceased during a period of leave - deceased" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-an-slhj-emer> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-slhj-emer" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_AN_SLHJ-emer" ] ;
+       fhir:description [ fhir:v "Testing correct use of cancellation of End hospital Stay" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-an-slhj-imp> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-slhj-imp" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_AN_SLHJ-imp" ] ;
+       fhir:description [ fhir:v "Testing correct use of cancellation of End hospital Stay" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-an-slor> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-slor" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_AN_SLOR" ] ;
+       fhir:description [ fhir:v "Testing correct use of cancellation of end leave" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-an-staa> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-staa" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_AN_STAA" ] ;
+       fhir:description [ fhir:v "Testing correct use of cancellation of start acute ambulant" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-an-stin> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-stin" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_AN_STIN" ] ;
+       fhir:description [ fhir:v "Testing correct use of cancellation of start hospital stay admission" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-an-stor> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-stor" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_AN_STOR" ] ;
+       fhir:description [ fhir:v "Testing correct use of cancellation of start leave" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-mors> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-mors" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_MORS" ] ;
+       fhir:description [ fhir:v "Testing correct use of status inpatient" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-mors-emer> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-mors-emer" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_MORS-EMER" ] ;
+       fhir:description [ fhir:v "Testing correct use of End hospital Stay-deseased" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-mors-imp> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-mors-imp" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_MORS-IMP" ] ;
+       fhir:description [ fhir:v "Testing correct use of End hospital Stay - deseased" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-mors-stor> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-mors-stor" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_MORS-STOR" ] ;
+       fhir:description [ fhir:v "Testing correct use of End hospital Stay - deseased" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-re-mors> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-mors" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_RE-MORS" ] ;
+       fhir:description [ fhir:v "Testing correct use of update of deceased inpatient before arrival at the hospital - deceased" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-re-mors-emer> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-mors-emer" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_RE-MORS-emer" ] ;
+       fhir:description [ fhir:v "Testing correct use of Update End hospital Stay - deceased" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-re-mors-imp> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-mors-imp" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_RE-MORS-IMP" ] ;
+       fhir:description [ fhir:v "Testing correct use of Update End hospital Stay - deceased" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-re-mors-stor> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-mors-stor" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_RE-MORS-STOR" ] ;
+       fhir:description [ fhir:v "Testing correct use of Update End hospital Stay - deceased" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-re-slhj-emer> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-slhj-emer" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_RE_SLHJ-emer" ] ;
+       fhir:description [ fhir:v "Testing correct use of Update End hospital Stay" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-re-slhj-imp> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-slhj-imp" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_RE_SLHJ-imp" ] ;
+       fhir:description [ fhir:v "Testing correct use of Update End hospital Stay" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-re-slor> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-slor" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_RE_SLOR" ] ;
+       fhir:description [ fhir:v "Testing correct use of Update end leave" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-re-staa> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-staa" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_RE_STAA" ] ;
+       fhir:description [ fhir:v "Testing correct use of status stay-acute ambulant" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-re-stin> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-stin" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_RE_STIN" ] ;
+       fhir:description [ fhir:v "Testing correct use of status Update Start hospital stay - admitted" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-re-stor> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-stor" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_RE_STOR" ] ;
+       fhir:description [ fhir:v "Testing correct use of Update Start leave" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-slhj-emer> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-slhj-emer" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_SLHJ-EMER" ] ;
+       fhir:description [ fhir:v "Testing correct use of End hospital Stay - patient discharged to home/primary sector" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-slhj-imp> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-slhj-imp" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_SLHJ-imp" ] ;
+       fhir:description [ fhir:v "Testing correct use of End hospital Stay- patient discharged to home/primary sector" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-slhj-imp-timestamptest> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-slhj-imp-timestamptest" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_SLHJ-imp-timestamptest" ] ;
+       fhir:description [ fhir:v "Testing correct use of End hospital Stay- patient discharged to home/primary sector" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-slor> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-slor" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_SLOR" ] ;
+       fhir:description [ fhir:v "Testing correct use of status End leave" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-staa> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-staa" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_STAA" ] ;
+       fhir:description [ fhir:v "Testing correct use of status acute-ambulant" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-stin> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-stin" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_STIN" ] ;
+       fhir:description [ fhir:v "Testing correct use of status inpatient" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-stin-a1> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-stin-a1" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_STIN-A1" ] ;
+       fhir:description [ fhir:v "Testing correct use of status inpatient" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "TestScript" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/fhir/fish/TestScript/hospitalnotification-send-stor> ;
+         fhir:reference [ fhir:v "TestScript/hospitalnotification-send-stor" ]
+       ] ;
+       fhir:name [ fhir:v "HospitalNotification_TestScript_STOR" ] ;
+       fhir:description [ fhir:v "Testing correct use of status Start leave" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

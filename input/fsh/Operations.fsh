@@ -45,7 +45,7 @@ RuleSet: operationReadMessage(type, number, destinationUri, bundleid)
 * test[=].action[=].operation.destination = 1
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[=].operation.origin = 1
-* test[=].action[=].operation.params = "?message.destination-uri=${{destinationUri}}&id=${{bundleid}}"
+* test[=].action[=].operation.params = "?message.destination-uri=${{destinationUri}}&amp;member._id=${{bundleid}}"
 
 /* RuleSet: operationSearchMessage(type, number, destinationUri)
 * test[+].id = "hospitalnotification-search-{type}-{number}"

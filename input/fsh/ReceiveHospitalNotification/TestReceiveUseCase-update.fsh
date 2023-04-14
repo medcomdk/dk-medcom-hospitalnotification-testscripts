@@ -1,5 +1,5 @@
 /* //Get RE-STIN
-Instance: HospitalNotification-TestScript-receive-RE-STIN
+Instance: HospitalNotification_TestScript_receive-RE-STIN
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-re-stin"
@@ -14,7 +14,7 @@ InstanceOf: TestScript
 
 
 //Get RE-SLHJ-imp
-Instance: HospitalNotification-TestScript-receive-RE-SLHJ-imp
+Instance: HospitalNotification_TestScript_receive-RE-SLHJ-imp
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-re-slhj-imp"
@@ -30,7 +30,7 @@ InstanceOf: TestScript
 
 
 //Get RE-STAA
-Instance: HospitalNotification-TestScript-receive-RE-STAA
+Instance: HospitalNotification_TestScript_receive-RE-STAA
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-re-staa"
@@ -43,7 +43,7 @@ InstanceOf: TestScript
 * insert readMessage(RE-STAA, 02, destinationUri-RE-STAA)
 
 //Get RE-SLHJ-emer
-Instance: HospitalNotification-TestScript-receive-RE-SLHJ-emer
+Instance: HospitalNotification_TestScript_receive-RE-SLHJ-emer
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-re-slhj-emer"
@@ -58,7 +58,7 @@ InstanceOf: TestScript
 * insert readMessage(RE-SLHJ, 03, destinationUri-RE-SLHJ)
 
 //Get RE-STOR
-Instance: HospitalNotification-TestScript-receive-RE-STOR
+Instance: HospitalNotification_TestScript_receive-RE-STOR
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-re-stor"
@@ -73,7 +73,7 @@ InstanceOf: TestScript
 * insert readMessage(RE-STOR, 03, destinationUri-RE-STOR)
 
 //Get RE-SLOR
-Instance: HospitalNotification-TestScript-receive-RE-SLOR
+Instance: HospitalNotification_TestScript_receive-RE-SLOR
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-re-slor"
@@ -90,7 +90,7 @@ InstanceOf: TestScript
 * insert readMessage(RE-SLOR, 04, destinationUri-RE-SLOR)
 
 //Get RE-MORS
-Instance: HospitalNotification-TestScript-receive-RE-MORS
+Instance: HospitalNotification_TestScript_receive-RE-MORS
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-re-mors"
@@ -103,7 +103,7 @@ InstanceOf: TestScript
 * insert readMessage(RE-MORS, 02, destinationUri-RE-MORS)
 
 //Get RE-MORS-imp
-Instance: HospitalNotification-TestScript-receive-RE-MORS-imp
+Instance: HospitalNotification_TestScript_receive-RE-MORS-imp
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-re-mors-imp"
@@ -119,7 +119,7 @@ InstanceOf: TestScript
 
  
 //Get RE-MORS-emer
-Instance: HospitalNotification-TestScript-receive-RE-MORS-emer
+Instance: HospitalNotification_TestScript_receive-RE-MORS-emer
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-re-mors-emer"
@@ -134,7 +134,7 @@ InstanceOf: TestScript
 * insert readMessage(RE-MORS, 03, destinationUri-RE-MORS)
 
 //Get RE-MORS_STOR
-Instance: HospitalNotification-TestScript-receive-RE-MORS-STOR
+Instance: HospitalNotification_TestScript_receive-RE-MORS-STOR
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-receive-re-mors-stor"

@@ -2,20 +2,20 @@
   "path" : "http://hl7.org/fhir/R4/",
   "canonical" : "http://example.org/fhir/fish",
   "igId" : "medcom.fhir.dk.testscripts.hospitalnotification",
-  "igName" : "HospitalnotificationTestscripts",
+  "igName" : "HospitalNotificationTestscripts",
   "packageId" : "medcom.fhir.dk.testscripts.hospitalnotification",
   "igVer" : "1.0.0-b1",
-  "errorCount" : 26,
+  "errorCount" : 156,
   "version" : "4.0.1",
   "revision" : "a53ec6ee1b",
   "versionFull" : "4.0.1-a53ec6ee1b",
-  "toolingVersion" : "5.0.0-draft-final",
+  "toolingVersion" : "5.0.0",
   "toolingRevision" : "3",
-  "toolingVersionFull" : "5.0.0-draft-final (3)",
-  "totalFiles" : 7,
-  "processedFiles" : 16,
-  "genDate" : "Tue, Mar 21, 2023 14:28+0100",
-  "genDay" : "21/03/2023",
+  "toolingVersionFull" : "5.0.0 (3)",
+  "totalFiles" : 44,
+  "processedFiles" : 53,
+  "genDate" : "Fri, Apr 14, 2023 12:59+0200",
+  "genDay" : "14/04/2023",
   "resourceTypes" : [
     "Account",
     "ActivityDefinition",
@@ -229,7 +229,7 @@
   ],
   "ig" : {
     "id" : "medcom.fhir.dk.testscripts.hospitalnotification",
-    "name" : "HospitalnotificationTestscripts",
+    "name" : "HospitalNotificationTestscripts",
     "title" : "HospitalNotification Testscripts",
     "url" : "http://example.org/fhir/fish/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification",
     "version" : "1.0.0-b1",
@@ -243,8 +243,8 @@
         "telecom" : ["fhir@medcom.dk"]
       }
     ],
-    "date" : "2023-03-21T14:28:49+01:00",
-    "description" : "Testscripts for HospitalNotification",
+    "date" : "2023-04-14T12:59:27+02:00",
+    "description" : "Testscripts for HospitalNotification v. 3.0.0",
     "copyright" : null,
     "fhirVersion" : "4.0.1"
   },
@@ -252,12 +252,8 @@
   "ver" : {
     "basespec" : null,
     "hl7tx" : "http://terminology.hl7.org/5.0.0",
-    "igtools" : "https://build.fhir.org/ig/FHIR/fhir-tools-ig/",
-    "hl7.fhir.r5.core" : "http://build.fhir.org/",
-    "hl7.fhir.uv.extensions" : "http://build.fhir.org/ig/HL7/fhir-extensions"
+    "igtools" : "https://build.fhir.org/ig/FHIR/fhir-tools-ig/"
   },
   "hl7tx" : "http://terminology.hl7.org",
-  "igtools" : "http://hl7.org/fhir/tools",
-  "hl7.fhir.r5.core" : "http://build.fhir.org",
-  "hl7.fhir.uv.extensions" : "http://build.fhir.org/ig/HL7/fhir-extensions"
+  "igtools" : "http://hl7.org/fhir/tools"
 }

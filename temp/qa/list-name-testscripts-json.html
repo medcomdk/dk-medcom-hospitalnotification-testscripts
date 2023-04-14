@@ -4,15 +4,91 @@
   <link rel="stylesheet" href="fhir.css"/>
 </head>
 <body>
+ <li><a href="TestScript-hospitalnotification-PF-send-emer-imp-01.json.html">Send: Admit patient as emergency, Admit patient as inpatient, discharge patient - PF-send-emer-imp-01</a> <p>Testing correct use of send HospitalNotification</p>
+</li>
  <li><a href="TestScript-hospitalnotification-PF-send-imp-04.json.html">Send: Admit patient, *register patient as being on leave, patient returns from leave*, * to * x2 - PF-send-imp-04</a> <p>Testing correct use of send HospitalNotification</p>
 </li>
- <li><a href="TestScript-hospitalnotification-PF-send-imp-05.json.html">Send: Admit patient, correct message due to incorrect hospital department. - PF-send-imp-02</a> <p>Testing correct use of send HospitalNotification</p>
+ <li><a href="TestScript-hospitalnotification-PF-send-emer-02.json.html">Send: Admit patient, correct message due to incorrect hospital department. Evaluation is based on SOR number.- PF-send-emer-02</a> <p>Testing correct use of send HospitalNotification</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-PF-send-imp-05.json.html">Send: Admit patient, correct message due to incorrect hospital department. Evaluation is based on SOR number.- PF-send-imp-05</a> <p>Testing correct use of send HospitalNotification</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-PF-send-emer-01.json.html">Send: Admit patient, correct message due to incorrect time of admission - PF-send-emer-01</a> <p>Testing correct use of send HospitalNotification</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-PF-send-imp-06.json.html">Send: Admit patient, correct message due to incorrect time of admission - PF-send-imp-06</a> <p>Testing correct use of send HospitalNotification</p>
 </li>
  <li><a href="TestScript-hospitalnotification-PF-send-imp-02.json.html">Send: Admit patient, register patient as being on leave, patient doesn’t return from leave, discharge patient. - PF-send-imp-02</a> <p>Testing correct use of send HospitalNotification</p>
 </li>
  <li><a href="TestScript-hospitalnotification-PF-send-imp-03.json.html">Send: Admit patient, register patient as being on leave, patient returns from leave, patient dies - PF-send-imp-03</a> <p>Testing correct use of send HospitalNotification - deceased</p>
 </li>
  <li><a href="TestScript-hospitalnotification-PF-send-imp-01.json.html">Send: Admit patient, register patient as being on leave, register patient as returned from leave, discharge patient. - PF-send-imp-01</a> <p>Testing correct use of send HospitalNotification</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-PF-send-tec-01.json.html">Send: Cancel a corrected admission: Admit patient, correct admit patient and cancel the correction - PF-send-tec-01</a> <p>Testing correct use of send HospitalNotification</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-an-mors.json.html">Send: Cancellation Deceased - dead at arrival to the hospital - MORS</a> <p>Testing correct use of cancellation of deceased inpatient before arrival at the hospital - deceased</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-an-mors-stor.json.html">Send: Cancellation Deceased - dies during a period of leave - AN_MORS</a> <p>Testing correct use of cancellation of deceased during a period of leave - deceased</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-an-mors-emer.json.html">Send: Cancellation Deceased - dies during acute ambulant - AN_MORS</a> <p>Testing correct use of cancellation of End hospital Stay - deceased</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-an-mors-imp.json.html">Send: Cancellation Deceased - dies during admission - AN_MORS</a> <p>Testing correct use of cancellation of End hospital Stay - deceased</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-an-slhj-emer.json.html">Send: Cancellation End hospital stay - patient completed to home/primary sector - AN_SLHJ</a> <p>Testing correct use of cancellation of End hospital Stay</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-an-slhj-imp.json.html">Send: Cancellation End hospital stay - patient completed to home/primary sector - AN_SLHJ</a> <p>Testing correct use of cancellation of End hospital Stay</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-an-slor.json.html">Send: Cancellation End leave - AN_SLOR</a> <p>Testing correct use of cancellation of end leave</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-an-staa.json.html">Send: Cancellation Start hospital stay - acute ambulant - AN_STAA</a> <p>Testing correct use of cancellation of start acute ambulant</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-an-stin.json.html">Send: Cancellation Start hospital stay - admitted - AN_STIN</a> <p>Testing correct use of cancellation of start hospital stay admission</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-an-stor.json.html">Send: Cancellation Start leave - AN_STOR</a> <p>Testing correct use of cancellation of start leave</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-mors-emer.json.html">Send: Deceased -  dies during hospital stay - MORS-EMER</a> <p>Testing correct use of End hospital Stay-deseased</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-mors.json.html">Send: Deceased - dead at arrival to the hospital - MORS</a> <p>Testing correct use of status inpatient</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-mors-imp.json.html">Send: Deceased - deceased during admission - MORS-IMP</a> <p>Testing correct use of End hospital Stay - deseased</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-mors-stor.json.html">Send: Deceased - dies during period of leave - MORS-STOR</a> <p>Testing correct use of End hospital Stay - deseased</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-slhj-emer.json.html">Send: End hospital stay - patient completed to home/primary sector - SLHJ-emer</a> <p>Testing correct use of End hospital Stay - patient discharged to home/primary sector</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-slhj-imp.json.html">Send: End hospital stay - patient completed to home/primary sector - SLHJ-imp</a> <p>Testing correct use of End hospital Stay- patient discharged to home/primary sector</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-slhj-imp-timestamptest.json.html">Send: End hospital stay - patient completed to home/primary sector - SLHJ-imp-timestamptest</a> <p>Testing correct use of End hospital Stay- patient discharged to home/primary sector</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-slor.json.html">Send: End leave - SLOR</a> <p>Testing correct use of status End leave</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-PF-send-tec-03.json.html">Send: Send max dublets, due to no acknowledgement of the messages: Send admit patient, admit patient, admit patient. Ids are handled correct - PF-send-tec-03</a> <p>Testing correct use of send HospitalNotification</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-staa.json.html">Send: Start hospital stay - acute ambulant - STAA</a> <p>Testing correct use of status acute-ambulant</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-stin-a1.json.html">Send: Start hospital stay - admitted - STIN.A1</a> <p>Testing correct use of status inpatient</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-stin.json.html">Send: Start hospital stay - admitted - STIN</a> <p>Testing correct use of status inpatient</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-stor.json.html">Send: Start leave - STOR</a> <p>Testing correct use of status Start leave</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-re-mors.json.html">Send: Update Deceased - dead at arrival to the hospital - RE-MORS</a> <p>Testing correct use of update of deceased inpatient before arrival at the hospital - deceased</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-re-mors-emer.json.html">Send: Update Deceased - deceased during acute ambulant - RE-MORS</a> <p>Testing correct use of Update End hospital Stay - deceased</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-re-mors-stor.json.html">Send: Update Deceased - dies during a period of leave - RE-MORS</a> <p>Testing correct use of Update End hospital Stay - deceased</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-re-mors-imp.json.html">Send: Update Deceased - dies during admission - RE-MORS</a> <p>Testing correct use of Update End hospital Stay - deceased</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-re-slhj-emer.json.html">Send: Update End hospital stay - patient completed to home/primary sector - RE_SLHJ</a> <p>Testing correct use of Update End hospital Stay</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-re-slhj-imp.json.html">Send: Update End hospital stay - patient completed to home/primary sector - RE_SLHJ</a> <p>Testing correct use of Update End hospital Stay</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-re-slor.json.html">Send: Update End leave - RE_SLOR</a> <p>Testing correct use of Update end leave</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-re-staa.json.html">Send: Update Start hospital stay - acute ambulant - RE_STAA</a> <p>Testing correct use of status stay-acute ambulant</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-re-stin.json.html">Send: Update Start hospital stay - admitted - RE_STIN</a> <p>Testing correct use of status Update Start hospital stay - admitted</p>
+</li>
+ <li><a href="TestScript-hospitalnotification-send-re-stor.json.html">Send: Update Start leave - RE_STOR</a> <p>Testing correct use of Update Start leave</p>
 </li>
 </body>
 </html>

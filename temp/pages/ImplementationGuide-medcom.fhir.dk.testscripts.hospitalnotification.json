@@ -3,14 +3,14 @@
   "id" : "medcom.fhir.dk.testscripts.hospitalnotification",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HospitalnotificationTestscripts</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/fhir/fish/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification</pre><div><p>Testscripts for HospitalNotification</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HospitalNotificationTestscripts</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/fhir/fish/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification</pre><div><p>Testscripts for HospitalNotification v. 3.0.0</p>\n</div></div>"
   },
   "url" : "http://example.org/fhir/fish/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification",
   "version" : "1.0.0-b1",
-  "name" : "HospitalnotificationTestscripts",
+  "name" : "HospitalNotificationTestscripts",
   "title" : "HospitalNotification Testscripts",
   "status" : "draft",
-  "date" : "2023-03-21T14:28:49+01:00",
+  "date" : "2023-04-14T12:59:27+02:00",
   "contact" : [{
     "name" : "MedCom",
     "telecom" : [{
@@ -18,7 +18,7 @@
       "value" : "fhir@medcom.dk"
     }]
   }],
-  "description" : "Testscripts for HospitalNotification",
+  "description" : "Testscripts for HospitalNotification v. 3.0.0",
   "packageId" : "medcom.fhir.dk.testscripts.hospitalnotification",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
@@ -311,7 +311,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "copyrightyear"
+        "valueCode" : "copyrightyear"
       },
       {
         "url" : "value",
@@ -322,7 +322,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "releaselabel"
+        "valueCode" : "releaselabel"
       },
       {
         "url" : "value",
@@ -333,7 +333,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-publisher"
+        "valueCode" : "apply-publisher"
       },
       {
         "url" : "value",
@@ -344,7 +344,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-contact"
+        "valueCode" : "apply-contact"
       },
       {
         "url" : "value",
@@ -355,7 +355,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "show-inherited-invariants"
+        "valueCode" : "show-inherited-invariants"
       },
       {
         "url" : "value",
@@ -366,7 +366,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "autoload-resources"
+        "valueCode" : "autoload-resources"
       },
       {
         "url" : "value",
@@ -377,7 +377,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueCode" : "path-liquid"
       },
       {
         "url" : "value",
@@ -388,7 +388,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueCode" : "path-liquid"
       },
       {
         "url" : "value",
@@ -399,7 +399,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-qa"
+        "valueCode" : "path-qa"
       },
       {
         "url" : "value",
@@ -410,7 +410,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-temp"
+        "valueCode" : "path-temp"
       },
       {
         "url" : "value",
@@ -421,7 +421,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-output"
+        "valueCode" : "path-output"
       },
       {
         "url" : "value",
@@ -432,7 +432,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-suppressed-warnings"
+        "valueCode" : "path-suppressed-warnings"
       },
       {
         "url" : "value",
@@ -443,7 +443,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-history"
+        "valueCode" : "path-history"
       },
       {
         "url" : "value",
@@ -454,7 +454,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "template-html"
+        "valueCode" : "template-html"
       },
       {
         "url" : "value",
@@ -465,7 +465,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "template-md"
+        "valueCode" : "template-md"
       },
       {
         "url" : "value",
@@ -476,7 +476,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-context"
+        "valueCode" : "apply-context"
       },
       {
         "url" : "value",
@@ -487,7 +487,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-copyright"
+        "valueCode" : "apply-copyright"
       },
       {
         "url" : "value",
@@ -498,7 +498,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-jurisdiction"
+        "valueCode" : "apply-jurisdiction"
       },
       {
         "url" : "value",
@@ -509,7 +509,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-license"
+        "valueCode" : "apply-license"
       },
       {
         "url" : "value",
@@ -520,7 +520,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-version"
+        "valueCode" : "apply-version"
       },
       {
         "url" : "value",
@@ -531,7 +531,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "active-tables"
+        "valueCode" : "active-tables"
       },
       {
         "url" : "value",
@@ -542,7 +542,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "fmm-definition"
+        "valueCode" : "fmm-definition"
       },
       {
         "url" : "value",
@@ -553,7 +553,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "propagate-status"
+        "valueCode" : "propagate-status"
       },
       {
         "url" : "value",
@@ -564,7 +564,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "excludelogbinaryformat"
+        "valueCode" : "excludelogbinaryformat"
       },
       {
         "url" : "value",
@@ -575,7 +575,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "tabbed-snapshots"
+        "valueCode" : "tabbed-snapshots"
       },
       {
         "url" : "value",
@@ -589,9 +589,45 @@
         "valueString" : "TestScript"
       }],
       "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-send-emer-01"
+      },
+      "name" : "HospitalNotification_TestScript_PF-send-emer-01",
+      "description" : "Testing correct use of send HospitalNotification",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-send-emer-02"
+      },
+      "name" : "HospitalNotification_TestScript_PF-send-emer-02",
+      "description" : "Testing correct use of send HospitalNotification",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-send-emer-imp-01"
+      },
+      "name" : "HospitalNotification_TestScript_PF-send-emer-imp-01",
+      "description" : "Testing correct use of send HospitalNotification",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
         "reference" : "TestScript/hospitalnotification-PF-send-imp-01"
       },
-      "name" : "HospitalNotification-TestScript-PF-send-imp-01",
+      "name" : "HospitalNotification_TestScript_PF-send-imp-01",
       "description" : "Testing correct use of send HospitalNotification",
       "exampleBoolean" : true
     },
@@ -603,7 +639,7 @@
       "reference" : {
         "reference" : "TestScript/hospitalnotification-PF-send-imp-02"
       },
-      "name" : "HospitalNotification-TestScript-PF-send-imp-02",
+      "name" : "HospitalNotification_TestScript_PF-send-imp-02",
       "description" : "Testing correct use of send HospitalNotification",
       "exampleBoolean" : true
     },
@@ -615,7 +651,7 @@
       "reference" : {
         "reference" : "TestScript/hospitalnotification-PF-send-imp-03"
       },
-      "name" : "HospitalNotification-TestScript-PF-send-imp-03",
+      "name" : "HospitalNotification_TestScript_PF-send-imp-03",
       "description" : "Testing correct use of send HospitalNotification - deceased",
       "exampleBoolean" : true
     },
@@ -627,7 +663,7 @@
       "reference" : {
         "reference" : "TestScript/hospitalnotification-PF-send-imp-04"
       },
-      "name" : "HospitalNotification-TestScript-PF-send-imp-04",
+      "name" : "HospitalNotification_TestScript_PF-send-imp-04",
       "description" : "Testing correct use of send HospitalNotification",
       "exampleBoolean" : true
     },
@@ -639,20 +675,429 @@
       "reference" : {
         "reference" : "TestScript/hospitalnotification-PF-send-imp-05"
       },
-      "name" : "HospitalNotification-TestScript-PF-send-imp-05",
+      "name" : "HospitalNotification_TestScript_PF-send-imp-05",
       "description" : "Testing correct use of send HospitalNotification",
       "exampleBoolean" : true
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
+        "valueString" : "TestScript"
       }],
       "reference" : {
-        "reference" : "Bundle/a5e5b880-c087-4055-b9ec-99108695f81d"
+        "reference" : "TestScript/hospitalnotification-PF-send-imp-06"
       },
-      "name" : "a5e5b880-c087-4055-b9ec-99108695f81d",
-      "exampleBoolean" : false
+      "name" : "HospitalNotification_TestScript_PF-send-imp-06",
+      "description" : "Testing correct use of send HospitalNotification",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-send-tec-01"
+      },
+      "name" : "HospitalNotification_TestScript_PF-send-tec-01",
+      "description" : "Testing correct use of send HospitalNotification",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-send-tec-03"
+      },
+      "name" : "HospitalNotification_TestScript_PF-send-tec-03",
+      "description" : "Testing correct use of send HospitalNotification",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-an-mors"
+      },
+      "name" : "HospitalNotification_TestScript_AN_MORS",
+      "description" : "Testing correct use of cancellation of deceased inpatient before arrival at the hospital - deceased",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-an-mors-emer"
+      },
+      "name" : "HospitalNotification_TestScript_AN_MORS-emer",
+      "description" : "Testing correct use of cancellation of End hospital Stay - deceased",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-an-mors-imp"
+      },
+      "name" : "HospitalNotification_TestScript_AN_MORS-IMP",
+      "description" : "Testing correct use of cancellation of End hospital Stay - deceased",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-an-mors-stor"
+      },
+      "name" : "HospitalNotification_TestScript_AN_MORS-STOR",
+      "description" : "Testing correct use of cancellation of deceased during a period of leave - deceased",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-an-slhj-emer"
+      },
+      "name" : "HospitalNotification_TestScript_AN_SLHJ-emer",
+      "description" : "Testing correct use of cancellation of End hospital Stay",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-an-slhj-imp"
+      },
+      "name" : "HospitalNotification_TestScript_AN_SLHJ-imp",
+      "description" : "Testing correct use of cancellation of End hospital Stay",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-an-slor"
+      },
+      "name" : "HospitalNotification_TestScript_AN_SLOR",
+      "description" : "Testing correct use of cancellation of end leave",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-an-staa"
+      },
+      "name" : "HospitalNotification_TestScript_AN_STAA",
+      "description" : "Testing correct use of cancellation of start acute ambulant",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-an-stin"
+      },
+      "name" : "HospitalNotification_TestScript_AN_STIN",
+      "description" : "Testing correct use of cancellation of start hospital stay admission",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-an-stor"
+      },
+      "name" : "HospitalNotification_TestScript_AN_STOR",
+      "description" : "Testing correct use of cancellation of start leave",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-mors"
+      },
+      "name" : "HospitalNotification_TestScript_MORS",
+      "description" : "Testing correct use of status inpatient",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-mors-emer"
+      },
+      "name" : "HospitalNotification_TestScript_MORS-EMER",
+      "description" : "Testing correct use of End hospital Stay-deseased",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-mors-imp"
+      },
+      "name" : "HospitalNotification_TestScript_MORS-IMP",
+      "description" : "Testing correct use of End hospital Stay - deseased",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-mors-stor"
+      },
+      "name" : "HospitalNotification_TestScript_MORS-STOR",
+      "description" : "Testing correct use of End hospital Stay - deseased",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-re-mors"
+      },
+      "name" : "HospitalNotification_TestScript_RE-MORS",
+      "description" : "Testing correct use of update of deceased inpatient before arrival at the hospital - deceased",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-re-mors-emer"
+      },
+      "name" : "HospitalNotification_TestScript_RE-MORS-emer",
+      "description" : "Testing correct use of Update End hospital Stay - deceased",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-re-mors-imp"
+      },
+      "name" : "HospitalNotification_TestScript_RE-MORS-IMP",
+      "description" : "Testing correct use of Update End hospital Stay - deceased",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-re-mors-stor"
+      },
+      "name" : "HospitalNotification_TestScript_RE-MORS-STOR",
+      "description" : "Testing correct use of Update End hospital Stay - deceased",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-re-slhj-emer"
+      },
+      "name" : "HospitalNotification_TestScript_RE_SLHJ-emer",
+      "description" : "Testing correct use of Update End hospital Stay",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-re-slhj-imp"
+      },
+      "name" : "HospitalNotification_TestScript_RE_SLHJ-imp",
+      "description" : "Testing correct use of Update End hospital Stay",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-re-slor"
+      },
+      "name" : "HospitalNotification_TestScript_RE_SLOR",
+      "description" : "Testing correct use of Update end leave",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-re-staa"
+      },
+      "name" : "HospitalNotification_TestScript_RE_STAA",
+      "description" : "Testing correct use of status stay-acute ambulant",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-re-stin"
+      },
+      "name" : "HospitalNotification_TestScript_RE_STIN",
+      "description" : "Testing correct use of status Update Start hospital stay - admitted",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-re-stor"
+      },
+      "name" : "HospitalNotification_TestScript_RE_STOR",
+      "description" : "Testing correct use of Update Start leave",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-slhj-emer"
+      },
+      "name" : "HospitalNotification_TestScript_SLHJ-EMER",
+      "description" : "Testing correct use of End hospital Stay - patient discharged to home/primary sector",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-slhj-imp"
+      },
+      "name" : "HospitalNotification_TestScript_SLHJ-imp",
+      "description" : "Testing correct use of End hospital Stay- patient discharged to home/primary sector",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-slhj-imp-timestamptest"
+      },
+      "name" : "HospitalNotification_TestScript_SLHJ-imp-timestamptest",
+      "description" : "Testing correct use of End hospital Stay- patient discharged to home/primary sector",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-slor"
+      },
+      "name" : "HospitalNotification_TestScript_SLOR",
+      "description" : "Testing correct use of status End leave",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-staa"
+      },
+      "name" : "HospitalNotification_TestScript_STAA",
+      "description" : "Testing correct use of status acute-ambulant",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-stin"
+      },
+      "name" : "HospitalNotification_TestScript_STIN",
+      "description" : "Testing correct use of status inpatient",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-stin-a1"
+      },
+      "name" : "HospitalNotification_TestScript_STIN-A1",
+      "description" : "Testing correct use of status inpatient",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-send-stor"
+      },
+      "name" : "HospitalNotification_TestScript_STOR",
+      "description" : "Testing correct use of status Start leave",
+      "exampleBoolean" : true
     }],
     "page" : {
       "extension" : [{

@@ -3,32 +3,84 @@
     "history" : false,
     "testscript" : false,
     "index" : 0,
-    "source" : "C:\\Users\\TMS\\TMS\\GitHub\\HospitalNotificationTouchStoneTestscripts\\fsh-generated\\resources\\ImplementationGuide-medcom.fhir.dk.testscripts.hospitalnotification.json",
+    "source" : "C:\\Users\\TMS\\TMS\\GitHub\\dk-medcom-hospitalnotification-testscripts\\fsh-generated\\resources\\ImplementationGuide-medcom.fhir.dk.testscripts.hospitalnotification.json",
     "sourceTail" : "ImplementationGuide-medcom.fhir.dk.testscripts.hospitalnotification.json",
     "path" : "ImplementationGuide-medcom.fhir.dk.testscripts.hospitalnotification.html",
     "url" : "http://example.org/fhir/fish/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification",
     "version" : "1.0.0-b1",
-    "name" : "HospitalnotificationTestscripts",
+    "name" : "HospitalNotificationTestscripts",
     "title" : "HospitalNotification Testscripts",
-    "date" : "2023-03-21T14:28:49+01:00",
-    "description" : "Testscripts for HospitalNotification",
+    "date" : "2023-04-14T12:59:27+02:00",
+    "description" : "Testscripts for HospitalNotification v. 3.0.0",
     "status" : {
       "class" : "colsd",
       "status" : "Draft"
     }
   },
-  "Bundle/a5e5b880-c087-4055-b9ec-99108695f81d" : {
+  "TestScript/hospitalnotification-PF-send-emer-01" : {
     "history" : false,
     "testscript" : false,
     "index" : 1,
-    "source" : "input/resources/Binary-create-STIN-01.json",
-    "sourceTail" : "Binary-create-STIN-01.json",
-    "path" : "Bundle-a5e5b880-c087-4055-b9ec-99108695f81d.html"
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-PF-send-emer-01.json",
+    "sourceTail" : "TestScript-hospitalnotification-PF-send-emer-01.json",
+    "path" : "TestScript-hospitalnotification-PF-send-emer-01.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Admit patient, correct message due to incorrect time of admission.",
+    "title" : "Send: Admit patient, correct message due to incorrect time of admission - PF-send-emer-01",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of send HospitalNotification",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-PF-send-emer-02" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 2,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-PF-send-emer-02.json",
+    "sourceTail" : "TestScript-hospitalnotification-PF-send-emer-02.json",
+    "path" : "TestScript-hospitalnotification-PF-send-emer-02.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Admit patient, correct message due to incorrect hospital department. Evaluation is based on SOR number.",
+    "title" : "Send: Admit patient, correct message due to incorrect hospital department. Evaluation is based on SOR number.- PF-send-emer-02",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of send HospitalNotification",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-PF-send-emer-imp-01" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 3,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-PF-send-emer-imp-01.json",
+    "sourceTail" : "TestScript-hospitalnotification-PF-send-emer-imp-01.json",
+    "path" : "TestScript-hospitalnotification-PF-send-emer-imp-01.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Admit patient as emergency, Admit patient as inpatient, discharge patient",
+    "title" : "Send: Admit patient as emergency, Admit patient as inpatient, discharge patient - PF-send-emer-imp-01",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of send HospitalNotification",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
   },
   "TestScript/hospitalnotification-PF-send-imp-01" : {
     "history" : false,
     "testscript" : false,
-    "index" : 2,
+    "index" : 4,
     "source" : "fsh-generated/resources/TestScript-hospitalnotification-PF-send-imp-01.json",
     "sourceTail" : "TestScript-hospitalnotification-PF-send-imp-01.json",
     "path" : "TestScript-hospitalnotification-PF-send-imp-01.html",
@@ -36,7 +88,7 @@
     "version" : "1.0.0-b1",
     "name" : "Send: Admit patient, register patient as being on leave, register patient as returned from leave, discharge patient.",
     "title" : "Send: Admit patient, register patient as being on leave, register patient as returned from leave, discharge patient. - PF-send-imp-01",
-    "date" : "2023-04-01",
+    "date" : "2023-05-01",
     "description" : "Testing correct use of send HospitalNotification",
     "status" : {
       "class" : "colsi",
@@ -48,7 +100,7 @@
   "TestScript/hospitalnotification-PF-send-imp-02" : {
     "history" : false,
     "testscript" : false,
-    "index" : 3,
+    "index" : 5,
     "source" : "fsh-generated/resources/TestScript-hospitalnotification-PF-send-imp-02.json",
     "sourceTail" : "TestScript-hospitalnotification-PF-send-imp-02.json",
     "path" : "TestScript-hospitalnotification-PF-send-imp-02.html",
@@ -56,7 +108,7 @@
     "version" : "1.0.0-b1",
     "name" : "Send: Admit patient, register patient as being on leave, patient doesn’t return from leave, discharge patient.",
     "title" : "Send: Admit patient, register patient as being on leave, patient doesn’t return from leave, discharge patient. - PF-send-imp-02",
-    "date" : "2023-04-01",
+    "date" : "2023-05-01",
     "description" : "Testing correct use of send HospitalNotification",
     "status" : {
       "class" : "colsi",
@@ -68,7 +120,7 @@
   "TestScript/hospitalnotification-PF-send-imp-03" : {
     "history" : false,
     "testscript" : false,
-    "index" : 4,
+    "index" : 6,
     "source" : "fsh-generated/resources/TestScript-hospitalnotification-PF-send-imp-03.json",
     "sourceTail" : "TestScript-hospitalnotification-PF-send-imp-03.json",
     "path" : "TestScript-hospitalnotification-PF-send-imp-03.html",
@@ -76,7 +128,7 @@
     "version" : "1.0.0-b1",
     "name" : "Send: Admit patient, register patient as being on leave, patient returns from leave, patient dies",
     "title" : "Send: Admit patient, register patient as being on leave, patient returns from leave, patient dies - PF-send-imp-03",
-    "date" : "2023-04-01",
+    "date" : "2023-05-01",
     "description" : "Testing correct use of send HospitalNotification - deceased",
     "status" : {
       "class" : "colsi",
@@ -88,7 +140,7 @@
   "TestScript/hospitalnotification-PF-send-imp-04" : {
     "history" : false,
     "testscript" : false,
-    "index" : 5,
+    "index" : 7,
     "source" : "fsh-generated/resources/TestScript-hospitalnotification-PF-send-imp-04.json",
     "sourceTail" : "TestScript-hospitalnotification-PF-send-imp-04.json",
     "path" : "TestScript-hospitalnotification-PF-send-imp-04.html",
@@ -96,7 +148,7 @@
     "version" : "1.0.0-b1",
     "name" : "Send: Admit patient, *register patient as being on leave, patient returns from leave*, * to * x2 ",
     "title" : "Send: Admit patient, *register patient as being on leave, patient returns from leave*, * to * x2 - PF-send-imp-04",
-    "date" : "2023-04-01",
+    "date" : "2023-05-01",
     "description" : "Testing correct use of send HospitalNotification",
     "status" : {
       "class" : "colsi",
@@ -108,16 +160,716 @@
   "TestScript/hospitalnotification-PF-send-imp-05" : {
     "history" : false,
     "testscript" : false,
-    "index" : 6,
+    "index" : 8,
     "source" : "fsh-generated/resources/TestScript-hospitalnotification-PF-send-imp-05.json",
     "sourceTail" : "TestScript-hospitalnotification-PF-send-imp-05.json",
     "path" : "TestScript-hospitalnotification-PF-send-imp-05.html",
     "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
     "version" : "1.0.0-b1",
-    "name" : "Send: Admit patient, correct message due to incorrect hospital department",
-    "title" : "Send: Admit patient, correct message due to incorrect hospital department. - PF-send-imp-02",
-    "date" : "2023-04-01",
+    "name" : "Send: Admit patient, correct message due to incorrect hospital department. Evaluation is based on SOR number.",
+    "title" : "Send: Admit patient, correct message due to incorrect hospital department. Evaluation is based on SOR number.- PF-send-imp-05",
+    "date" : "2023-05-01",
     "description" : "Testing correct use of send HospitalNotification",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-PF-send-imp-06" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 9,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-PF-send-imp-06.json",
+    "sourceTail" : "TestScript-hospitalnotification-PF-send-imp-06.json",
+    "path" : "TestScript-hospitalnotification-PF-send-imp-06.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Admit patient, correct message due to incorrect time of admission.",
+    "title" : "Send: Admit patient, correct message due to incorrect time of admission - PF-send-imp-06",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of send HospitalNotification",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-PF-send-tec-01" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 10,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-PF-send-tec-01.json",
+    "sourceTail" : "TestScript-hospitalnotification-PF-send-tec-01.json",
+    "path" : "TestScript-hospitalnotification-PF-send-tec-01.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancel a corrected admission: Admit patient, correct admit patient and cancel the correction",
+    "title" : "Send: Cancel a corrected admission: Admit patient, correct admit patient and cancel the correction - PF-send-tec-01",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of send HospitalNotification",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-PF-send-tec-03" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 11,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-PF-send-tec-03.json",
+    "sourceTail" : "TestScript-hospitalnotification-PF-send-tec-03.json",
+    "path" : "TestScript-hospitalnotification-PF-send-tec-03.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Send max dublets, due to no acknowledgement of the messages: Send admit patient, admit patient, admit patient. Ids are handled correct",
+    "title" : "Send: Send max dublets, due to no acknowledgement of the messages: Send admit patient, admit patient, admit patient. Ids are handled correct - PF-send-tec-03",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of send HospitalNotification",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-an-mors-emer" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 12,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-an-mors-emer.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-an-mors-emer.json",
+    "path" : "TestScript-hospitalnotification-send-an-mors-emer.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation Deceased - dies during acute ambulant",
+    "title" : "Send: Cancellation Deceased - dies during acute ambulant - AN_MORS",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of cancellation of End hospital Stay - deceased",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-an-mors-imp" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 13,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-an-mors-imp.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-an-mors-imp.json",
+    "path" : "TestScript-hospitalnotification-send-an-mors-imp.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation Deceased - dies during admission",
+    "title" : "Send: Cancellation Deceased - dies during admission - AN_MORS",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of cancellation of End hospital Stay - deceased",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-an-mors-stor" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 14,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-an-mors-stor.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-an-mors-stor.json",
+    "path" : "TestScript-hospitalnotification-send-an-mors-stor.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation Deceased - dies during a period of leave",
+    "title" : "Send: Cancellation Deceased - dies during a period of leave - AN_MORS",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of cancellation of deceased during a period of leave - deceased",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-an-mors" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 15,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-an-mors.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-an-mors.json",
+    "path" : "TestScript-hospitalnotification-send-an-mors.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation Deceased - dead at arrival to the hospital",
+    "title" : "Send: Cancellation Deceased - dead at arrival to the hospital - MORS",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of cancellation of deceased inpatient before arrival at the hospital - deceased",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-an-slhj-emer" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 16,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-an-slhj-emer.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-an-slhj-emer.json",
+    "path" : "TestScript-hospitalnotification-send-an-slhj-emer.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation End hospital stay - patient completed to home/primary sector",
+    "title" : "Send: Cancellation End hospital stay - patient completed to home/primary sector - AN_SLHJ",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of cancellation of End hospital Stay",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-an-slhj-imp" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 17,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-an-slhj-imp.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-an-slhj-imp.json",
+    "path" : "TestScript-hospitalnotification-send-an-slhj-imp.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation End hospital stay - patient completed to home/primary sector",
+    "title" : "Send: Cancellation End hospital stay - patient completed to home/primary sector - AN_SLHJ",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of cancellation of End hospital Stay",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-an-slor" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 18,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-an-slor.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-an-slor.json",
+    "path" : "TestScript-hospitalnotification-send-an-slor.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation End leave",
+    "title" : "Send: Cancellation End leave - AN_SLOR",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of cancellation of end leave",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-an-staa" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 19,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-an-staa.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-an-staa.json",
+    "path" : "TestScript-hospitalnotification-send-an-staa.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation Start hospital stay - acute ambulant",
+    "title" : "Send: Cancellation Start hospital stay - acute ambulant - AN_STAA",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of cancellation of start acute ambulant",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-an-stin" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 20,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-an-stin.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-an-stin.json",
+    "path" : "TestScript-hospitalnotification-send-an-stin.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation Start hospital stay - admitted - AN_STIN",
+    "title" : "Send: Cancellation Start hospital stay - admitted - AN_STIN",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of cancellation of start hospital stay admission",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-an-stor" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 21,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-an-stor.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-an-stor.json",
+    "path" : "TestScript-hospitalnotification-send-an-stor.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Cancellation Start leave - AN_STOR",
+    "title" : "Send: Cancellation Start leave - AN_STOR",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of cancellation of start leave",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-mors-emer" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 22,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-mors-emer.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-mors-emer.json",
+    "path" : "TestScript-hospitalnotification-send-mors-emer.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Deceased -  dies during hospital stay",
+    "title" : "Send: Deceased -  dies during hospital stay - MORS-EMER",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of End hospital Stay-deseased",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-mors-imp" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 23,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-mors-imp.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-mors-imp.json",
+    "path" : "TestScript-hospitalnotification-send-mors-imp.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Deceased - deceased during admission",
+    "title" : "Send: Deceased - deceased during admission - MORS-IMP",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of End hospital Stay - deseased",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-mors-stor" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 24,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-mors-stor.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-mors-stor.json",
+    "path" : "TestScript-hospitalnotification-send-mors-stor.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Deceased - dies during a period of leave",
+    "title" : "Send: Deceased - dies during period of leave - MORS-STOR",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of End hospital Stay - deseased",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-mors" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 25,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-mors.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-mors.json",
+    "path" : "TestScript-hospitalnotification-send-mors.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Deceased - dead at arrival to the hospital.",
+    "title" : "Send: Deceased - dead at arrival to the hospital - MORS",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of status inpatient",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-re-mors-emer" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 26,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-re-mors-emer.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-re-mors-emer.json",
+    "path" : "TestScript-hospitalnotification-send-re-mors-emer.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update Deceased - deceased during acute ambulant",
+    "title" : "Send: Update Deceased - deceased during acute ambulant - RE-MORS",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of Update End hospital Stay - deceased",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-re-mors-imp" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 27,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-re-mors-imp.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-re-mors-imp.json",
+    "path" : "TestScript-hospitalnotification-send-re-mors-imp.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update Deceased - dies during admission",
+    "title" : "Send: Update Deceased - dies during admission - RE-MORS",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of Update End hospital Stay - deceased",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-re-mors-stor" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 28,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-re-mors-stor.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-re-mors-stor.json",
+    "path" : "TestScript-hospitalnotification-send-re-mors-stor.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update Deceased - dies during a period of leave",
+    "title" : "Send: Update Deceased - dies during a period of leave - RE-MORS",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of Update End hospital Stay - deceased",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-re-mors" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 29,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-re-mors.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-re-mors.json",
+    "path" : "TestScript-hospitalnotification-send-re-mors.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update Deceased - dead at arrival to the hospital",
+    "title" : "Send: Update Deceased - dead at arrival to the hospital - RE-MORS",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of update of deceased inpatient before arrival at the hospital - deceased",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-re-slhj-emer" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 30,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-re-slhj-emer.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-re-slhj-emer.json",
+    "path" : "TestScript-hospitalnotification-send-re-slhj-emer.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update End hospital stay - patient completed to home/primary sector",
+    "title" : "Send: Update End hospital stay - patient completed to home/primary sector - RE_SLHJ",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of Update End hospital Stay",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-re-slhj-imp" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 31,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-re-slhj-imp.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-re-slhj-imp.json",
+    "path" : "TestScript-hospitalnotification-send-re-slhj-imp.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update End hospital stay - patient completed to home/primary sector",
+    "title" : "Send: Update End hospital stay - patient completed to home/primary sector - RE_SLHJ",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of Update End hospital Stay",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-re-slor" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 32,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-re-slor.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-re-slor.json",
+    "path" : "TestScript-hospitalnotification-send-re-slor.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update End leave",
+    "title" : "Send: Update End leave - RE_SLOR",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of Update end leave",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-re-staa" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 33,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-re-staa.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-re-staa.json",
+    "path" : "TestScript-hospitalnotification-send-re-staa.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update Start hospital stay - acute ambulant",
+    "title" : "Send: Update Start hospital stay - acute ambulant - RE_STAA",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of status stay-acute ambulant",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-re-stin" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 34,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-re-stin.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-re-stin.json",
+    "path" : "TestScript-hospitalnotification-send-re-stin.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update Start hospital stay - admitted",
+    "title" : "Send: Update Start hospital stay - admitted - RE_STIN",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of status Update Start hospital stay - admitted",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-re-stor" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 35,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-re-stor.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-re-stor.json",
+    "path" : "TestScript-hospitalnotification-send-re-stor.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Update Start leave",
+    "title" : "Send: Update Start leave - RE_STOR",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of Update Start leave",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-slhj-emer" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 36,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-slhj-emer.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-slhj-emer.json",
+    "path" : "TestScript-hospitalnotification-send-slhj-emer.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: End hospital stay - patient completed to home/primary sector",
+    "title" : "Send: End hospital stay - patient completed to home/primary sector - SLHJ-emer",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of End hospital Stay - patient discharged to home/primary sector",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-slhj-imp-timestamptest" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 37,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-slhj-imp-timestamptest.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-slhj-imp-timestamptest.json",
+    "path" : "TestScript-hospitalnotification-send-slhj-imp-timestamptest.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: End hospital stay - patient completed to home/primary sector",
+    "title" : "Send: End hospital stay - patient completed to home/primary sector - SLHJ-imp-timestamptest",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of End hospital Stay- patient discharged to home/primary sector",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-slhj-imp" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 38,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-slhj-imp.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-slhj-imp.json",
+    "path" : "TestScript-hospitalnotification-send-slhj-imp.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: End hospital stay - patient completed to home/primary sector",
+    "title" : "Send: End hospital stay - patient completed to home/primary sector - SLHJ-imp",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of End hospital Stay- patient discharged to home/primary sector",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-slor" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 39,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-slor.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-slor.json",
+    "path" : "TestScript-hospitalnotification-send-slor.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: End leave",
+    "title" : "Send: End leave - SLOR",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of status End leave",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-staa" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 40,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-staa.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-staa.json",
+    "path" : "TestScript-hospitalnotification-send-staa.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Start hospital stay - acute ambulant.",
+    "title" : "Send: Start hospital stay - acute ambulant - STAA",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of status acute-ambulant",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-stin-a1" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 41,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-stin-a1.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-stin-a1.json",
+    "path" : "TestScript-hospitalnotification-send-stin-a1.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Start hospital stay - admitted, without request for a reportOfAdmission.",
+    "title" : "Send: Start hospital stay - admitted - STIN.A1",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of status inpatient",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-stin" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 42,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-stin.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-stin.json",
+    "path" : "TestScript-hospitalnotification-send-stin.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Start hospital stay - admitted.",
+    "title" : "Send: Start hospital stay - admitted - STIN",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of status inpatient",
+    "status" : {
+      "class" : "colsi",
+      "owner" : "MedCom",
+      "status" : "Active"
+    },
+    "copyright" : "MedCom 2021"
+  },
+  "TestScript/hospitalnotification-send-stor" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 43,
+    "source" : "fsh-generated/resources/TestScript-hospitalnotification-send-stor.json",
+    "sourceTail" : "TestScript-hospitalnotification-send-stor.json",
+    "path" : "TestScript-hospitalnotification-send-stor.html",
+    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
+    "version" : "1.0.0-b1",
+    "name" : "Send: Start leave",
+    "title" : "Send: Start leave - STOR",
+    "date" : "2023-05-01",
+    "description" : "Testing correct use of status Start leave",
     "status" : {
       "class" : "colsi",
       "owner" : "MedCom",

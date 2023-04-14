@@ -3,20 +3,20 @@
    <text>
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
-         <h2>HospitalnotificationTestscripts</h2>
+         <h2>HospitalNotificationTestscripts</h2>
          <p>The official URL for this implementation guide is: </p>
          <pre>http://example.org/fhir/fish/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification</pre>
          <div>
-            <p>Testscripts for HospitalNotification</p>
+            <p>Testscripts for HospitalNotification v. 3.0.0</p>
          </div>
       </div>
    </text>
    <url value="http://example.org/fhir/fish/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification"/>
    <version value="1.0.0-b1"/>
-   <name value="HospitalnotificationTestscripts"/>
+   <name value="HospitalNotificationTestscripts"/>
    <title value="HospitalNotification Testscripts"/>
    <status value="draft"/>
-   <date value="2023-03-21T14:28:49+01:00"/>
+   <date value="2023-04-14T12:59:27+02:00"/>
    <contact>
       <name value="MedCom"/>
       <telecom>
@@ -24,7 +24,7 @@
          <value value="fhir@medcom.dk"/>
       </telecom>
    </contact>
-   <description value="Testscripts for HospitalNotification"/>
+   <description value="Testscripts for HospitalNotification v. 3.0.0"/>
    <packageId value="medcom.fhir.dk.testscripts.hospitalnotification"/>
    <license value="CC0-1.0"/>
    <fhirVersion value="4.0.1"/>
@@ -264,10 +264,53 @@
          <name value="Example: Example Instances"/>
          <description value="These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like."/>
       </grouping>
-      <grouping id="-other">
-         <name value="Other"/>
-         <description value="These are resources that are used within this implementation guide that do not fit into one of the other categories."/>
-      </grouping>
+
+
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-PF-send-emer-01.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-PF-send-emer-01"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_PF-send-emer-01"/>
+         <description value="Testing correct use of send HospitalNotification"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-PF-send-emer-02.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-PF-send-emer-02"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_PF-send-emer-02"/>
+         <description value="Testing correct use of send HospitalNotification"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-PF-send-emer-imp-01.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-PF-send-emer-imp-01"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_PF-send-emer-imp-01"/>
+         <description value="Testing correct use of send HospitalNotification"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="TestScript"/>
@@ -278,7 +321,7 @@
          <reference>
             <reference value="TestScript/hospitalnotification-PF-send-imp-01"/>
          </reference>
-         <name value="HospitalNotification-TestScript-PF-send-imp-01"/>
+         <name value="HospitalNotification_TestScript_PF-send-imp-01"/>
          <description value="Testing correct use of send HospitalNotification"/>
          <exampleBoolean value="true"/>
          <groupingId value="-ex-example"/>
@@ -293,7 +336,7 @@
          <reference>
             <reference value="TestScript/hospitalnotification-PF-send-imp-02"/>
          </reference>
-         <name value="HospitalNotification-TestScript-PF-send-imp-02"/>
+         <name value="HospitalNotification_TestScript_PF-send-imp-02"/>
          <description value="Testing correct use of send HospitalNotification"/>
          <exampleBoolean value="true"/>
          <groupingId value="-ex-example"/>
@@ -308,7 +351,7 @@
          <reference>
             <reference value="TestScript/hospitalnotification-PF-send-imp-03"/>
          </reference>
-         <name value="HospitalNotification-TestScript-PF-send-imp-03"/>
+         <name value="HospitalNotification_TestScript_PF-send-imp-03"/>
          <description value="Testing correct use of send HospitalNotification - deceased"/>
          <exampleBoolean value="true"/>
          <groupingId value="-ex-example"/>
@@ -323,7 +366,7 @@
          <reference>
             <reference value="TestScript/hospitalnotification-PF-send-imp-04"/>
          </reference>
-         <name value="HospitalNotification-TestScript-PF-send-imp-04"/>
+         <name value="HospitalNotification_TestScript_PF-send-imp-04"/>
          <description value="Testing correct use of send HospitalNotification"/>
          <exampleBoolean value="true"/>
          <groupingId value="-ex-example"/>
@@ -338,24 +381,535 @@
          <reference>
             <reference value="TestScript/hospitalnotification-PF-send-imp-05"/>
          </reference>
-         <name value="HospitalNotification-TestScript-PF-send-imp-05"/>
+         <name value="HospitalNotification_TestScript_PF-send-imp-05"/>
          <description value="Testing correct use of send HospitalNotification"/>
          <exampleBoolean value="true"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Bundle"/>
+            <valueString value="TestScript"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Bundle-a5e5b880-c087-4055-b9ec-99108695f81d.html"/>
+            <valueUri value="TestScript-hospitalnotification-PF-send-imp-06.html"/>
          </extension>
          <reference>
-            <reference value="Bundle/a5e5b880-c087-4055-b9ec-99108695f81d"/>
+            <reference value="TestScript/hospitalnotification-PF-send-imp-06"/>
          </reference>
-         <name value="a5e5b880-c087-4055-b9ec-99108695f81d"/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-other"/>
+         <name value="HospitalNotification_TestScript_PF-send-imp-06"/>
+         <description value="Testing correct use of send HospitalNotification"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-PF-send-tec-01.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-PF-send-tec-01"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_PF-send-tec-01"/>
+         <description value="Testing correct use of send HospitalNotification"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-PF-send-tec-03.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-PF-send-tec-03"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_PF-send-tec-03"/>
+         <description value="Testing correct use of send HospitalNotification"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-an-mors.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-an-mors"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_AN_MORS"/>
+         <description value="Testing correct use of cancellation of deceased inpatient before arrival at the hospital - deceased"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-an-mors-emer.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-an-mors-emer"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_AN_MORS-emer"/>
+         <description value="Testing correct use of cancellation of End hospital Stay - deceased"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-an-mors-imp.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-an-mors-imp"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_AN_MORS-IMP"/>
+         <description value="Testing correct use of cancellation of End hospital Stay - deceased"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-an-mors-stor.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-an-mors-stor"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_AN_MORS-STOR"/>
+         <description value="Testing correct use of cancellation of deceased during a period of leave - deceased"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-an-slhj-emer.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-an-slhj-emer"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_AN_SLHJ-emer"/>
+         <description value="Testing correct use of cancellation of End hospital Stay"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-an-slhj-imp.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-an-slhj-imp"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_AN_SLHJ-imp"/>
+         <description value="Testing correct use of cancellation of End hospital Stay"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-an-slor.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-an-slor"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_AN_SLOR"/>
+         <description value="Testing correct use of cancellation of end leave"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-an-staa.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-an-staa"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_AN_STAA"/>
+         <description value="Testing correct use of cancellation of start acute ambulant"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-an-stin.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-an-stin"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_AN_STIN"/>
+         <description value="Testing correct use of cancellation of start hospital stay admission"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-an-stor.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-an-stor"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_AN_STOR"/>
+         <description value="Testing correct use of cancellation of start leave"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-mors.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-mors"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_MORS"/>
+         <description value="Testing correct use of status inpatient"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-mors-emer.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-mors-emer"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_MORS-EMER"/>
+         <description value="Testing correct use of End hospital Stay-deseased"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-mors-imp.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-mors-imp"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_MORS-IMP"/>
+         <description value="Testing correct use of End hospital Stay - deseased"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-mors-stor.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-mors-stor"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_MORS-STOR"/>
+         <description value="Testing correct use of End hospital Stay - deseased"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-re-mors.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-re-mors"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_RE-MORS"/>
+         <description value="Testing correct use of update of deceased inpatient before arrival at the hospital - deceased"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-re-mors-emer.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-re-mors-emer"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_RE-MORS-emer"/>
+         <description value="Testing correct use of Update End hospital Stay - deceased"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-re-mors-imp.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-re-mors-imp"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_RE-MORS-IMP"/>
+         <description value="Testing correct use of Update End hospital Stay - deceased"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-re-mors-stor.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-re-mors-stor"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_RE-MORS-STOR"/>
+         <description value="Testing correct use of Update End hospital Stay - deceased"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-re-slhj-emer.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-re-slhj-emer"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_RE_SLHJ-emer"/>
+         <description value="Testing correct use of Update End hospital Stay"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-re-slhj-imp.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-re-slhj-imp"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_RE_SLHJ-imp"/>
+         <description value="Testing correct use of Update End hospital Stay"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-re-slor.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-re-slor"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_RE_SLOR"/>
+         <description value="Testing correct use of Update end leave"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-re-staa.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-re-staa"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_RE_STAA"/>
+         <description value="Testing correct use of status stay-acute ambulant"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-re-stin.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-re-stin"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_RE_STIN"/>
+         <description value="Testing correct use of status Update Start hospital stay - admitted"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-re-stor.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-re-stor"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_RE_STOR"/>
+         <description value="Testing correct use of Update Start leave"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-slhj-emer.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-slhj-emer"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_SLHJ-EMER"/>
+         <description value="Testing correct use of End hospital Stay - patient discharged to home/primary sector"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-slhj-imp.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-slhj-imp"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_SLHJ-imp"/>
+         <description value="Testing correct use of End hospital Stay- patient discharged to home/primary sector"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-slhj-imp-timestamptest.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-slhj-imp-timestamptest"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_SLHJ-imp-timestamptest"/>
+         <description value="Testing correct use of End hospital Stay- patient discharged to home/primary sector"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-slor.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-slor"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_SLOR"/>
+         <description value="Testing correct use of status End leave"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-staa.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-staa"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_STAA"/>
+         <description value="Testing correct use of status acute-ambulant"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-stin.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-stin"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_STIN"/>
+         <description value="Testing correct use of status inpatient"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-stin-a1.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-stin-a1"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_STIN-A1"/>
+         <description value="Testing correct use of status inpatient"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="TestScript"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="TestScript-hospitalnotification-send-stor.html"/>
+         </extension>
+         <reference>
+            <reference value="TestScript/hospitalnotification-send-stor"/>
+         </reference>
+         <name value="HospitalNotification_TestScript_STOR"/>
+         <description value="Testing correct use of status Start leave"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
       </resource>
       <page>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -377,33 +931,218 @@
             <title value="Artifacts Summary"/>
             <generation value="html"/>
             <page>
+               <nameUrl value="TestScript-hospitalnotification-PF-send-emer-01.html"/>
+               <title value="HospitalNotification_TestScript_PF-send-emer-01"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-PF-send-emer-02.html"/>
+               <title value="HospitalNotification_TestScript_PF-send-emer-02"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-PF-send-emer-imp-01.html"/>
+               <title value="HospitalNotification_TestScript_PF-send-emer-imp-01"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="TestScript-hospitalnotification-PF-send-imp-01.html"/>
-               <title value="HospitalNotification-TestScript-PF-send-imp-01"/>
+               <title value="HospitalNotification_TestScript_PF-send-imp-01"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="TestScript-hospitalnotification-PF-send-imp-02.html"/>
-               <title value="HospitalNotification-TestScript-PF-send-imp-02"/>
+               <title value="HospitalNotification_TestScript_PF-send-imp-02"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="TestScript-hospitalnotification-PF-send-imp-03.html"/>
-               <title value="HospitalNotification-TestScript-PF-send-imp-03"/>
+               <title value="HospitalNotification_TestScript_PF-send-imp-03"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="TestScript-hospitalnotification-PF-send-imp-04.html"/>
-               <title value="HospitalNotification-TestScript-PF-send-imp-04"/>
+               <title value="HospitalNotification_TestScript_PF-send-imp-04"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="TestScript-hospitalnotification-PF-send-imp-05.html"/>
-               <title value="HospitalNotification-TestScript-PF-send-imp-05"/>
+               <title value="HospitalNotification_TestScript_PF-send-imp-05"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="Bundle-a5e5b880-c087-4055-b9ec-99108695f81d.html"/>
-               <title value="a5e5b880-c087-4055-b9ec-99108695f81d"/>
+               <nameUrl value="TestScript-hospitalnotification-PF-send-imp-06.html"/>
+               <title value="HospitalNotification_TestScript_PF-send-imp-06"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-PF-send-tec-01.html"/>
+               <title value="HospitalNotification_TestScript_PF-send-tec-01"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-PF-send-tec-03.html"/>
+               <title value="HospitalNotification_TestScript_PF-send-tec-03"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-an-mors.html"/>
+               <title value="HospitalNotification_TestScript_AN_MORS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-an-mors-emer.html"/>
+               <title value="HospitalNotification_TestScript_AN_MORS-emer"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-an-mors-imp.html"/>
+               <title value="HospitalNotification_TestScript_AN_MORS-IMP"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-an-mors-stor.html"/>
+               <title value="HospitalNotification_TestScript_AN_MORS-STOR"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-an-slhj-emer.html"/>
+               <title value="HospitalNotification_TestScript_AN_SLHJ-emer"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-an-slhj-imp.html"/>
+               <title value="HospitalNotification_TestScript_AN_SLHJ-imp"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-an-slor.html"/>
+               <title value="HospitalNotification_TestScript_AN_SLOR"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-an-staa.html"/>
+               <title value="HospitalNotification_TestScript_AN_STAA"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-an-stin.html"/>
+               <title value="HospitalNotification_TestScript_AN_STIN"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-an-stor.html"/>
+               <title value="HospitalNotification_TestScript_AN_STOR"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-mors.html"/>
+               <title value="HospitalNotification_TestScript_MORS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-mors-emer.html"/>
+               <title value="HospitalNotification_TestScript_MORS-EMER"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-mors-imp.html"/>
+               <title value="HospitalNotification_TestScript_MORS-IMP"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-mors-stor.html"/>
+               <title value="HospitalNotification_TestScript_MORS-STOR"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-re-mors.html"/>
+               <title value="HospitalNotification_TestScript_RE-MORS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-re-mors-emer.html"/>
+               <title value="HospitalNotification_TestScript_RE-MORS-emer"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-re-mors-imp.html"/>
+               <title value="HospitalNotification_TestScript_RE-MORS-IMP"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-re-mors-stor.html"/>
+               <title value="HospitalNotification_TestScript_RE-MORS-STOR"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-re-slhj-emer.html"/>
+               <title value="HospitalNotification_TestScript_RE_SLHJ-emer"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-re-slhj-imp.html"/>
+               <title value="HospitalNotification_TestScript_RE_SLHJ-imp"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-re-slor.html"/>
+               <title value="HospitalNotification_TestScript_RE_SLOR"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-re-staa.html"/>
+               <title value="HospitalNotification_TestScript_RE_STAA"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-re-stin.html"/>
+               <title value="HospitalNotification_TestScript_RE_STIN"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-re-stor.html"/>
+               <title value="HospitalNotification_TestScript_RE_STOR"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-slhj-emer.html"/>
+               <title value="HospitalNotification_TestScript_SLHJ-EMER"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-slhj-imp.html"/>
+               <title value="HospitalNotification_TestScript_SLHJ-imp"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-slhj-imp-timestamptest.html"/>
+               <title value="HospitalNotification_TestScript_SLHJ-imp-timestamptest"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-slor.html"/>
+               <title value="HospitalNotification_TestScript_SLOR"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-staa.html"/>
+               <title value="HospitalNotification_TestScript_STAA"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-stin.html"/>
+               <title value="HospitalNotification_TestScript_STIN"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-stin-a1.html"/>
+               <title value="HospitalNotification_TestScript_STIN-A1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="TestScript-hospitalnotification-send-stor.html"/>
+               <title value="HospitalNotification_TestScript_STOR"/>
                <generation value="generated"/>
             </page>
          </page>

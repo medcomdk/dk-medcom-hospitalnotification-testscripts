@@ -1,5 +1,5 @@
-/* //STIN.A1
-Instance: HospitalNotification-TestScript-STIN-A1
+//STIN.A1
+Instance: HospitalNotification_TestScript_STIN-A1
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-stin-a1"
@@ -9,7 +9,7 @@ InstanceOf: TestScript
 * insert createInitialMessage(STIN, 01, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, false) 
 
 //STIN
-Instance: HospitalNotification-TestScript-STIN
+Instance: HospitalNotification_TestScript_STIN
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-stin"
@@ -19,7 +19,7 @@ InstanceOf: TestScript
 * insert createInitialMessage(STIN, 01, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, true) 
 
 //STAA
-Instance: HospitalNotification-TestScript-STAA
+Instance: HospitalNotification_TestScript_STAA
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-staa"
@@ -29,7 +29,7 @@ InstanceOf: TestScript
 * insert createInitialMessage(STAA, 01, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-emergency, EMER, in-progress, true) 
 
 //STOR
-Instance: HospitalNotification-TestScript-STOR
+Instance: HospitalNotification_TestScript_STOR
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-stor"
@@ -40,7 +40,7 @@ InstanceOf: TestScript
 * insert createMessage(STOR, 02, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, start-leave-inpatient, IMP, onleave, revision, messageHeaderid-STIN, 2, episodeOfCareID-STIN)
 
 //SLOR
-Instance: HospitalNotification-TestScript-SLOR
+Instance: HospitalNotification_TestScript_SLOR
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-slor"
@@ -52,7 +52,7 @@ InstanceOf: TestScript
 * insert createMessage(SLOR, 03, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, end-leave-inpatient, IMP, in-progress, revision, messageHeaderid-STOR, 3, episodeOfCareID-STOR)
 
 //SLHJ - IMP
-Instance: HospitalNotification-TestScript-SLHJ-imp
+Instance: HospitalNotification_TestScript_SLHJ-imp
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-slhj-imp"
@@ -63,7 +63,7 @@ InstanceOf: TestScript
 * insert createMessage(SLHJ, 02, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, discharge-inpatient-home, IMP, finished, revision, messageHeaderid-STIN, 2, episodeOfCareID-STIN)
 
  //SLHJ - EMER
-Instance: HospitalNotification-TestScript-SLHJ-EMER
+Instance: HospitalNotification_TestScript_SLHJ-EMER
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-slhj-emer"
@@ -74,7 +74,7 @@ InstanceOf: TestScript
 * insert createMessage(SLHJ, 02, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, discharge-emergency-home, EMER, finished, revision, messageHeaderid-STAA, 2, episodeOfCareID-STAA)
 
 //MORS
-Instance: HospitalNotification-TestScript-MORS
+Instance: HospitalNotification_TestScript_MORS
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-mors"
@@ -84,7 +84,7 @@ InstanceOf: TestScript
 * insert createInitialMessageDeceased(MORS, 01, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, false, true) 
 
 //MORS - EMER
-Instance: HospitalNotification-TestScript-MORS-EMER
+Instance: HospitalNotification_TestScript_MORS-EMER
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-mors-emer"
@@ -95,7 +95,7 @@ InstanceOf: TestScript
 * insert createMessageDeceased(MORS, 02, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-emergency, EMER, finished, revision, true, messageHeaderid-STAA, 2, episodeOfCareID-STAA)
  
  //MORS - STOR
-Instance: HospitalNotification-TestScript-MORS-STOR
+Instance: HospitalNotification_TestScript_MORS-STOR
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-mors-stor"
@@ -107,7 +107,7 @@ InstanceOf: TestScript
 * insert createMessageDeceased(MORS, 03, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, start-leave-inpatient, IMP, finished, revision, true, messageHeaderid-STOR, 3, episodeOfCareID-STOR)
  
  //MORS - IMP
-Instance: HospitalNotification-TestScript-MORS-IMP
+Instance: HospitalNotification_TestScript_MORS-IMP
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-mors-imp"
@@ -119,7 +119,7 @@ InstanceOf: TestScript
  
 
 //SLHJ - IMP
-Instance: HospitalNotification-TestScript-SLHJ-imp-timestamptest
+Instance: HospitalNotification_TestScript_SLHJ-imp-timestamptest
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-send-slhj-imp-timestamptest"
@@ -128,4 +128,3 @@ InstanceOf: TestScript
 * description = "Testing correct use of End hospital Stay- patient discharged to home/primary sector"
 * insert createInitialMessage(STIN, 01, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, true)
 * insert createMessage(SLHJ, 02, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, discharge-inpatient-home, IMP, finished, revision, messageHeaderid-STIN, 2, episodeOfCareID-STIN)
- */

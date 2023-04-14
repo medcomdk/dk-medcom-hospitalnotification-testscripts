@@ -8,7 +8,7 @@
   },
   "url": "https://medcomfhir.dk/ig/hospitalnotification/",
   "status": "active",
-  "date": "2023-04-01",
+  "date": "2023-05-01",
   "publisher": "MedCom",
   "contact": [
     {
@@ -23,8 +23,8 @@
     }
   ],
   "copyright": "MedCom 2021",
-  "name": "Send: AdmitAdmit patient, correct message due to incorrect time of admission.",
-  "title": "Send: Admit patient, correct message due to incorrect time of admission - PF-send-imp-05",
+  "name": "Send: Admit patient, correct message due to incorrect time of admission.",
+  "title": "Send: Admit patient, correct message due to incorrect time of admission - PF-send-imp-06",
   "description": "Testing correct use of send HospitalNotification",
   "origin": [
     {
@@ -91,7 +91,7 @@
     },
     {
       "name": "encounterDateTime-STIN",
-      "expression": "Bundle.entry.resource.ofType('Encounter').period.start",
+      "expression": "Bundle.entry.resource.ofType(Encounter).period.start",
       "sourceId": "create-message-STIN"
     },
     {
@@ -336,7 +336,7 @@
           "assert": {
             "description": "Confirm that Encounter.period.start has been updated.",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType('Encounter').period.start != ${encounterDateTime-STIN}",
+            "expression": "Bundle.entry.resource.ofType(Encounter).period.start != ${encounterDateTime-STIN}",
             "warningOnly": false
           }
         }
