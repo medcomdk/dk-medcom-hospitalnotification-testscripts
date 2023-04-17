@@ -27,6 +27,104 @@
     "resource": [
       {
         "reference": {
+          "reference": "TestScript/hospitalnotification-PF-receive-emer-01"
+        },
+        "name": "HospitalNotification_TestScript_PF-receive-emer-01",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "TestScript/hospitalnotification-PF-receive-emer-02"
+        },
+        "name": "HospitalNotification_TestScript_PF-receive-emer-02",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "TestScript/hospitalnotification-PF-receive-emer-imp-01"
+        },
+        "name": "HospitalNotification_TestScript_PF-receive-emer-imp-01",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "TestScript/hospitalnotification-PF-receive-imp-01"
+        },
+        "name": "HospitalNotification_TestScript_PF-receive-imp-01",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "TestScript/hospitalnotification-PF-receive-imp-02"
+        },
+        "name": "HospitalNotification_TestScript_PF-receive-imp-02",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "TestScript/hospitalnotification-PF-receive-imp-03"
+        },
+        "name": "HospitalNotification_TestScript_PF-receive-imp-03",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "TestScript/hospitalnotification-PF-receive-imp-04"
+        },
+        "name": "HospitalNotification_TestScript_PF-receive-imp-04",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "TestScript/hospitalnotification-PF-receive-imp-05"
+        },
+        "name": "HospitalNotification_TestScript_PF-receive-imp-05",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "TestScript/hospitalnotification-PF-receive-imp-06"
+        },
+        "name": "HospitalNotification_TestScript_PF-receive-imp-06",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "TestScript/hospitalnotification-PF-receive-tec-01"
+        },
+        "name": "HospitalNotification_TestScript_PF-receive-tec-01",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "TestScript/hospitalnotification-PF-receive-tec-02"
+        },
+        "name": "HospitalNotification_TestScript_PF-receive-tec-02",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "TestScript/hospitalnotification-PF-receive-tec-03"
+        },
+        "name": "HospitalNotification_TestScript_PF-receive-tec-03",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "TestScript/hospitalnotification-PF-receive-tec-04"
+        },
+        "name": "HospitalNotification_TestScript_PF-receive-tec-04",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "TestScript/hospitalnotification-PF-receive-tec-05"
+        },
+        "name": "HospitalNotification_TestScript_PF-receive-tec-05",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "TestScript/hospitalnotification-PF-send-emer-01"
         },
         "name": "HospitalNotification_TestScript_PF-send-emer-01",
@@ -104,226 +202,16 @@
       },
       {
         "reference": {
-          "reference": "TestScript/hospitalnotification-send-an-mors"
+          "reference": "TestScript/hospitalnotification-PF-send-tec-04"
         },
-        "name": "HospitalNotification_TestScript_AN_MORS",
+        "name": "HospitalNotification_TestScript_PF-send-tec-04",
         "exampleBoolean": true
       },
       {
         "reference": {
-          "reference": "TestScript/hospitalnotification-send-an-mors-emer"
+          "reference": "TestScript/hospitalnotification-PF-send-tec-05"
         },
-        "name": "HospitalNotification_TestScript_AN_MORS-emer",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-an-mors-imp"
-        },
-        "name": "HospitalNotification_TestScript_AN_MORS-IMP",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-an-mors-stor"
-        },
-        "name": "HospitalNotification_TestScript_AN_MORS-STOR",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-an-slhj-emer"
-        },
-        "name": "HospitalNotification_TestScript_AN_SLHJ-emer",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-an-slhj-imp"
-        },
-        "name": "HospitalNotification_TestScript_AN_SLHJ-imp",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-an-slor"
-        },
-        "name": "HospitalNotification_TestScript_AN_SLOR",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-an-staa"
-        },
-        "name": "HospitalNotification_TestScript_AN_STAA",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-an-stin"
-        },
-        "name": "HospitalNotification_TestScript_AN_STIN",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-an-stor"
-        },
-        "name": "HospitalNotification_TestScript_AN_STOR",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-mors"
-        },
-        "name": "HospitalNotification_TestScript_MORS",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-mors-emer"
-        },
-        "name": "HospitalNotification_TestScript_MORS-EMER",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-mors-imp"
-        },
-        "name": "HospitalNotification_TestScript_MORS-IMP",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-mors-stor"
-        },
-        "name": "HospitalNotification_TestScript_MORS-STOR",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-re-mors"
-        },
-        "name": "HospitalNotification_TestScript_RE-MORS",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-re-mors-emer"
-        },
-        "name": "HospitalNotification_TestScript_RE-MORS-emer",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-re-mors-imp"
-        },
-        "name": "HospitalNotification_TestScript_RE-MORS-IMP",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-re-mors-stor"
-        },
-        "name": "HospitalNotification_TestScript_RE-MORS-STOR",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-re-slhj-emer"
-        },
-        "name": "HospitalNotification_TestScript_RE_SLHJ-emer",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-re-slhj-imp"
-        },
-        "name": "HospitalNotification_TestScript_RE_SLHJ-imp",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-re-slor"
-        },
-        "name": "HospitalNotification_TestScript_RE_SLOR",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-re-staa"
-        },
-        "name": "HospitalNotification_TestScript_RE_STAA",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-re-stin"
-        },
-        "name": "HospitalNotification_TestScript_RE_STIN",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-re-stor"
-        },
-        "name": "HospitalNotification_TestScript_RE_STOR",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-slhj-emer"
-        },
-        "name": "HospitalNotification_TestScript_SLHJ-EMER",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-slhj-imp"
-        },
-        "name": "HospitalNotification_TestScript_SLHJ-imp",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-slhj-imp-timestamptest"
-        },
-        "name": "HospitalNotification_TestScript_SLHJ-imp-timestamptest",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-slor"
-        },
-        "name": "HospitalNotification_TestScript_SLOR",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-staa"
-        },
-        "name": "HospitalNotification_TestScript_STAA",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-stin"
-        },
-        "name": "HospitalNotification_TestScript_STIN",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-stin-a1"
-        },
-        "name": "HospitalNotification_TestScript_STIN-A1",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "TestScript/hospitalnotification-send-stor"
-        },
-        "name": "HospitalNotification_TestScript_STOR",
+        "name": "HospitalNotification_TestScript_PF-send-tec-05",
         "exampleBoolean": true
       }
     ],

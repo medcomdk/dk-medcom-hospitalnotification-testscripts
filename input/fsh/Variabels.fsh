@@ -64,15 +64,9 @@ RuleSet: variableEncounterDateTime(type) // skal kun anvendes ved den initielle 
 * variable[=].sourceId = "create-message-{type}"
 
 
-RuleSet: dynamicEndpoint(type, number)
-* extension.extension[0].url = "id"
-* extension.extension[=].valueId = "create-{type}-{number}"
-* extension.extension[+].url = "resourceType"
-* extension.extension[=].valueString = "MessageHeader"
-* extension.extension[+].url = "contentType"
-* extension.extension[=].valueString = "string" //"application/fhir+xml"
-* extension.extension[+].url = "description"
-* extension.extension[=].valueString = "Receiver endpoint"
-* extension.extension[+].url = "hint"
-* extension.extension[=].valueString = "Bundle resource contents"
-* extension.url = "http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-dynamic-fixture"
+RuleSet: variableTimeZone(type) 
+* variable[+].name = "encounterTimeZone-{type}"
+* variable[=].expression = "Bundle.entry.resource.ofType(Encounter).period.start.substring(19,3)"
+* variable[=].sourceId = "create-message-{type}"
+
+

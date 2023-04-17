@@ -16,8 +16,8 @@ Instance: HospitalNotification_TestScript_PF-send-imp-02
 InstanceOf: TestScript
 * insert Metadata
 * id = "hospitalnotification-PF-send-imp-02"
-* name = "Send: Admit patient, register patient as being on leave, patient doesn’t return from leave, discharge patient."
-* title = "Send: Admit patient, register patient as being on leave, patient doesn’t return from leave, discharge patient. - PF-send-imp-02"
+* name = "Send: Admit patient, register patient as being on leave, patient doesn't return from leave, discharge patient."
+* title = "Send: Admit patient, register patient as being on leave, patient doesn't return from leave, discharge patient. - PF-send-imp-02"
 * description = "Testing correct use of send HospitalNotification"
 * insert createInitialMessage(STIN, 01, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, true)
 * insert createMessage(STOR, 02, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, start-leave-inpatient, IMP, onleave, revision, messageHeaderid-STIN, 2, episodeOfCareID-STIN)
@@ -152,7 +152,7 @@ InstanceOf: TestScript
 * insert createMessage(STIN2, 02, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, revision, messageHeaderid-STIN, 2, episodeOfCareID-STIN)
 * insert createMessage(STIN3, 03, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, revision, messageHeaderid-STIN2, 3, episodeOfCareID-STIN2)
 
-/*  //PF-send-tec-04 - STAA-RE_STAA
+//PF-send-tec-04 - STAA-RE_STAA
 Instance: HospitalNotification_TestScript_PF-send-tec-04
 InstanceOf: TestScript
 * insert Metadata
@@ -161,6 +161,19 @@ InstanceOf: TestScript
 * title = "Send: Correct use of timezone of summertime (+02:00) and vintertime (+01:00). Send STIN and SLHJ-imp in different timezones. - PF-send-tec-04"
 * description = "Testing correct use of send HospitalNotification"
 * insert createInitialMessage(STIN, 01, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, true)
-* insert variableTimeZone
+* insert variableTimeZone(STIN)
+* insert assertEncounterStartTimeZone
 * insert createMessage(SLHJ, 02, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, discharge-inpatient-home, IMP, finished, revision, messageHeaderid-STIN, 2, episodeOfCareID-STIN)
- */
+* insert assertEncounterEndTimeZone
+* insert assertCompareTimeZone(encounterTimeZone-STIN)
+
+//PF-send-tec-05 - STAA-RE_STAA
+Instance: HospitalNotification_TestScript_PF-send-tec-05
+InstanceOf: TestScript
+* insert Metadata
+* id = "hospitalnotification-PF-send-tec-05"
+* name = "Send: Send a message on the 29th of February 2024 (leap year)."
+* title = "Send: Send a message on the 29th of February 2024 (leap year). - PF-send-tec-05"
+* description = "Testing correct use of send HospitalNotification"
+* insert createInitialMessage(STIN, 01, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, true)
+* insert assertEncounterLeapYear

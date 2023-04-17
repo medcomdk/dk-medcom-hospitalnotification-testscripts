@@ -151,6 +151,31 @@ RuleSet: assertEncounterDateTime(encounterDateTime)
 * test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Encounter).period.start != ${{encounterDateTime}}"
 * test[=].action[=].assert.warningOnly = false
 
+RuleSet: assertEncounterStartTimeZone
+* test[=].action[+].assert.description = "Confirm that the time zone is +01 or +02."
+* test[=].action[=].assert.direction = #request
+* test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Encounter).period.start.where(substring(19,3) = '+01').exists() or Bundle.entry.resource.ofType(Encounter).period.start.where(substring(19,3) = '+02').exists()"
+* test[=].action[=].assert.warningOnly = false
+
+RuleSet: assertEncounterEndTimeZone
+* test[=].action[+].assert.description = "Confirm that the time zone is +01 or +02."
+* test[=].action[=].assert.direction = #request
+* test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Encounter).period.end.where(substring(19,3) = '+01').exists() or Bundle.entry.resource.ofType(Encounter).period.end.where(substring(19,3) = '+02').exists()"
+* test[=].action[=].assert.warningOnly = false
+
+RuleSet: assertCompareTimeZone(encounterTimeZone)
+* test[=].action[+].assert.description = "Confirm that Encounter.period.start and Encounter.period.end has different timezones."
+* test[=].action[=].assert.direction = #request
+* test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Encounter).period.end.(substring(19,3) = '${{encounterTimeZone}}').exists().not"
+* test[=].action[=].assert.warningOnly = false
+
+
+RuleSet: assertEncounterLeapYear
+* test[=].action[+].assert.description = "Confirm that Encounter.period.start is on the 29th of Febuary 2024."
+* test[=].action[=].assert.direction = #request
+* test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Encounter).period.start.contains('2024-02-29')"
+* test[=].action[=].assert.warningOnly = false
+
 /* RuleSet: assertPatientIdentifier(patientID)
 * test[=].action[+].assert.description = "Confirm that the patient.deceased is set to {deceased}"
 * test[=].action[=].assert.direction = #request

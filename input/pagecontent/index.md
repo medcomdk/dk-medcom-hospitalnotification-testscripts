@@ -200,17 +200,15 @@ Which results in the following variable to be used in the GET operation:
 | PF-receive-tec-02 | Cancel a correction: Admit patient, correct admit patient and cancel the correction | STIN, RE_STIN, AN_STIN |
 | PF-receive-tec-03 | Messages received in wrong order: Acute ambulant, discharge patient, admit patient. | STAA, SLHJ, STIN |
 
+### Governance
+MedComs FHIR profiles and extension are managed in GitHub under MedCom: Source code
 
-### FHIR Shorthand Resources
-<!-- 
-FHIR Shorthand calls currently are the second Thursday of every month at 9 am Eastern US Time. Click here to join(https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGJmYmVlM2UtYzVkZi00YWJjLWJlNzMtN2ZkYTVkYTA1Mzlk%40thread.v2/0?context=%7b%22Tid%22%3a%22c620dc48-1d50-4952-8b39-df4d54d74d82%22%2c%22Oid%22%3a%22f9a60b6f-fbcc-48d0-bc8e-d6d742b4b339%22%7d)
+A description of governance concerning change management and versioning of MedComs FHIR artefacts, can be found on the link.
 
-[HL7 Confluence site](https://confluence.hl7.org/display/FHIRI/FHIR+Shorthand)
+#### Quality Assurance Report
+In the Quality Assurance report (QA-report) for this IG, there is an error with the following description: Reference is remote which isn’t supported by the specified aggregation mode(s) for the reference (bundled). The error occurs when creating instances of the profiles and is due to some elements having a Bundled flag {b}, however the referenced profile is not included in a Bundle in an instance, since the instance only represents a part of the entire message. This should not influence the implementation by IT-vendors.
 
-[FHIR Shorthand Documentation](https://build.fhir.org/ig/HL7/fhir-shorthand) 
+#### Contact
+<a href="https://www.medcom.dk/">MedCom</a> is responsible for this IG.
 
-[FHIR Shorthand documentation code repository](https://github.com/HL7/fhir-shorthand)
-
-[SUSHI code repository](https://github.com/FHIR/sushi)
-
-[Zulip](https://chat.fhir.org) channel: #shorthand -->
+If you have any questions, please contact <a href="mailto:fhir@medcom.dk">fhir@medcom.dk</a> or write to MedCom’s stream in <a href="https://chat.fhir.org/#narrow/stream/315677-denmark.2Fmedcom.2FFHIRimplementationErfaGroup">Zulip</a>.

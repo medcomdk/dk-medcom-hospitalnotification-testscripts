@@ -1,4 +1,4 @@
-//STIN.A1
+/* //STIN.A1
 Instance: HospitalNotification_TestScript_STIN-A1
 InstanceOf: TestScript
 * insert Metadata
@@ -128,3 +128,4 @@ InstanceOf: TestScript
 * description = "Testing correct use of End hospital Stay- patient discharged to home/primary sector"
 * insert createInitialMessage(STIN, 01, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, true)
 * insert createMessage(SLHJ, 02, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, discharge-inpatient-home, IMP, finished, revision, messageHeaderid-STIN, 2, episodeOfCareID-STIN)
+ */

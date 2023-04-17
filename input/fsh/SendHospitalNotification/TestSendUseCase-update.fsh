@@ -1,4 +1,4 @@
-//RE_STAA
+/* //RE_STAA
 Instance: HospitalNotification_TestScript_RE_STAA
 InstanceOf: TestScript
 * insert Metadata
@@ -122,3 +122,4 @@ InstanceOf: TestScript
 * insert createInitialMessage(STIN, 01, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, true)
 * insert createMessageDeceased(MORS, 02, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, finished, revision, true, messageHeaderid-STIN, 2, episodeOfCareID-STIN)
 * insert createMessageDeceased(RE-MORS, 03, /FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml, admit-inpatient, IMP, finished, revision, true, messageHeaderid-MORS, 3, episodeOfCareID-MORS)
+ */

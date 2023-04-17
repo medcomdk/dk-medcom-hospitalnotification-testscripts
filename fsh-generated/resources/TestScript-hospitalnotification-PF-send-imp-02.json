@@ -23,8 +23,8 @@
     }
   ],
   "copyright": "MedCom 2021",
-  "name": "Send: Admit patient, register patient as being on leave, patient doesn’t return from leave, discharge patient.",
-  "title": "Send: Admit patient, register patient as being on leave, patient doesn’t return from leave, discharge patient. - PF-send-imp-02",
+  "name": "Send: Admit patient, register patient as being on leave, patient doesn't return from leave, discharge patient.",
+  "title": "Send: Admit patient, register patient as being on leave, patient doesn't return from leave, discharge patient. - PF-send-imp-02",
   "description": "Testing correct use of send HospitalNotification",
   "origin": [
     {
