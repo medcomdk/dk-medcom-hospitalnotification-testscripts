@@ -6,7 +6,6 @@
       "http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"
     ]
   },
-  "url": "https://medcomfhir.dk/ig/hospitalnotification/",
   "status": "active",
   "date": "2023-05-01",
   "publisher": "MedCom",
@@ -16,16 +15,20 @@
       "telecom": [
         {
           "system": "email",
-          "value": "fhir@medcom.dk",
-          "use": "work"
+          "value": "mailto:fhir@medcom.dk"
+        },
+        {
+          "system": "url",
+          "value": "https://medcom.dk/"
         }
       ]
     }
   ],
   "copyright": "MedCom 2021",
-  "name": "Send: Admit patient, correct message due to incorrect time of admission.",
-  "title": "Send: Admit patient, correct message due to incorrect time of admission - PF-send-emer-01",
-  "description": "Testing correct use of send HospitalNotification",
+  "description": "Send: Register patient as acute ambulant, correct message due to incorrect hospital department",
+  "title": "Send: Register patient as acute ambulant, correct message due to incorrect hospital department - PF-send-emer-01",
+  "url": "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-send-emer-01",
+  "name": "HospitalNotificationTestScript",
   "origin": [
     {
       "index": 1,
@@ -56,7 +59,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml"
       }
     },
     {
@@ -64,7 +67,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml"
       }
     }
   ],
@@ -90,8 +93,13 @@
       "sourceId": "create-message-STAA"
     },
     {
-      "name": "encounterDateTime-STAA",
-      "expression": "Bundle.entry.resource.ofType(Encounter).period.start",
+      "name": "hospitalSOR-STAA",
+      "expression": "Bundle.entry.where(fullUrl = %resource.entry.resource[0].sender.reference).resource.identifier.where(system = 'urn:oid:1.2.208.176.1.1').value",
+      "sourceId": "create-message-STAA"
+    },
+    {
+      "name": "hospitalGLN-STAA",
+      "expression": "Bundle.entry.where(fullUrl = %resource.entry.resource[0].sender.reference).resource.identifier.where(system = 'https://www.gs1.org/gln').value",
       "sourceId": "create-message-STAA"
     },
     {
@@ -334,10 +342,18 @@
         },
         {
           "assert": {
-            "description": "Confirm that Encounter.period.start has been updated.",
+            "description": "Confirm that the sender SOR number is different from the previous message.",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Encounter).period.start != ${encounterDateTime-STAA}",
+            "expression": "Bundle.entry.where(fullUrl = %resource.entry.resource[0].sender.reference).resource.identifier.where(system = 'urn:oid:1.2.208.176.1.1').value != ${hospitalSOR-STAA}",
             "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "description": "Confirm that the sender SOR number is different from the previous message.",
+            "direction": "request",
+            "expression": "Bundle.entry.where(fullUrl = %resource.entry.resource[0].sender.reference).resource.identifier.where(system = 'https://www.gs1.org/gln').value != ${hospitalGLN-STAA}",
+            "warningOnly": true
           }
         }
       ]

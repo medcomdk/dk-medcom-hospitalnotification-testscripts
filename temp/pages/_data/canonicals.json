@@ -2,309 +2,638 @@
   {
     "id" : "medcom.fhir.dk.testscripts.hospitalnotification",
     "type" : "ImplementationGuide",
-    "url" : "http://example.org/fhir/fish/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification",
-    "version" : "1.0.0-b1",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification",
+    "version" : "1.0.0",
     "name" : "HospitalNotificationTestscripts"
+  },
+  {
+    "id" : "hospitalnotification-PF-receive-emer-01",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-emer-01",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-PF-receive-emer-02",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-emer-02",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-PF-receive-emer-imp-01",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-emer-imp-01",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-PF-receive-imp-01",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-imp-01",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-PF-receive-imp-02",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-imp-02",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-PF-receive-imp-03",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-imp-03",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-PF-receive-imp-04",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-imp-04",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-PF-receive-imp-05",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-imp-05",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-PF-receive-imp-06",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-imp-06",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-PF-receive-tec-01",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-tec-01",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-PF-receive-tec-02",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-tec-02",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-PF-receive-tec-03",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-tec-03",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-PF-receive-tec-04",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-tec-04",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-PF-receive-tec-05",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-tec-05",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-PF-receive-tec-06",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-tec-06",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-PF-send-emer-01",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Admit patient, correct message due to incorrect time of admission."
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-send-emer-01",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-PF-send-emer-02",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Admit patient, correct message due to incorrect hospital department. Evaluation is based on SOR number."
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-send-emer-02",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-PF-send-emer-imp-01",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Admit patient as emergency, Admit patient as inpatient, discharge patient"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-send-emer-imp-01",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-PF-send-imp-01",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Admit patient, register patient as being on leave, register patient as returned from leave, discharge patient."
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-send-imp-01",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-PF-send-imp-02",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Admit patient, register patient as being on leave, patient doesn’t return from leave, discharge patient."
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-send-imp-02",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-PF-send-imp-03",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Admit patient, register patient as being on leave, patient returns from leave, patient dies"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-send-imp-03",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-PF-send-imp-04",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Admit patient, *register patient as being on leave, patient returns from leave*, * to * x2 "
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-send-imp-04",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-PF-send-imp-05",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Admit patient, correct message due to incorrect hospital department. Evaluation is based on SOR number."
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-send-imp-05",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-PF-send-imp-06",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Admit patient, correct message due to incorrect time of admission."
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-send-imp-06",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-PF-send-tec-01",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Cancel a corrected admission: Admit patient, correct admit patient and cancel the correction"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-send-tec-01",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-PF-send-tec-02",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-send-tec-02",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-PF-send-tec-03",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Send max dublets, due to no acknowledgement of the messages: Send admit patient, admit patient, admit patient. Ids are handled correct"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-send-tec-03",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
-    "id" : "hospitalnotification-send-an-mors-emer",
+    "id" : "hospitalnotification-PF-send-tec-04",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Cancellation Deceased - dies during acute ambulant"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-send-tec-04",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
-    "id" : "hospitalnotification-send-an-mors-imp",
+    "id" : "hospitalnotification-receive-an-mors",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Cancellation Deceased - dies during admission"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-an-mors",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
-    "id" : "hospitalnotification-send-an-mors-stor",
+    "id" : "hospitalnotification-receive-an-mors-emer",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Cancellation Deceased - dies during a period of leave"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-an-mors-emer",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-an-mors-imp",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-an-mors-imp",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-an-mors-stor",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-an-mors-stor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-an-slhj-emer",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-an-slhj-emer",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-an-slhj-imp",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-an-slhj-imp",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-an-slor",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-an-slor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-an-staa",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-an-staa",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-an-stin",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-an-stin",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-an-stor",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-an-stor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-mors",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-mors",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-mors-emer",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-mors-emer",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-mors-imp",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-mors-imp",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-mors-stor",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-mors-stor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-re-mors",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-mors",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-re-mors-emer",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-mors-emer",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-re-mors-imp",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-mors-imp",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-re-mors-stor",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-mors-stor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-re-slhj-emer",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-slhj-emer",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-re-slhj-imp",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-slhj-imp",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-re-slor",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-slor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-re-staa",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-staa",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-re-stin",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-stin",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-re-stor",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-stor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-slhj-emer",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-slhj-emer",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-slhj-imp",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-slhj-imp",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-slor",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-slor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-staa",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-staa",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-stin",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-stin",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-stin-a1",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-stin-a1",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-receive-stor",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-stor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-an-mors",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Cancellation Deceased - dead at arrival to the hospital"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-an-mors",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-send-an-mors-emer",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-an-mors-emer",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-send-an-mors-imp",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-an-mors-imp",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-send-an-mors-stor",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-an-mors-stor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-an-slhj-emer",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Cancellation End hospital stay - patient completed to home/primary sector"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-an-slhj-emer",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-an-slhj-imp",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Cancellation End hospital stay - patient completed to home/primary sector"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-an-slhj-imp",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-an-slor",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Cancellation End leave"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-an-slor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-an-staa",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Cancellation Start hospital stay - acute ambulant"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-an-staa",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-an-stin",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Cancellation Start hospital stay - admitted - AN_STIN"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-an-stin",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-an-stor",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Cancellation Start leave - AN_STOR"
-  },
-  {
-    "id" : "hospitalnotification-send-mors-emer",
-    "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Deceased -  dies during hospital stay"
-  },
-  {
-    "id" : "hospitalnotification-send-mors-imp",
-    "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Deceased - deceased during admission"
-  },
-  {
-    "id" : "hospitalnotification-send-mors-stor",
-    "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Deceased - dies during a period of leave"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-an-stor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-mors",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Deceased - dead at arrival to the hospital."
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-mors",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
-    "id" : "hospitalnotification-send-re-mors-emer",
+    "id" : "hospitalnotification-send-mors-emer",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Update Deceased - deceased during acute ambulant"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-mors-emer",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
-    "id" : "hospitalnotification-send-re-mors-imp",
+    "id" : "hospitalnotification-send-mors-imp",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Update Deceased - dies during admission"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-mors-imp",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
-    "id" : "hospitalnotification-send-re-mors-stor",
+    "id" : "hospitalnotification-send-mors-stor",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Update Deceased - dies during a period of leave"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-mors-stor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-re-mors",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Update Deceased - dead at arrival to the hospital"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-re-mors",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-send-re-mors-emer",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-re-mors-emer",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-send-re-mors-imp",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-re-mors-imp",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-send-re-mors-stor",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-re-mors-stor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-re-slhj-emer",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Update End hospital stay - patient completed to home/primary sector"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-re-slhj-emer",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-re-slhj-imp",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Update End hospital stay - patient completed to home/primary sector"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-re-slhj-imp",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-re-slor",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Update End leave"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-re-slor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-re-staa",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Update Start hospital stay - acute ambulant"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-re-staa",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-re-stin",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Update Start hospital stay - admitted"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-re-stin",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-re-stor",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Update Start leave"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-re-stor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-slhj-emer",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: End hospital stay - patient completed to home/primary sector"
-  },
-  {
-    "id" : "hospitalnotification-send-slhj-imp-timestamptest",
-    "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: End hospital stay - patient completed to home/primary sector"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-slhj-emer",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-slhj-imp",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: End hospital stay - patient completed to home/primary sector"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-slhj-imp",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-slor",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: End leave"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-slor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-staa",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Start hospital stay - acute ambulant."
-  },
-  {
-    "id" : "hospitalnotification-send-stin-a1",
-    "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Start hospital stay - admitted, without request for a reportOfAdmission."
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-staa",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-stin",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Start hospital stay - admitted."
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-stin",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "hospitalnotification-send-stin-a1",
+    "type" : "TestScript",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-stin-a1",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   },
   {
     "id" : "hospitalnotification-send-stor",
     "type" : "TestScript",
-    "url" : "https://medcomfhir.dk/ig/hospitalnotification/",
-    "version" : "1.0.0-b1",
-    "name" : "Send: Start leave"
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-stor",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestScript"
   }
 ]

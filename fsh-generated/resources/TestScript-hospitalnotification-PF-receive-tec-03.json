@@ -6,7 +6,6 @@
       "http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"
     ]
   },
-  "url": "https://medcomfhir.dk/ig/hospitalnotification/",
   "status": "active",
   "date": "2023-05-01",
   "publisher": "MedCom",
@@ -16,16 +15,20 @@
       "telecom": [
         {
           "system": "email",
-          "value": "fhir@medcom.dk",
-          "use": "work"
+          "value": "mailto:fhir@medcom.dk"
+        },
+        {
+          "system": "url",
+          "value": "https://medcom.dk/"
         }
       ]
     }
   ],
   "copyright": "MedCom 2021",
-  "name": "Receive: Messages received in wrong order: Acute ambulant, discharge patient, admit inpatient.",
-  "title": "Receive: Messages received in wrong order: Acute ambulant, discharge patient, admit inpatient - PF-receive-tec-03",
-  "description": "Test of receiving of HospitalNotification Message",
+  "description": "Receive: Messages received in wrong order: Patient is admitted as emergency, patient is discharged, patient is admitted as inpatient.",
+  "title": "Receive: Messages received in wrong order: Patient is admitted as emergency, patient is discharged, patient is admitted as inpatient. - PF-receive-tec-03",
+  "url": "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-tec-03",
+  "name": "HospitalNotificationTestScript",
   "origin": [
     {
       "index": 1,
@@ -50,7 +53,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture-STAA.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-STAA.xml"
       }
     },
     {
@@ -58,7 +61,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture-SLHJ-emer.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-STAA-STIN-SLHJ.xml"
       }
     },
     {
@@ -66,7 +69,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture-SLHJ-STIN.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-STAA-STIN.xml"
       }
     }
   ],

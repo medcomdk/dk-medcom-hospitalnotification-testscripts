@@ -6,7 +6,6 @@
       "http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"
     ]
   },
-  "url": "https://medcomfhir.dk/ig/hospitalnotification/",
   "status": "active",
   "date": "2023-05-01",
   "publisher": "MedCom",
@@ -16,16 +15,20 @@
       "telecom": [
         {
           "system": "email",
-          "value": "fhir@medcom.dk",
-          "use": "work"
+          "value": "mailto:fhir@medcom.dk"
+        },
+        {
+          "system": "url",
+          "value": "https://medcom.dk/"
         }
       ]
     }
   ],
   "copyright": "MedCom 2021",
-  "name": "Receive: Receive a message on the 29th of February 2024 (leap year)",
-  "title": "Receive: Receive a message on the 29th of February 2024 (leap year) - PF-receive-tec-05",
-  "description": "Test of receiving of HospitalNotification Message",
+  "description": "Receive: Receive a message on the 29th of February 2024 (leap year): Patient is admitted on the date of leap year",
+  "title": "Receive: Receive a message on the 29th of February 2024 (leap year): Patient is admitted on the date of leap year - PF-receive-tec-05",
+  "url": "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-tec-05",
+  "name": "HospitalNotificationTestScript",
   "origin": [
     {
       "index": 1,
@@ -50,7 +53,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture-STIN-leapyear.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-STIN-leapyear.xml"
       }
     }
   ],

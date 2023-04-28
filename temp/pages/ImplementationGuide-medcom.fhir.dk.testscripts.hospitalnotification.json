@@ -3,19 +3,19 @@
   "id" : "medcom.fhir.dk.testscripts.hospitalnotification",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HospitalNotificationTestscripts</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/fhir/fish/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification</pre><div><p>Testscripts for HospitalNotification v. 3.0.0</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HospitalNotificationTestscripts</h2><p>The official URL for this implementation guide is: </p><pre>http://medcomfhir.dk/ig/hospitalnotificationtestscript/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification</pre><div><p>Testscripts for HospitalNotification v. 3.0.0</p>\n</div></div>"
   },
-  "url" : "http://example.org/fhir/fish/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification",
-  "version" : "1.0.0-b1",
+  "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification",
+  "version" : "1.0.0",
   "name" : "HospitalNotificationTestscripts",
   "title" : "HospitalNotification Testscripts",
-  "status" : "draft",
-  "date" : "2023-04-14T12:59:27+02:00",
+  "status" : "active",
+  "date" : "2023-04-28T15:12:42+02:00",
   "contact" : [{
     "name" : "MedCom",
     "telecom" : [{
       "system" : "email",
-      "value" : "fhir@medcom.dk"
+      "value" : "mailto:fhir@medcom.dk"
     }]
   }],
   "description" : "Testscripts for HospitalNotification v. 3.0.0",
@@ -31,6 +31,12 @@
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
     "version" : "5.0.0"
+  },
+  {
+    "id" : "medcom_fhir_dk_hospitalnotification",
+    "uri" : "http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/medcom.fhir.dk.hospitalnotification",
+    "packageId" : "medcom.fhir.dk.hospitalnotification",
+    "version" : "3.0.0"
   }],
   "definition" : {
     "extension" : [{
@@ -172,7 +178,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://example.org/fhir/fish/history.html"
+        "valueString" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -447,7 +453,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://example.org/fhir/fish/history.html"
+        "valueString" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -589,10 +595,190 @@
         "valueString" : "TestScript"
       }],
       "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-receive-emer-01"
+      },
+      "name" : "HospitalNotification_TestScript_PF-receive-emer-01",
+      "description" : "Receive: Patient is admitted, message is corrected due to incorrect hospital department",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-receive-emer-02"
+      },
+      "name" : "HospitalNotification_TestScript_PF-receive-emer-02",
+      "description" : "Receive: Patient is admitted, message is corrected due to incorrect time of admission",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-receive-emer-imp-01"
+      },
+      "name" : "HospitalNotification_TestScript_PF-receive-emer-imp-01",
+      "description" : "Receive: Patient is admitted as emergency, patient is admitted as inpatient, patient is discharged",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-receive-imp-01"
+      },
+      "name" : "HospitalNotification_TestScript_PF-receive-imp-01",
+      "description" : "Receive: Patient is admitted, patient is registered as being on leave, patient returns from leave, patient is discharged",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-receive-imp-02"
+      },
+      "name" : "HospitalNotification_TestScript_PF-receive-imp-02",
+      "description" : "Receive: Patient is admitted, patient is registered as being on leave, patient doesn't return from leave, patient is discharged",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-receive-imp-03"
+      },
+      "name" : "HospitalNotification_TestScript_PF-receive-imp-03",
+      "description" : "Receive: Patient is admitted, patient is registered as being on leave, patient returns from leave, patient is registered as dead",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-receive-imp-04"
+      },
+      "name" : "HospitalNotification_TestScript_PF-receive-imp-04",
+      "description" : "Receive: Patient is admitted, 'patient is registered as being on leave, patient returns from leave', ' to ' x 2",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-receive-imp-05"
+      },
+      "name" : "HospitalNotification_TestScript_PF-receive-imp-05",
+      "description" : "Receive: Patient is admitted, message is corrected due to incorrect hospital department",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-receive-imp-06"
+      },
+      "name" : "HospitalNotification_TestScript_PF-receive-imp-06",
+      "description" : "Receive: Patient is admitted, message is corrected due to incorrect time of admission",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-receive-tec-01"
+      },
+      "name" : "HospitalNotification_TestScript_PF-receive-tec-01",
+      "description" : "Receive dublicate: Patient is admitted, doesn't get acknowledged, patient is admitted",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-receive-tec-02"
+      },
+      "name" : "HospitalNotification_TestScript_PF-receive-tec-02",
+      "description" : "Receive: Receive cancellation of admit patient: Patient is admitted, correction of admit patient and cancellation admit patient",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-receive-tec-03"
+      },
+      "name" : "HospitalNotification_TestScript_PF-receive-tec-03",
+      "description" : "Receive: Messages received in wrong order: Patient is admitted as emergency, patient is discharged, patient is admitted as inpatient.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-receive-tec-04"
+      },
+      "name" : "HospitalNotification_TestScript_PF-receive-tec-04",
+      "description" : "Receive: Receive a message with different timezones (+01:00 and +02:00): Patient is admitted in one timezone, patient is discharged in a different timezone.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-receive-tec-05"
+      },
+      "name" : "HospitalNotification_TestScript_PF-receive-tec-05",
+      "description" : "Receive: Receive a message on the 29th of February 2024 (leap year): Patient is admitted on the date of leap year",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-receive-tec-06"
+      },
+      "name" : "HospitalNotification_TestScript_PF-receive-tec-06",
+      "description" : "Receive: Receive a message where the serviceprovider is different from the sender: Patient is admitted",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
         "reference" : "TestScript/hospitalnotification-PF-send-emer-01"
       },
       "name" : "HospitalNotification_TestScript_PF-send-emer-01",
-      "description" : "Testing correct use of send HospitalNotification",
+      "description" : "Send: Register patient as acute ambulant, correct message due to incorrect hospital department",
       "exampleBoolean" : true
     },
     {
@@ -604,7 +790,7 @@
         "reference" : "TestScript/hospitalnotification-PF-send-emer-02"
       },
       "name" : "HospitalNotification_TestScript_PF-send-emer-02",
-      "description" : "Testing correct use of send HospitalNotification",
+      "description" : "Send: Register patient as acute ambulant, correct message due to incorrect time of admission.",
       "exampleBoolean" : true
     },
     {
@@ -616,7 +802,7 @@
         "reference" : "TestScript/hospitalnotification-PF-send-emer-imp-01"
       },
       "name" : "HospitalNotification_TestScript_PF-send-emer-imp-01",
-      "description" : "Testing correct use of send HospitalNotification",
+      "description" : "Send: Register patient as acute ambulant, admit patient (inpatient), discharge patient",
       "exampleBoolean" : true
     },
     {
@@ -628,7 +814,7 @@
         "reference" : "TestScript/hospitalnotification-PF-send-imp-01"
       },
       "name" : "HospitalNotification_TestScript_PF-send-imp-01",
-      "description" : "Testing correct use of send HospitalNotification",
+      "description" : "Send: Admit patient, register patient as being on leave, register patient as returned from leave, discharge patient.",
       "exampleBoolean" : true
     },
     {
@@ -640,7 +826,7 @@
         "reference" : "TestScript/hospitalnotification-PF-send-imp-02"
       },
       "name" : "HospitalNotification_TestScript_PF-send-imp-02",
-      "description" : "Testing correct use of send HospitalNotification",
+      "description" : "Send: Admit patient, register patient as being on leave, patient doesn't return from leave, discharge patient.",
       "exampleBoolean" : true
     },
     {
@@ -652,7 +838,7 @@
         "reference" : "TestScript/hospitalnotification-PF-send-imp-03"
       },
       "name" : "HospitalNotification_TestScript_PF-send-imp-03",
-      "description" : "Testing correct use of send HospitalNotification - deceased",
+      "description" : "Send: Admit patient, register patient as being on leave, patient returns from leave, patient dies",
       "exampleBoolean" : true
     },
     {
@@ -664,7 +850,7 @@
         "reference" : "TestScript/hospitalnotification-PF-send-imp-04"
       },
       "name" : "HospitalNotification_TestScript_PF-send-imp-04",
-      "description" : "Testing correct use of send HospitalNotification",
+      "description" : "Send: Admit patient, *register patient as being on leave, patient returns from leave*, * to * x2",
       "exampleBoolean" : true
     },
     {
@@ -676,7 +862,7 @@
         "reference" : "TestScript/hospitalnotification-PF-send-imp-05"
       },
       "name" : "HospitalNotification_TestScript_PF-send-imp-05",
-      "description" : "Testing correct use of send HospitalNotification",
+      "description" : "Send: Admit patient, correct message due to incorrect hospital department. Evaluation is based on SOR number.",
       "exampleBoolean" : true
     },
     {
@@ -688,7 +874,7 @@
         "reference" : "TestScript/hospitalnotification-PF-send-imp-06"
       },
       "name" : "HospitalNotification_TestScript_PF-send-imp-06",
-      "description" : "Testing correct use of send HospitalNotification",
+      "description" : "Send: Admit patient, correct message due to incorrect time of admission.",
       "exampleBoolean" : true
     },
     {
@@ -700,7 +886,19 @@
         "reference" : "TestScript/hospitalnotification-PF-send-tec-01"
       },
       "name" : "HospitalNotification_TestScript_PF-send-tec-01",
-      "description" : "Testing correct use of send HospitalNotification",
+      "description" : "Send: Cancel a corrected admission: Admit patient, correct admit patient and cancel admit patient",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-send-tec-02"
+      },
+      "name" : "HospitalNotification_TestScript_PF-send-tec-02",
+      "description" : "Send: Send a message on the 29th of February 2024 (leap year)",
       "exampleBoolean" : true
     },
     {
@@ -712,7 +910,391 @@
         "reference" : "TestScript/hospitalnotification-PF-send-tec-03"
       },
       "name" : "HospitalNotification_TestScript_PF-send-tec-03",
-      "description" : "Testing correct use of send HospitalNotification",
+      "description" : "Send: Send dublicate: Admit patient, doesn't get acknowledged, send admit patient. IDs are handled correct",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-PF-send-tec-04"
+      },
+      "name" : "HospitalNotification_TestScript_PF-send-tec-04",
+      "description" : "Send: Admit patient and End hospital stay in different timezones. Correct use of timezone of summertime (+02:00) and vintertime (+01:00).",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-an-mors"
+      },
+      "name" : "HospitalNotification_TestScript_receive-AN-MORS",
+      "description" : "Receive: Cancellation Deceased - is dead at arrival to the hospital",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-an-mors-emer"
+      },
+      "name" : "HospitalNotification_TestScript_receive-AN-MORS-emer",
+      "description" : "Receive: Cancellation Deceased - deceased during acute ambulant",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-an-mors-imp"
+      },
+      "name" : "HospitalNotification_TestScript_receive-AN-MORS-imp",
+      "description" : "Receive: Cancellation Deceased - deceased during hospital stay",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-an-mors-stor"
+      },
+      "name" : "HospitalNotification_TestScript_receive-AN-MORS-STOR",
+      "description" : "Receive: Cancellation Deceased - deceased during a period of leave",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-an-slhj-emer"
+      },
+      "name" : "HospitalNotification_TestScript_receive-AN-SLHJ-emer",
+      "description" : "Receive: Cancellation End hospital stay - patient completed to home/primary sector",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-an-slhj-imp"
+      },
+      "name" : "HospitalNotification_TestScript_receive-AN-SLHJ-imp",
+      "description" : "Receive: Cancellation End hospital stay - patient completed to home/primary sector",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-an-slor"
+      },
+      "name" : "HospitalNotification_TestScript_receive-AN-SLOR",
+      "description" : "Receive: Cancellation End leave",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-an-staa"
+      },
+      "name" : "HospitalNotification_TestScript_receive-AN-STAA",
+      "description" : "Receive: Cancellation Start hospital stay - acute ambulant",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-an-stin"
+      },
+      "name" : "HospitalNotification_TestScript_receive-AN-STIN",
+      "description" : "Receive: Cancellation Start hospital stay",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-an-stor"
+      },
+      "name" : "HospitalNotification_TestScript_receive-AN-STOR",
+      "description" : "Receive: Cancellation Start leave",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-mors"
+      },
+      "name" : "HospitalNotification_TestScript_receive-MORS",
+      "description" : "Receive: Deceased - is dead at arrival to the hospital",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-mors-emer"
+      },
+      "name" : "HospitalNotification_TestScript_receive-MORS-emer",
+      "description" : "Receive: Deceased - deceased during acute ambulant",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-mors-imp"
+      },
+      "name" : "HospitalNotification_TestScript_receive-MORS-imp",
+      "description" : "Receive: Deceased - deceased during hospital stay",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-mors-stor"
+      },
+      "name" : "HospitalNotification_TestScript_receive-MORS-STOR",
+      "description" : "Receive: Deceased - deceased during a period of leave",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-re-mors"
+      },
+      "name" : "HospitalNotification_TestScript_receive-RE-MORS",
+      "description" : "Receive: Update Deceased - is dead at arrival to the hospital",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-re-mors-emer"
+      },
+      "name" : "HospitalNotification_TestScript_receive-RE-MORS-emer",
+      "description" : "Receive: Update Deceased - deceased during acute ambulant",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-re-mors-imp"
+      },
+      "name" : "HospitalNotification_TestScript_receive-RE-MORS-imp",
+      "description" : "Receive: Update Deceased - deceased during hospital stay",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-re-mors-stor"
+      },
+      "name" : "HospitalNotification_TestScript_receive-RE-MORS-STOR",
+      "description" : "Receive: Update Deceased - deceased during a period of leave",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-re-slhj-emer"
+      },
+      "name" : "HospitalNotification_TestScript_receive-RE-SLHJ-emer",
+      "description" : "Receive: Update End hospital stay - patient completed to home/primary sector",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-re-slhj-imp"
+      },
+      "name" : "HospitalNotification_TestScript_receive-RE-SLHJ-imp",
+      "description" : "Receive: Update End hospital stay - patient completed to home/primary sector",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-re-slor"
+      },
+      "name" : "HospitalNotification_TestScript_receive-RE-SLOR",
+      "description" : "Receive: Update End leave",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-re-staa"
+      },
+      "name" : "HospitalNotification_TestScript_receive-RE-STAA",
+      "description" : "Receive: Update Start hospital stay - acute ambulant",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-re-stin"
+      },
+      "name" : "HospitalNotification_TestScript_receive-RE-STIN",
+      "description" : "Receive: Update Start hospital stay",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-re-stor"
+      },
+      "name" : "HospitalNotification_TestScript_receive-RE-STOR",
+      "description" : "Receive: Update Start leave",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-slhj-emer"
+      },
+      "name" : "HospitalNotification_TestScript_receive-SLHJ-emer",
+      "description" : "Receive: End hospital stay - patient completed to home/primary sector",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-slhj-imp"
+      },
+      "name" : "HospitalNotification_TestScript_receive-SLHJ-imp",
+      "description" : "Receive: End hospital stay - patient completed to home/primary sector",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-slor"
+      },
+      "name" : "HospitalNotification_TestScript_receive-SLOR",
+      "description" : "Receive: End leave",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-staa"
+      },
+      "name" : "HospitalNotification_TestScript_receive-STAA",
+      "description" : "Receive: Start hospital stay - acute ambulant",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-stin"
+      },
+      "name" : "HospitalNotification_TestScript_receive-STIN",
+      "description" : "Receive: Start hospital stay - admitted",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-stin-a1"
+      },
+      "name" : "HospitalNotification_TestScript_receive-STIN-A1",
+      "description" : "Receive: Start hospital stay - admitted, without request for reportOfAdmission",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "TestScript"
+      }],
+      "reference" : {
+        "reference" : "TestScript/hospitalnotification-receive-stor"
+      },
+      "name" : "HospitalNotification_TestScript_receive-STOR",
+      "description" : "Receive: Start leave",
       "exampleBoolean" : true
     },
     {
@@ -724,7 +1306,7 @@
         "reference" : "TestScript/hospitalnotification-send-an-mors"
       },
       "name" : "HospitalNotification_TestScript_AN_MORS",
-      "description" : "Testing correct use of cancellation of deceased inpatient before arrival at the hospital - deceased",
+      "description" : "Send: Cancellation Deceased - dead at arrival to the hospital",
       "exampleBoolean" : true
     },
     {
@@ -736,7 +1318,7 @@
         "reference" : "TestScript/hospitalnotification-send-an-mors-emer"
       },
       "name" : "HospitalNotification_TestScript_AN_MORS-emer",
-      "description" : "Testing correct use of cancellation of End hospital Stay - deceased",
+      "description" : "Send: Cancellation Deceased - deceased during acute ambulant",
       "exampleBoolean" : true
     },
     {
@@ -748,7 +1330,7 @@
         "reference" : "TestScript/hospitalnotification-send-an-mors-imp"
       },
       "name" : "HospitalNotification_TestScript_AN_MORS-IMP",
-      "description" : "Testing correct use of cancellation of End hospital Stay - deceased",
+      "description" : "Send: Cancellation Deceased - deceased during admission",
       "exampleBoolean" : true
     },
     {
@@ -760,7 +1342,7 @@
         "reference" : "TestScript/hospitalnotification-send-an-mors-stor"
       },
       "name" : "HospitalNotification_TestScript_AN_MORS-STOR",
-      "description" : "Testing correct use of cancellation of deceased during a period of leave - deceased",
+      "description" : "Send: Cancellation Deceased - deceased during a period of leave",
       "exampleBoolean" : true
     },
     {
@@ -772,7 +1354,7 @@
         "reference" : "TestScript/hospitalnotification-send-an-slhj-emer"
       },
       "name" : "HospitalNotification_TestScript_AN_SLHJ-emer",
-      "description" : "Testing correct use of cancellation of End hospital Stay",
+      "description" : "Send: Cancellation End hospital stay - patient completed to home/primary sector",
       "exampleBoolean" : true
     },
     {
@@ -784,7 +1366,7 @@
         "reference" : "TestScript/hospitalnotification-send-an-slhj-imp"
       },
       "name" : "HospitalNotification_TestScript_AN_SLHJ-imp",
-      "description" : "Testing correct use of cancellation of End hospital Stay",
+      "description" : "Send: Cancellation End hospital stay - patient completed to home/primary sector",
       "exampleBoolean" : true
     },
     {
@@ -796,7 +1378,7 @@
         "reference" : "TestScript/hospitalnotification-send-an-slor"
       },
       "name" : "HospitalNotification_TestScript_AN_SLOR",
-      "description" : "Testing correct use of cancellation of end leave",
+      "description" : "Send: Cancellation End leave",
       "exampleBoolean" : true
     },
     {
@@ -808,7 +1390,7 @@
         "reference" : "TestScript/hospitalnotification-send-an-staa"
       },
       "name" : "HospitalNotification_TestScript_AN_STAA",
-      "description" : "Testing correct use of cancellation of start acute ambulant",
+      "description" : "Send: Cancellation Start hospital stay - acute ambulant",
       "exampleBoolean" : true
     },
     {
@@ -820,7 +1402,7 @@
         "reference" : "TestScript/hospitalnotification-send-an-stin"
       },
       "name" : "HospitalNotification_TestScript_AN_STIN",
-      "description" : "Testing correct use of cancellation of start hospital stay admission",
+      "description" : "Send: Cancellation Start hospital stay - admitted",
       "exampleBoolean" : true
     },
     {
@@ -832,7 +1414,7 @@
         "reference" : "TestScript/hospitalnotification-send-an-stor"
       },
       "name" : "HospitalNotification_TestScript_AN_STOR",
-      "description" : "Testing correct use of cancellation of start leave",
+      "description" : "Send: Cancellation Start leave",
       "exampleBoolean" : true
     },
     {
@@ -844,7 +1426,7 @@
         "reference" : "TestScript/hospitalnotification-send-mors"
       },
       "name" : "HospitalNotification_TestScript_MORS",
-      "description" : "Testing correct use of status inpatient",
+      "description" : "Send: Deceased - dead at arrival to the hospital.",
       "exampleBoolean" : true
     },
     {
@@ -856,7 +1438,7 @@
         "reference" : "TestScript/hospitalnotification-send-mors-emer"
       },
       "name" : "HospitalNotification_TestScript_MORS-EMER",
-      "description" : "Testing correct use of End hospital Stay-deseased",
+      "description" : "Send: Deceased - deceased during hospital stay",
       "exampleBoolean" : true
     },
     {
@@ -868,7 +1450,7 @@
         "reference" : "TestScript/hospitalnotification-send-mors-imp"
       },
       "name" : "HospitalNotification_TestScript_MORS-IMP",
-      "description" : "Testing correct use of End hospital Stay - deseased",
+      "description" : "Send: Deceased - deceased during admission",
       "exampleBoolean" : true
     },
     {
@@ -880,7 +1462,7 @@
         "reference" : "TestScript/hospitalnotification-send-mors-stor"
       },
       "name" : "HospitalNotification_TestScript_MORS-STOR",
-      "description" : "Testing correct use of End hospital Stay - deseased",
+      "description" : "Send: Deceased - deceased during a period of leave",
       "exampleBoolean" : true
     },
     {
@@ -892,7 +1474,7 @@
         "reference" : "TestScript/hospitalnotification-send-re-mors"
       },
       "name" : "HospitalNotification_TestScript_RE-MORS",
-      "description" : "Testing correct use of update of deceased inpatient before arrival at the hospital - deceased",
+      "description" : "Send: Update Deceased - dead at arrival to the hospital",
       "exampleBoolean" : true
     },
     {
@@ -904,7 +1486,7 @@
         "reference" : "TestScript/hospitalnotification-send-re-mors-emer"
       },
       "name" : "HospitalNotification_TestScript_RE-MORS-emer",
-      "description" : "Testing correct use of Update End hospital Stay - deceased",
+      "description" : "Send: Update Deceased - deceased during acute ambulant",
       "exampleBoolean" : true
     },
     {
@@ -916,7 +1498,7 @@
         "reference" : "TestScript/hospitalnotification-send-re-mors-imp"
       },
       "name" : "HospitalNotification_TestScript_RE-MORS-IMP",
-      "description" : "Testing correct use of Update End hospital Stay - deceased",
+      "description" : "Send: Update Deceased - deceased during hospital Stay",
       "exampleBoolean" : true
     },
     {
@@ -928,7 +1510,7 @@
         "reference" : "TestScript/hospitalnotification-send-re-mors-stor"
       },
       "name" : "HospitalNotification_TestScript_RE-MORS-STOR",
-      "description" : "Testing correct use of Update End hospital Stay - deceased",
+      "description" : "Send: Update Deceased - deceased during a period of leave",
       "exampleBoolean" : true
     },
     {
@@ -940,7 +1522,7 @@
         "reference" : "TestScript/hospitalnotification-send-re-slhj-emer"
       },
       "name" : "HospitalNotification_TestScript_RE_SLHJ-emer",
-      "description" : "Testing correct use of Update End hospital Stay",
+      "description" : "Send: Update End hospital stay - patient completed to home/primary sector",
       "exampleBoolean" : true
     },
     {
@@ -952,7 +1534,7 @@
         "reference" : "TestScript/hospitalnotification-send-re-slhj-imp"
       },
       "name" : "HospitalNotification_TestScript_RE_SLHJ-imp",
-      "description" : "Testing correct use of Update End hospital Stay",
+      "description" : "Send: Update End hospital stay - patient completed to home/primary sector",
       "exampleBoolean" : true
     },
     {
@@ -964,7 +1546,7 @@
         "reference" : "TestScript/hospitalnotification-send-re-slor"
       },
       "name" : "HospitalNotification_TestScript_RE_SLOR",
-      "description" : "Testing correct use of Update end leave",
+      "description" : "Send: Update End leave",
       "exampleBoolean" : true
     },
     {
@@ -976,7 +1558,7 @@
         "reference" : "TestScript/hospitalnotification-send-re-staa"
       },
       "name" : "HospitalNotification_TestScript_RE_STAA",
-      "description" : "Testing correct use of status stay-acute ambulant",
+      "description" : "Send: Update Start hospital stay - acute ambulant",
       "exampleBoolean" : true
     },
     {
@@ -988,7 +1570,7 @@
         "reference" : "TestScript/hospitalnotification-send-re-stin"
       },
       "name" : "HospitalNotification_TestScript_RE_STIN",
-      "description" : "Testing correct use of status Update Start hospital stay - admitted",
+      "description" : "Send: Update Start hospital stay - admitted",
       "exampleBoolean" : true
     },
     {
@@ -1000,7 +1582,7 @@
         "reference" : "TestScript/hospitalnotification-send-re-stor"
       },
       "name" : "HospitalNotification_TestScript_RE_STOR",
-      "description" : "Testing correct use of Update Start leave",
+      "description" : "Send: Update Start leave",
       "exampleBoolean" : true
     },
     {
@@ -1012,7 +1594,7 @@
         "reference" : "TestScript/hospitalnotification-send-slhj-emer"
       },
       "name" : "HospitalNotification_TestScript_SLHJ-EMER",
-      "description" : "Testing correct use of End hospital Stay - patient discharged to home/primary sector",
+      "description" : "Send: End hospital stay - patient completed to home/primary sector",
       "exampleBoolean" : true
     },
     {
@@ -1024,19 +1606,7 @@
         "reference" : "TestScript/hospitalnotification-send-slhj-imp"
       },
       "name" : "HospitalNotification_TestScript_SLHJ-imp",
-      "description" : "Testing correct use of End hospital Stay- patient discharged to home/primary sector",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "TestScript"
-      }],
-      "reference" : {
-        "reference" : "TestScript/hospitalnotification-send-slhj-imp-timestamptest"
-      },
-      "name" : "HospitalNotification_TestScript_SLHJ-imp-timestamptest",
-      "description" : "Testing correct use of End hospital Stay- patient discharged to home/primary sector",
+      "description" : "Send: End hospital stay - patient completed to home/primary sector",
       "exampleBoolean" : true
     },
     {
@@ -1048,7 +1618,7 @@
         "reference" : "TestScript/hospitalnotification-send-slor"
       },
       "name" : "HospitalNotification_TestScript_SLOR",
-      "description" : "Testing correct use of status End leave",
+      "description" : "Send: End leave",
       "exampleBoolean" : true
     },
     {
@@ -1060,7 +1630,7 @@
         "reference" : "TestScript/hospitalnotification-send-staa"
       },
       "name" : "HospitalNotification_TestScript_STAA",
-      "description" : "Testing correct use of status acute-ambulant",
+      "description" : "Send: Start hospital stay - acute ambulant.",
       "exampleBoolean" : true
     },
     {
@@ -1072,7 +1642,7 @@
         "reference" : "TestScript/hospitalnotification-send-stin"
       },
       "name" : "HospitalNotification_TestScript_STIN",
-      "description" : "Testing correct use of status inpatient",
+      "description" : "Send: Start hospital stay - admitted.",
       "exampleBoolean" : true
     },
     {
@@ -1084,7 +1654,7 @@
         "reference" : "TestScript/hospitalnotification-send-stin-a1"
       },
       "name" : "HospitalNotification_TestScript_STIN-A1",
-      "description" : "Testing correct use of status inpatient",
+      "description" : "Send: Start hospital stay - admitted, without request for a reportOfAdmission.",
       "exampleBoolean" : true
     },
     {
@@ -1096,8 +1666,19 @@
         "reference" : "TestScript/hospitalnotification-send-stor"
       },
       "name" : "HospitalNotification_TestScript_STOR",
-      "description" : "Testing correct use of status Start leave",
+      "description" : "Send: Start leave",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/a5e5b880-c087-4055-b9ec-99108695f81d"
+      },
+      "name" : "a5e5b880-c087-4055-b9ec-99108695f81d",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{
@@ -1114,6 +1695,24 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "testexamples.html"
+        }],
+        "nameUrl" : "testexamples.html",
+        "title" : "Testexamples",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "testscripts.html"
+        }],
+        "nameUrl" : "testscripts.html",
+        "title" : "Testscripts",
         "generation" : "markdown"
       }]
     },

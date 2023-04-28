@@ -6,7 +6,6 @@
       "http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"
     ]
   },
-  "url": "https://medcomfhir.dk/ig/hospitalnotification/",
   "status": "active",
   "date": "2023-05-01",
   "publisher": "MedCom",
@@ -16,16 +15,20 @@
       "telecom": [
         {
           "system": "email",
-          "value": "fhir@medcom.dk",
-          "use": "work"
+          "value": "mailto:fhir@medcom.dk"
+        },
+        {
+          "system": "url",
+          "value": "https://medcom.dk/"
         }
       ]
     }
   ],
   "copyright": "MedCom 2021",
-  "name": "Receive: Receive dublet: Admit patient, admit patient.",
-  "title": "Receive: Receive dublet: Admit patient, admit patient. - PF-receive-tec-01",
-  "description": "Test of receiving of HospitalNotification Message",
+  "description": "Receive dublicate: Patient is admitted, doesn't get acknowledged, patient is admitted",
+  "title": "Receive dublicate: Patient is admitted, doesn't get acknowledged, patient is admitted. - PF-receive-tec-01",
+  "url": "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-tec-01",
+  "name": "HospitalNotificationTestScript",
   "origin": [
     {
       "index": 1,
@@ -50,15 +53,15 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture-STIN.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-STIN.xml"
       }
     },
     {
-      "id": "create-STIN-02",
+      "id": "create-STIN2-02",
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture-STIN.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-STIN.xml"
       }
     }
   ],
@@ -80,14 +83,14 @@
       "sourceId": "create-STIN-01"
     },
     {
-      "name": "destinationUri-STIN",
+      "name": "destinationUri-STIN2",
       "expression": "Bundle.entry.resource.ofType(MessageHeader).destination.endpoint",
-      "sourceId": "create-STIN-02"
+      "sourceId": "create-STIN2-02"
     },
     {
-      "name": "bundleid-STIN",
+      "name": "bundleid-STIN2",
       "expression": "Bundle.entry.resource.ofType(MessageHeader).id",
-      "sourceId": "create-STIN-02"
+      "sourceId": "create-STIN2-02"
     }
   ],
   "setup": {
@@ -139,7 +142,7 @@
           "accept": "xml",
           "contentType": "xml",
           "encodeRequestUrl": true,
-          "sourceId": "create-STIN-02"
+          "sourceId": "create-STIN2-02"
         }
       },
       {
@@ -186,8 +189,8 @@
       ]
     },
     {
-      "id": "hospitalnotification-read-STIN-02",
-      "name": "Get a HospitalNotification STIN Message 02",
+      "id": "hospitalnotification-read-STIN2-02",
+      "name": "Get a HospitalNotification STIN2 Message 02",
       "description": "GET a Hospital notification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format.",
       "action": [
         {
@@ -202,7 +205,7 @@
             "destination": 1,
             "encodeRequestUrl": true,
             "origin": 1,
-            "params": "?message.destination-uri=${destinationUri-STIN}&amp;member._id=${bundleid-STIN}"
+            "params": "?message.destination-uri=${destinationUri-STIN2}&amp;member._id=${bundleid-STIN2}"
           }
         },
         {

@@ -4,17 +4,17 @@
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: medcom.fhir.dk.testscripts.hospitalnotification
-canonical: http://example.org/fhir/fish #http://medcomfhir.dk/ig/testscript/hospitalnotification
-version: 1.0.0-b1
+canonical: http://medcomfhir.dk/ig/hospitalnotificationtestscript
+version: 1.0.0
 name: HospitalNotification Testscripts
 title: HospitalNotification Testscripts
-status: draft
+status: active
 publisher: MedCom
 contact:
   - name: MedCom
     telecom:
       - system: email
-        value: fhir@medcom.dk
+        value: "mailto:fhir@medcom.dk"
 description: Testscripts for HospitalNotification v. 3.0.0
 license: CC0-1.0
 fhirVersion: 4.0.1
@@ -24,14 +24,13 @@ parameters:
   show-inherited-invariants: false
 copyrightYear: 2020+
 releaseLabel: ci-build
-Dependencies: 
+dependencies: 
   medcom.fhir.dk.hospitalnotification: 
-    version: current
-    uri: https://medcomfhir.dk/ig/hospitalnotification/
-  medcom.fhir.dk.core: 
-    version: current
-    uri: https://medcomfhir.dk/ig/core/
-
+    version: 3.0.0
+    uri: http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/medcom.fhir.dk.hospitalnotification
+  #net.aegis.touchstone.touchstone.fhir.testing: 
+  #  version: dev
+  #  uri: https://touchstone.aegis.net/touchstone/fhir/testing/
 
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
@@ -40,6 +39,8 @@ Dependencies:
 menu:
   IG Home: index.html
   Table of Contents: toc.html
+  Test scripts: testscripts.html
+  Test examples: testexamples.html
   Artifacts Summary: artifacts.html
   Other Resources:
     "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html

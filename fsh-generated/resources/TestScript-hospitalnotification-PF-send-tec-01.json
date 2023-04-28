@@ -6,7 +6,6 @@
       "http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"
     ]
   },
-  "url": "https://medcomfhir.dk/ig/hospitalnotification/",
   "status": "active",
   "date": "2023-05-01",
   "publisher": "MedCom",
@@ -16,16 +15,20 @@
       "telecom": [
         {
           "system": "email",
-          "value": "fhir@medcom.dk",
-          "use": "work"
+          "value": "mailto:fhir@medcom.dk"
+        },
+        {
+          "system": "url",
+          "value": "https://medcom.dk/"
         }
       ]
     }
   ],
   "copyright": "MedCom 2021",
-  "name": "Send: Cancel a corrected admission: Admit patient, correct admit patient and cancel the correction",
-  "title": "Send: Cancel a corrected admission: Admit patient, correct admit patient and cancel the correction - PF-send-tec-01",
-  "description": "Testing correct use of send HospitalNotification",
+  "description": "Send: Cancel a corrected admission: Admit patient, correct admit patient and cancel admit patient",
+  "title": "Send: Cancel a corrected admission: Admit patient, correct admit patient and cancel admit patient - PF-send-tec-01",
+  "url": "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-send-tec-01",
+  "name": "HospitalNotificationTestScript",
   "origin": [
     {
       "index": 1,
@@ -56,7 +59,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml"
       }
     },
     {
@@ -64,7 +67,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml"
       }
     },
     {
@@ -72,7 +75,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml"
       }
     }
   ],

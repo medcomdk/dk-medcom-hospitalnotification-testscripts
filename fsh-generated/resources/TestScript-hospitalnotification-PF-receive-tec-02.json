@@ -6,7 +6,6 @@
       "http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"
     ]
   },
-  "url": "https://medcomfhir.dk/ig/hospitalnotification/",
   "status": "active",
   "date": "2023-05-01",
   "publisher": "MedCom",
@@ -16,16 +15,20 @@
       "telecom": [
         {
           "system": "email",
-          "value": "fhir@medcom.dk",
-          "use": "work"
+          "value": "mailto:fhir@medcom.dk"
+        },
+        {
+          "system": "url",
+          "value": "https://medcom.dk/"
         }
       ]
     }
   ],
   "copyright": "MedCom 2021",
-  "name": "Receive: Cancel an admission: Admit patient, correct admit patient and cancel the correction",
-  "title": "Receive: Cancel an admission: Admit patient, correct admit patient and cancel the correction - PF-receive-tec-02",
-  "description": "Test of receiving of HospitalNotification Message",
+  "description": "Receive: Receive cancellation of admit patient: Patient is admitted, correction of admit patient and cancellation admit patient",
+  "title": "Receive: Receive cancellation of admit patient: Patient is admitted, correction of admit patient and cancellation admit patient - PF-receive-tec-02",
+  "url": "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-tec-02",
+  "name": "HospitalNotificationTestScript",
   "origin": [
     {
       "index": 1,
@@ -50,7 +53,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture-STIN.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-STIN.xml"
       }
     },
     {
@@ -58,7 +61,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture-RE-STIN-admissionTime.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-RE-STIN-admissionTime.xml"
       }
     },
     {
@@ -66,7 +69,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture-AN-RE-STIN.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-AN-RE-STIN.xml"
       }
     }
   ],
