@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-re-stin> a fhir:TestScript ;
+<http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-re-stin> a fhir:TestScript ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "hospitalnotification-receive-re-stin"] ; # 
   fhir:meta [
@@ -53,7 +53,7 @@
      fhir:autocreate [ fhir:v "false"^^xsd:boolean ] ;
      fhir:autodelete [ fhir:v "false"^^xsd:boolean ] ;
      fhir:resource [
-       fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript//FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-STIN.xml> ;
+       fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts//FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-STIN.xml> ;
        fhir:reference [ fhir:v "/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-STIN.xml" ]
      ]
   ] [
@@ -61,7 +61,7 @@
      fhir:autocreate [ fhir:v "false"^^xsd:boolean ] ;
      fhir:autodelete [ fhir:v "false"^^xsd:boolean ] ;
      fhir:resource [
-       fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript//FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-RE-STIN.xml> ;
+       fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts//FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-RE-STIN.xml> ;
        fhir:reference [ fhir:v "/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-RE-STIN.xml" ]
      ]
   ] ) ; # 

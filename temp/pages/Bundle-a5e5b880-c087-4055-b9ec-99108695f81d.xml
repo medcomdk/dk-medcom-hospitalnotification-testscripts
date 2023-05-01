@@ -6,7 +6,7 @@
     <profile value="http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-hospitalNotification-message"/>
   </meta>
   <type value="message"/>
-  <timestamp value="2022-12-07T12:00:01+02:00"/>
+  <timestamp value="2023-03-01T12:00:00+01:00"/>
   <entry>
     <fullUrl value="MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"/>
     <resource>
@@ -102,7 +102,7 @@
           </identifier>
         </episodeOfCare>
         <period>
-          <start value="2022-12-07T12:00:00+02:00"/>
+          <start value="2023-03-01T12:00:00+01:00"/>
         </period>
         <serviceProvider>
           <reference value="Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"/>
@@ -170,8 +170,8 @@
         <target>
           <reference value="MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"/>
         </target>
-        <occurredDateTime value="2022-12-07T12:00:02+02:00"/>
-        <recorded value="2022-12-07T12:00:02+02:00"/>
+        <occurredDateTime value="2023-03-01T12:00:00+01:00"/>
+        <recorded value="2023-03-01T12:00:00+01:00"/>
         <activity>
           <coding>
             <system value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"/>

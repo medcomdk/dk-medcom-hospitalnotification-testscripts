@@ -1,16 +1,26 @@
 ### Background
 
 This Implementation Guide (IG) has two purposes: 
-  1) to present test scripts for sending and receiving [HospitalNotification (GitHub-pages)](https://medcomdk.github.io/dk-medcom-hospitalnotification)/[HospitalNotification (IG)](https://medcomfhir.dk/ig/hospitalnotification/)) v. 3.0.0 are included. 
-  2) to present test examples used in the [testprotocol for receiving HospitalNotification](https://medcomdk.github.io/dk-medcom-hospitalnotification/#2-test-and-certification).
+  1) to present test scripts for sending and receiving HospitalNotifications v. 3.0.0 are included. 
+  2) to present test examples used in the testprotocol for receiving HospitalNotifications.
 
 Both test scripts and test examples are developed by MedCom. For more information, please click on the tabs above.
+
+#### Relevant information
+The following pages might be of interest when implementing HospitalNotification:
+* [GitHub-pages for HospitalNotification](https://medcomdk.github.io/dk-medcom-hospitalnotification)
+  * [Testprotocol for sending and receiving HospitalNotification](https://medcomdk.github.io/dk-medcom-hospitalnotification/#2-test-and-certification)
+* [Implementation Guide for HospitalNotification v. 3.0.0](https://medcomfhir.dk/ig/hospitalnotification/3.0.0)
+* [Governance for MedCom FHIR messaging](https://medcomdk.github.io/MedComLandingPage/)
 
 ### Governance
 A description of <a href="https://medcomdk.github.io/MedComLandingPage/#4-change-management-and-versioning">governance concerning change management and versioning of MedComs FHIR artefacts, can be found on here</a>.
 
+#### Download
+Content in this IG can be downloaded under [Download](downloads.html). The download includes both test scripts and test examples. It is also possible to download each artifact, on the individual page.
+
 #### Quality Assurance Report
-In the Quality Assurance report (QA-report) for this IG. An example of the errors: *Unable to resolve resource with reference '/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture-SLOR.xml* and *Unable to resolve resource with reference 'http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-hospitalNotification-message'*. The errors occur when creating a test script, as the fixture and profile are not reachable in the IG. However, they are reachable from TouchStone, why it is of less concern. For vendors who uses the test scripts locally should be aware of the error and e.g. create the fixtures and define the profile locally.
+In the Quality Assurance report (QA-report) for this IG there are some errors and warnings. An instance of the errors are: *Unable to resolve resource with reference '/FHIRSandbox/MedCom/HospitalNotificationTMS/HospitalNotification-fixture-SLOR.xml* and *Unable to resolve resource with reference 'http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-hospitalNotification-message'*. The errors occur when creating a test script, as the fixture and profile are not reachable in the IG. However, they are reachable from TouchStone, why it is of less concern. For vendors who uses the test scripts locally should be aware of the error and e.g. create the fixtures and define the profile locally.
 
 #### Contact
 <a href="https://www.medcom.dk/">MedCom</a> is responsible for this IG.

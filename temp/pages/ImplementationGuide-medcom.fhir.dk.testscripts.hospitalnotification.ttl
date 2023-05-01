@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://medcomfhir.dk/ig/hospitalnotificationtestscript/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification> a fhir:ImplementationGuide ;
+<http://medcomfhir.dk/ig/hospitalnotificationtestscripts/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "medcom.fhir.dk.testscripts.hospitalnotification"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HospitalNotificationTestscripts</h2><p>The official URL for this implementation guide is: </p><pre>http://medcomfhir.dk/ig/hospitalnotificationtestscript/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification</pre><div><p>Testscripts for HospitalNotification v. 3.0.0</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HospitalNotificationTestscripts</h2><p>The official URL for this implementation guide is: </p><pre>http://medcomfhir.dk/ig/hospitalnotificationtestscripts/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification</pre><div><p>Testscripts for HospitalNotification v. 3.0.0</p>\n</div></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://medcomfhir.dk/ig/hospitalnotificationtestscript/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://medcomfhir.dk/ig/hospitalnotificationtestscripts/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "HospitalNotificationTestscripts"] ; # 
   fhir:title [ fhir:v "HospitalNotification Testscripts"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-04-28T15:12:42+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-01T13:22:27+02:00"^^xsd:dateTime] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MedCom" ] ;
      fhir:telecom ( [
@@ -48,7 +48,7 @@
        fhir:link <http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/medcom.fhir.dk.hospitalnotification>
      ] ;
      fhir:packageId [ fhir:v "medcom.fhir.dk.hospitalnotification" ] ;
-     fhir:version [ fhir:v "3.0.0" ]
+     fhir:version [ fhir:v "current" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -165,7 +165,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://medcomfhir.dk/ig/hospitalnotificationtestscript/history.html" ]
+         fhir:value [ fhir:v "http://medcomfhir.dk/ig/hospitalnotificationtestscripts/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -390,7 +390,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://medcomfhir.dk/ig/hospitalnotificationtestscript/history.html" ]
+         fhir:value [ fhir:v "http://medcomfhir.dk/ig/hospitalnotificationtestscripts/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -508,7 +508,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-receive-emer-01> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-receive-emer-01> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-receive-emer-01" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-receive-emer-01" ] ;
@@ -520,7 +520,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-receive-emer-02> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-receive-emer-02> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-receive-emer-02" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-receive-emer-02" ] ;
@@ -532,7 +532,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-receive-emer-imp-01> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-receive-emer-imp-01> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-receive-emer-imp-01" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-receive-emer-imp-01" ] ;
@@ -544,7 +544,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-receive-imp-01> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-receive-imp-01> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-receive-imp-01" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-receive-imp-01" ] ;
@@ -556,7 +556,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-receive-imp-02> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-receive-imp-02> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-receive-imp-02" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-receive-imp-02" ] ;
@@ -568,7 +568,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-receive-imp-03> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-receive-imp-03> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-receive-imp-03" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-receive-imp-03" ] ;
@@ -580,7 +580,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-receive-imp-04> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-receive-imp-04> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-receive-imp-04" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-receive-imp-04" ] ;
@@ -592,7 +592,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-receive-imp-05> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-receive-imp-05> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-receive-imp-05" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-receive-imp-05" ] ;
@@ -604,7 +604,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-receive-imp-06> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-receive-imp-06> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-receive-imp-06" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-receive-imp-06" ] ;
@@ -616,7 +616,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-receive-tec-01> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-receive-tec-01> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-receive-tec-01" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-receive-tec-01" ] ;
@@ -628,7 +628,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-receive-tec-02> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-receive-tec-02> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-receive-tec-02" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-receive-tec-02" ] ;
@@ -640,7 +640,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-receive-tec-03> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-receive-tec-03> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-receive-tec-03" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-receive-tec-03" ] ;
@@ -652,7 +652,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-receive-tec-04> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-receive-tec-04> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-receive-tec-04" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-receive-tec-04" ] ;
@@ -664,7 +664,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-receive-tec-05> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-receive-tec-05> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-receive-tec-05" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-receive-tec-05" ] ;
@@ -676,7 +676,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-receive-tec-06> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-receive-tec-06> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-receive-tec-06" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-receive-tec-06" ] ;
@@ -688,7 +688,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-send-emer-01> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-send-emer-01> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-emer-01" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-emer-01" ] ;
@@ -700,7 +700,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-send-emer-02> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-send-emer-02> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-emer-02" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-emer-02" ] ;
@@ -712,7 +712,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-send-emer-imp-01> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-send-emer-imp-01> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-emer-imp-01" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-emer-imp-01" ] ;
@@ -724,7 +724,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-send-imp-01> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-send-imp-01> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-imp-01" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-imp-01" ] ;
@@ -736,7 +736,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-send-imp-02> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-send-imp-02> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-imp-02" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-imp-02" ] ;
@@ -748,7 +748,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-send-imp-03> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-send-imp-03> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-imp-03" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-imp-03" ] ;
@@ -760,7 +760,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-send-imp-04> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-send-imp-04> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-imp-04" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-imp-04" ] ;
@@ -772,7 +772,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-send-imp-05> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-send-imp-05> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-imp-05" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-imp-05" ] ;
@@ -784,7 +784,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-send-imp-06> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-send-imp-06> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-imp-06" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-imp-06" ] ;
@@ -796,7 +796,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-send-tec-01> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-send-tec-01> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-tec-01" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-tec-01" ] ;
@@ -808,7 +808,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-send-tec-02> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-send-tec-02> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-tec-02" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-tec-02" ] ;
@@ -820,7 +820,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-send-tec-03> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-send-tec-03> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-tec-03" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-tec-03" ] ;
@@ -832,7 +832,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-PF-send-tec-04> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-PF-send-tec-04> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-PF-send-tec-04" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_PF-send-tec-04" ] ;
@@ -844,7 +844,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-an-mors> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-an-mors> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-an-mors" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-AN-MORS" ] ;
@@ -856,7 +856,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-an-mors-emer> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-an-mors-emer> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-an-mors-emer" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-AN-MORS-emer" ] ;
@@ -868,7 +868,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-an-mors-imp> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-an-mors-imp> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-an-mors-imp" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-AN-MORS-imp" ] ;
@@ -880,7 +880,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-an-mors-stor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-an-mors-stor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-an-mors-stor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-AN-MORS-STOR" ] ;
@@ -892,7 +892,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-an-slhj-emer> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-an-slhj-emer> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-an-slhj-emer" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-AN-SLHJ-emer" ] ;
@@ -904,7 +904,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-an-slhj-imp> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-an-slhj-imp> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-an-slhj-imp" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-AN-SLHJ-imp" ] ;
@@ -916,7 +916,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-an-slor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-an-slor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-an-slor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-AN-SLOR" ] ;
@@ -928,7 +928,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-an-staa> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-an-staa> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-an-staa" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-AN-STAA" ] ;
@@ -940,7 +940,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-an-stin> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-an-stin> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-an-stin" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-AN-STIN" ] ;
@@ -952,7 +952,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-an-stor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-an-stor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-an-stor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-AN-STOR" ] ;
@@ -964,7 +964,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-mors> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-mors> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-mors" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-MORS" ] ;
@@ -976,7 +976,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-mors-emer> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-mors-emer> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-mors-emer" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-MORS-emer" ] ;
@@ -988,7 +988,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-mors-imp> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-mors-imp> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-mors-imp" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-MORS-imp" ] ;
@@ -1000,7 +1000,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-mors-stor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-mors-stor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-mors-stor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-MORS-STOR" ] ;
@@ -1012,7 +1012,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-re-mors> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-re-mors> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-re-mors" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-RE-MORS" ] ;
@@ -1024,7 +1024,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-re-mors-emer> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-re-mors-emer> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-re-mors-emer" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-RE-MORS-emer" ] ;
@@ -1036,7 +1036,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-re-mors-imp> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-re-mors-imp> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-re-mors-imp" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-RE-MORS-imp" ] ;
@@ -1048,7 +1048,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-re-mors-stor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-re-mors-stor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-re-mors-stor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-RE-MORS-STOR" ] ;
@@ -1060,7 +1060,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-re-slhj-emer> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-re-slhj-emer> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-re-slhj-emer" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-RE-SLHJ-emer" ] ;
@@ -1072,7 +1072,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-re-slhj-imp> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-re-slhj-imp> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-re-slhj-imp" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-RE-SLHJ-imp" ] ;
@@ -1084,7 +1084,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-re-slor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-re-slor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-re-slor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-RE-SLOR" ] ;
@@ -1096,7 +1096,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-re-staa> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-re-staa> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-re-staa" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-RE-STAA" ] ;
@@ -1108,7 +1108,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-re-stin> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-re-stin> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-re-stin" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-RE-STIN" ] ;
@@ -1120,7 +1120,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-re-stor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-re-stor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-re-stor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-RE-STOR" ] ;
@@ -1132,7 +1132,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-slhj-emer> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-slhj-emer> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-slhj-emer" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-SLHJ-emer" ] ;
@@ -1144,7 +1144,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-slhj-imp> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-slhj-imp> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-slhj-imp" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-SLHJ-imp" ] ;
@@ -1156,7 +1156,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-slor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-slor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-slor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-SLOR" ] ;
@@ -1168,7 +1168,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-staa> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-staa> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-staa" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-STAA" ] ;
@@ -1180,7 +1180,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-stin> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-stin> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-stin" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-STIN" ] ;
@@ -1192,7 +1192,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-stin-a1> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-stin-a1> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-stin-a1" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-STIN-A1" ] ;
@@ -1204,7 +1204,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-receive-stor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-receive-stor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-receive-stor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_receive-STOR" ] ;
@@ -1216,7 +1216,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-an-mors> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-an-mors> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-mors" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_AN_MORS" ] ;
@@ -1228,7 +1228,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-an-mors-emer> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-an-mors-emer> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-mors-emer" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_AN_MORS-emer" ] ;
@@ -1240,7 +1240,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-an-mors-imp> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-an-mors-imp> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-mors-imp" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_AN_MORS-IMP" ] ;
@@ -1252,7 +1252,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-an-mors-stor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-an-mors-stor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-mors-stor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_AN_MORS-STOR" ] ;
@@ -1264,7 +1264,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-an-slhj-emer> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-an-slhj-emer> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-slhj-emer" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_AN_SLHJ-emer" ] ;
@@ -1276,7 +1276,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-an-slhj-imp> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-an-slhj-imp> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-slhj-imp" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_AN_SLHJ-imp" ] ;
@@ -1288,7 +1288,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-an-slor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-an-slor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-slor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_AN_SLOR" ] ;
@@ -1300,7 +1300,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-an-staa> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-an-staa> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-staa" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_AN_STAA" ] ;
@@ -1312,7 +1312,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-an-stin> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-an-stin> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-stin" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_AN_STIN" ] ;
@@ -1324,7 +1324,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-an-stor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-an-stor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-an-stor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_AN_STOR" ] ;
@@ -1336,7 +1336,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-mors> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-mors> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-mors" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_MORS" ] ;
@@ -1348,7 +1348,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-mors-emer> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-mors-emer> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-mors-emer" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_MORS-EMER" ] ;
@@ -1360,7 +1360,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-mors-imp> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-mors-imp> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-mors-imp" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_MORS-IMP" ] ;
@@ -1372,7 +1372,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-mors-stor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-mors-stor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-mors-stor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_MORS-STOR" ] ;
@@ -1384,7 +1384,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-re-mors> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-re-mors> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-mors" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_RE-MORS" ] ;
@@ -1396,7 +1396,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-re-mors-emer> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-re-mors-emer> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-mors-emer" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_RE-MORS-emer" ] ;
@@ -1408,7 +1408,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-re-mors-imp> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-re-mors-imp> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-mors-imp" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_RE-MORS-IMP" ] ;
@@ -1420,7 +1420,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-re-mors-stor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-re-mors-stor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-mors-stor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_RE-MORS-STOR" ] ;
@@ -1432,7 +1432,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-re-slhj-emer> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-re-slhj-emer> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-slhj-emer" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_RE_SLHJ-emer" ] ;
@@ -1444,7 +1444,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-re-slhj-imp> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-re-slhj-imp> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-slhj-imp" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_RE_SLHJ-imp" ] ;
@@ -1456,7 +1456,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-re-slor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-re-slor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-slor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_RE_SLOR" ] ;
@@ -1468,7 +1468,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-re-staa> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-re-staa> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-staa" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_RE_STAA" ] ;
@@ -1480,7 +1480,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-re-stin> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-re-stin> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-stin" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_RE_STIN" ] ;
@@ -1492,7 +1492,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-re-stor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-re-stor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-re-stor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_RE_STOR" ] ;
@@ -1504,7 +1504,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-slhj-emer> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-slhj-emer> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-slhj-emer" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_SLHJ-EMER" ] ;
@@ -1516,7 +1516,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-slhj-imp> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-slhj-imp> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-slhj-imp" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_SLHJ-imp" ] ;
@@ -1528,7 +1528,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-slor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-slor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-slor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_SLOR" ] ;
@@ -1540,7 +1540,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-staa> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-staa> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-staa" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_STAA" ] ;
@@ -1552,7 +1552,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-stin> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-stin> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-stin" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_STIN" ] ;
@@ -1564,7 +1564,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-stin-a1> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-stin-a1> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-stin-a1" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_STIN-A1" ] ;
@@ -1576,7 +1576,7 @@
          fhir:value [ fhir:v "TestScript" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/TestScript/hospitalnotification-send-stor> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/TestScript/hospitalnotification-send-stor> ;
          fhir:reference [ fhir:v "TestScript/hospitalnotification-send-stor" ]
        ] ;
        fhir:name [ fhir:v "HospitalNotification_TestScript_STOR" ] ;
@@ -1588,10 +1588,461 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscript/Bundle/a5e5b880-c087-4055-b9ec-99108695f81d> ;
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/4af4ef94-c452-4e52-8176-b8bd1d059433> ;
+         fhir:reference [ fhir:v "Bundle/4af4ef94-c452-4e52-8176-b8bd1d059433" ]
+       ] ;
+       fhir:name [ fhir:v "4af4ef94-c452-4e52-8176-b8bd1d059433" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/3b11cb1c-63df-4206-a7aa-f299c4a206ba> ;
+         fhir:reference [ fhir:v "Bundle/3b11cb1c-63df-4206-a7aa-f299c4a206ba" ]
+       ] ;
+       fhir:name [ fhir:v "3b11cb1c-63df-4206-a7aa-f299c4a206ba" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/04fc7ad0-4c60-450c-9320-2c821e0a0ce0> ;
+         fhir:reference [ fhir:v "Bundle/04fc7ad0-4c60-450c-9320-2c821e0a0ce0" ]
+       ] ;
+       fhir:name [ fhir:v "04fc7ad0-4c60-450c-9320-2c821e0a0ce0" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/fe1c34a3-460a-431d-a0e3-a2b59fa93a9f> ;
+         fhir:reference [ fhir:v "Bundle/fe1c34a3-460a-431d-a0e3-a2b59fa93a9f" ]
+       ] ;
+       fhir:name [ fhir:v "fe1c34a3-460a-431d-a0e3-a2b59fa93a9f" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/cac520bc-f88b-4e7a-b8fd-bb8750e38c7a> ;
+         fhir:reference [ fhir:v "Bundle/cac520bc-f88b-4e7a-b8fd-bb8750e38c7a" ]
+       ] ;
+       fhir:name [ fhir:v "cac520bc-f88b-4e7a-b8fd-bb8750e38c7a" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/4d747862-61ab-48c1-a00e-8f527c985169> ;
+         fhir:reference [ fhir:v "Bundle/4d747862-61ab-48c1-a00e-8f527c985169" ]
+       ] ;
+       fhir:name [ fhir:v "4d747862-61ab-48c1-a00e-8f527c985169" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/2094d603-a09c-462c-a1c9-23859ba035f3> ;
+         fhir:reference [ fhir:v "Bundle/2094d603-a09c-462c-a1c9-23859ba035f3" ]
+       ] ;
+       fhir:name [ fhir:v "2094d603-a09c-462c-a1c9-23859ba035f3" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/5be3a118-64e4-4541-a2fa-a90e3df387d6> ;
+         fhir:reference [ fhir:v "Bundle/5be3a118-64e4-4541-a2fa-a90e3df387d6" ]
+       ] ;
+       fhir:name [ fhir:v "5be3a118-64e4-4541-a2fa-a90e3df387d6" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/70dfd9bb-362a-4424-a5b8-98fe11e95f42> ;
+         fhir:reference [ fhir:v "Bundle/70dfd9bb-362a-4424-a5b8-98fe11e95f42" ]
+       ] ;
+       fhir:name [ fhir:v "70dfd9bb-362a-4424-a5b8-98fe11e95f42" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/5248a961-331b-4f22-8593-75cdd8d7e36c> ;
+         fhir:reference [ fhir:v "Bundle/5248a961-331b-4f22-8593-75cdd8d7e36c" ]
+       ] ;
+       fhir:name [ fhir:v "5248a961-331b-4f22-8593-75cdd8d7e36c" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/2cadabe8-9349-4b2e-9b5e-4441c9aeef4b> ;
+         fhir:reference [ fhir:v "Bundle/2cadabe8-9349-4b2e-9b5e-4441c9aeef4b" ]
+       ] ;
+       fhir:name [ fhir:v "2cadabe8-9349-4b2e-9b5e-4441c9aeef4b" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/d434d732-951c-4dd3-aeb8-2e18f1c81942> ;
+         fhir:reference [ fhir:v "Bundle/d434d732-951c-4dd3-aeb8-2e18f1c81942" ]
+       ] ;
+       fhir:name [ fhir:v "d434d732-951c-4dd3-aeb8-2e18f1c81942" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/a5e5b880-c087-4055-b9ec-99108695f81d> ;
          fhir:reference [ fhir:v "Bundle/a5e5b880-c087-4055-b9ec-99108695f81d" ]
        ] ;
        fhir:name [ fhir:v "a5e5b880-c087-4055-b9ec-99108695f81d" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/3c4c04ea-a622-4c6e-8e62-307a62d4c851> ;
+         fhir:reference [ fhir:v "Bundle/3c4c04ea-a622-4c6e-8e62-307a62d4c851" ]
+       ] ;
+       fhir:name [ fhir:v "3c4c04ea-a622-4c6e-8e62-307a62d4c851" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/64e7f154-668d-4d2a-bf76-2cec049b3252> ;
+         fhir:reference [ fhir:v "Bundle/64e7f154-668d-4d2a-bf76-2cec049b3252" ]
+       ] ;
+       fhir:name [ fhir:v "64e7f154-668d-4d2a-bf76-2cec049b3252" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/f628d121-52f5-401b-a195-3492b3fec614> ;
+         fhir:reference [ fhir:v "Bundle/f628d121-52f5-401b-a195-3492b3fec614" ]
+       ] ;
+       fhir:name [ fhir:v "f628d121-52f5-401b-a195-3492b3fec614" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/8111a01d-eed2-4244-b079-00afe30d99bd> ;
+         fhir:reference [ fhir:v "Bundle/8111a01d-eed2-4244-b079-00afe30d99bd" ]
+       ] ;
+       fhir:name [ fhir:v "8111a01d-eed2-4244-b079-00afe30d99bd" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/ff90d6fc-fa84-4c0f-969d-84510b0ef7e3> ;
+         fhir:reference [ fhir:v "Bundle/ff90d6fc-fa84-4c0f-969d-84510b0ef7e3" ]
+       ] ;
+       fhir:name [ fhir:v "ff90d6fc-fa84-4c0f-969d-84510b0ef7e3" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/ce5cf7e2-3a37-4b95-9d2c-268c8ec3c576> ;
+         fhir:reference [ fhir:v "Bundle/ce5cf7e2-3a37-4b95-9d2c-268c8ec3c576" ]
+       ] ;
+       fhir:name [ fhir:v "ce5cf7e2-3a37-4b95-9d2c-268c8ec3c576" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/67df3ce8-0cdb-4e91-937c-d8a3025867e7> ;
+         fhir:reference [ fhir:v "Bundle/67df3ce8-0cdb-4e91-937c-d8a3025867e7" ]
+       ] ;
+       fhir:name [ fhir:v "67df3ce8-0cdb-4e91-937c-d8a3025867e7" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/2361f9af-3411-4f87-93ef-61f501ce01b5> ;
+         fhir:reference [ fhir:v "Bundle/2361f9af-3411-4f87-93ef-61f501ce01b5" ]
+       ] ;
+       fhir:name [ fhir:v "2361f9af-3411-4f87-93ef-61f501ce01b5" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/079858e5-8687-4f5c-b183-d9688206fd29> ;
+         fhir:reference [ fhir:v "Bundle/079858e5-8687-4f5c-b183-d9688206fd29" ]
+       ] ;
+       fhir:name [ fhir:v "079858e5-8687-4f5c-b183-d9688206fd29" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/ae2dc2a8-5094-4d20-9ce5-78878066976a> ;
+         fhir:reference [ fhir:v "Bundle/ae2dc2a8-5094-4d20-9ce5-78878066976a" ]
+       ] ;
+       fhir:name [ fhir:v "ae2dc2a8-5094-4d20-9ce5-78878066976a" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/9b86a65a-1428-46f5-9487-7e5cdfe687fe> ;
+         fhir:reference [ fhir:v "Bundle/9b86a65a-1428-46f5-9487-7e5cdfe687fe" ]
+       ] ;
+       fhir:name [ fhir:v "9b86a65a-1428-46f5-9487-7e5cdfe687fe" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/82b851ce-4837-49bb-9623-7310d3c83210> ;
+         fhir:reference [ fhir:v "Bundle/82b851ce-4837-49bb-9623-7310d3c83210" ]
+       ] ;
+       fhir:name [ fhir:v "82b851ce-4837-49bb-9623-7310d3c83210" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/5832154e-58d0-4590-9ba0-21661dbe2658> ;
+         fhir:reference [ fhir:v "Bundle/5832154e-58d0-4590-9ba0-21661dbe2658" ]
+       ] ;
+       fhir:name [ fhir:v "5832154e-58d0-4590-9ba0-21661dbe2658" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/3111b274-76e4-403c-8701-ec94edcd2bf2> ;
+         fhir:reference [ fhir:v "Bundle/3111b274-76e4-403c-8701-ec94edcd2bf2" ]
+       ] ;
+       fhir:name [ fhir:v "3111b274-76e4-403c-8701-ec94edcd2bf2" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/cc7b9615-3d48-404d-a82a-f4d158839843> ;
+         fhir:reference [ fhir:v "Bundle/cc7b9615-3d48-404d-a82a-f4d158839843" ]
+       ] ;
+       fhir:name [ fhir:v "cc7b9615-3d48-404d-a82a-f4d158839843" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/91a204af-471b-4ce2-b19f-c458e3716070> ;
+         fhir:reference [ fhir:v "Bundle/91a204af-471b-4ce2-b19f-c458e3716070" ]
+       ] ;
+       fhir:name [ fhir:v "91a204af-471b-4ce2-b19f-c458e3716070" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/ec49747c-6005-4732-86b5-c7d2ec9f173d> ;
+         fhir:reference [ fhir:v "Bundle/ec49747c-6005-4732-86b5-c7d2ec9f173d" ]
+       ] ;
+       fhir:name [ fhir:v "ec49747c-6005-4732-86b5-c7d2ec9f173d" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/cd9b8635-aef9-4518-b52d-35fbd384a7be> ;
+         fhir:reference [ fhir:v "Bundle/cd9b8635-aef9-4518-b52d-35fbd384a7be" ]
+       ] ;
+       fhir:name [ fhir:v "cd9b8635-aef9-4518-b52d-35fbd384a7be" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/abdd86e8-e084-4fad-95ce-fb82c36c5768> ;
+         fhir:reference [ fhir:v "Bundle/abdd86e8-e084-4fad-95ce-fb82c36c5768" ]
+       ] ;
+       fhir:name [ fhir:v "abdd86e8-e084-4fad-95ce-fb82c36c5768" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/1a32e7d1-7008-4bd4-907e-1fb6a016f5b8> ;
+         fhir:reference [ fhir:v "Bundle/1a32e7d1-7008-4bd4-907e-1fb6a016f5b8" ]
+       ] ;
+       fhir:name [ fhir:v "1a32e7d1-7008-4bd4-907e-1fb6a016f5b8" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/17a0c807-372b-452c-972e-c59036153b57> ;
+         fhir:reference [ fhir:v "Bundle/17a0c807-372b-452c-972e-c59036153b57" ]
+       ] ;
+       fhir:name [ fhir:v "17a0c807-372b-452c-972e-c59036153b57" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/9479ce7a-6837-42a5-a4d2-08f09254cbc9> ;
+         fhir:reference [ fhir:v "Bundle/9479ce7a-6837-42a5-a4d2-08f09254cbc9" ]
+       ] ;
+       fhir:name [ fhir:v "9479ce7a-6837-42a5-a4d2-08f09254cbc9" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/28e963f1-f629-44a7-a246-7412ed0e457c> ;
+         fhir:reference [ fhir:v "Bundle/28e963f1-f629-44a7-a246-7412ed0e457c" ]
+       ] ;
+       fhir:name [ fhir:v "28e963f1-f629-44a7-a246-7412ed0e457c" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/9fc89121-a0aa-43e0-a753-88bbe142ba91> ;
+         fhir:reference [ fhir:v "Bundle/9fc89121-a0aa-43e0-a753-88bbe142ba91" ]
+       ] ;
+       fhir:name [ fhir:v "9fc89121-a0aa-43e0-a753-88bbe142ba91" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/71ea109a-a5fb-4301-8609-34d7849190df> ;
+         fhir:reference [ fhir:v "Bundle/71ea109a-a5fb-4301-8609-34d7849190df" ]
+       ] ;
+       fhir:name [ fhir:v "71ea109a-a5fb-4301-8609-34d7849190df" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/277a564b-1595-41d7-9d49-95eae2336b59> ;
+         fhir:reference [ fhir:v "Bundle/277a564b-1595-41d7-9d49-95eae2336b59" ]
+       ] ;
+       fhir:name [ fhir:v "277a564b-1595-41d7-9d49-95eae2336b59" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/34fbe325-7edb-4956-a1db-15f2e053ac4d> ;
+         fhir:reference [ fhir:v "Bundle/34fbe325-7edb-4956-a1db-15f2e053ac4d" ]
+       ] ;
+       fhir:name [ fhir:v "34fbe325-7edb-4956-a1db-15f2e053ac4d" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/271a9b00-0b1c-46ac-b00e-c3193d187c62> ;
+         fhir:reference [ fhir:v "Bundle/271a9b00-0b1c-46ac-b00e-c3193d187c62" ]
+       ] ;
+       fhir:name [ fhir:v "271a9b00-0b1c-46ac-b00e-c3193d187c62" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Bundle/8d184671-a40a-4236-9579-0445ecf98ea0> ;
+         fhir:reference [ fhir:v "Bundle/8d184671-a40a-4236-9579-0445ecf98ea0" ]
+       ] ;
+       fhir:name [ fhir:v "8d184671-a40a-4236-9579-0445ecf98ea0" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
@@ -1609,6 +2060,14 @@
          ] ) ;
          fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "downloads.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

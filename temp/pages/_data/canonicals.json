@@ -1,12 +1,5 @@
 [
   {
-    "id" : "medcom.fhir.dk.testscripts.hospitalnotification",
-    "type" : "ImplementationGuide",
-    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification",
-    "version" : "1.0.0",
-    "name" : "HospitalNotificationTestscripts"
-  },
-  {
     "id" : "hospitalnotification-PF-receive-emer-01",
     "type" : "TestScript",
     "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-emer-01",
@@ -635,5 +628,12 @@
     "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-send-stor",
     "version" : "1.0.0",
     "name" : "HospitalNotificationTestScript"
+  },
+  {
+    "id" : "medcom.fhir.dk.testscripts.hospitalnotification",
+    "type" : "ImplementationGuide",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscripts/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification",
+    "version" : "1.0.0",
+    "name" : "HospitalNotificationTestscripts"
   }
 ]

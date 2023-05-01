@@ -1,0 +1,21 @@
+---
+---
+<!-- layouts\layout-changehistory.html -->
+<!-- get modelType -->
+
+
+{% include fragment-pagebegin.html %}
+
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-base-navtabs.html type='Bundle' id='cac520bc-f88b-4e7a-b8fd-bb8750e38c7a' active='history' %}
+
+  <a name="root"> </a>
+  <h2 id="root">{{type}}: Bundle/cac520bc-f88b-4e7a-b8fd-bb8750e38c7a - Change History</h2>
+  <p>History of changes for cac520bc-f88b-4e7a-b8fd-bb8750e38c7a {{type | downcase}}.</p>
+
+  {%include Bundle-cac520bc-f88b-4e7a-b8fd-bb8750e38c7a-history.xhtml%}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

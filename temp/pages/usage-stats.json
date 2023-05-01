@@ -18,6 +18,9 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-hospitalnotifiation-leave-period-extension": [
+      "Bundle.entry.resource"
+    ],
     "http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-messaging-reportOfAdmissionExtension": [
       "Bundle.entry.resource"
     ],

@@ -4,7 +4,7 @@
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: medcom.fhir.dk.testscripts.hospitalnotification
-canonical: http://medcomfhir.dk/ig/hospitalnotificationtestscript
+canonical: http://medcomfhir.dk/ig/hospitalnotificationtestscripts
 version: 1.0.0
 name: HospitalNotification Testscripts
 title: HospitalNotification Testscripts
@@ -38,12 +38,11 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   IG Home: index.html
-  Table of Contents: toc.html
   Test scripts: testscripts.html
   Test examples: testexamples.html
   Artifacts Summary: artifacts.html
-  Other Resources:
-    "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
+  Download: downloads.html
+
 
 
 # The resources property corresponds to IG.definition.resource.

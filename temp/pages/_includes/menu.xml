@@ -14,9 +14,6 @@
     <a href="index.html">IG Home</a>
   </li>
   <li>
-    <a href="toc.html">Table of Contents</a>
-  </li>
-  <li>
     <a href="testscripts.html">Test scripts</a>
   </li>
   <li>
@@ -25,14 +22,7 @@
   <li>
     <a href="artifacts.html">Artifacts Summary</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec </a>
-      </li>
-    </ul>
+  <li>
+    <a href="downloads.html">Download</a>
   </li>
 </ul>

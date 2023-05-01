@@ -1,8 +1,6 @@
-## Test scripts
-
 The test scripts are created by MedCom for testing in [TouchStone](https://touchstone.aegis.net/touchstone/) during MedCom test and certification, both self- and live test. However, the test scripts may be used locally by vendors in their own testsetup, e.g. during code development or test. 
 
-Test scripts presented in this IG are all based on the [test script FHIR resource](https://www.hl7.org/fhir/testscript.html). They are profiled by MedCom using FSH and published using the FHIR publisher. 
+Test scripts presented in this IG are all based on the [FHIR TestScript resource](https://www.hl7.org/fhir/testscript.html). They are created using FSH and published using the FHIR publisher. 
 
 ### Before getting started
 
@@ -27,18 +25,18 @@ The system under test is abbreviated 'SUT'.
 
 Most of the send test scripts requires that SUT has executed one or more use cases in advance. These use cases are listed in the 'Precondition' columns in the tables. 
 
-**Use cases:** The name of the test scripts is constituted by HospitalNotification_Testscript_[send/receive]-[type]-[imp/emer or alternative flow or precondition], describing the type of messages being sent, or recieved. 'HospitalNotifciation_Testscript_[send/receive]' is not shown in the naming below.
+**Use cases:** The name of the test scripts is constituted by HospitalNotification_Testscript_[send/receive]-[type]-[imp/emer or alternative flow or precondition], describing the type of messages being sent, or recieved. 'HospitalNotifciation_Testscript_[send/receive]-' is not shown in the naming below.
 
-**Patient flows:** These will be named HospitalNotification_Testscript_PF-[send/receive]-[imp/emer/tec]-[number]. 'HospitalNotifciation_Testscript_[send/receive]' is not shown in the naming below. 
+**Patient flows:** These will be named HospitalNotification_Testscript_PF-[send/receive]-[imp/emer/tec]-[number]. 'HospitalNotifciation_Testscript_' is not shown in the naming below. 
 
 ### Send HospitalNotification test scripts
-When sending a HospitalNotification, a POST operation is required for all types of messages, valid for both the precondition messages and actual messages being tested. 
+When sending a HospitalNotification, a POST operation is required for all types of messages, and is therefore valid for both the precondition messages and actual messages being tested. 
 
 #### Use Cases
 
 [Test scripts for test of sending use cases, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300/Send/PatientFlows&activeOnly=false&contentEntry=TEST_SCRIPTS)
 
-| **Test script** | **Use case code** | **Description** | **Type** | **Precondition** |
+| **Type** | **Use case <br> code** | **Description** | **Type** | **Precondition** |
 |---|---|---|---|---|
 | **Inpatient** |  |  |  |  |
 | [STIN](./TestScript-hospitalnotification-send-stin.html) | S1 | Send: Start hospital stay - admitted | STIN |  |
@@ -83,7 +81,7 @@ When sending a HospitalNotification, a POST operation is required for all types 
 
 [Test scripts for test of sending patient flows, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300/Send/PatientFlows&activeOnly=false&contentEntry=TEST_SCRIPTS)
 
-| **Test script** | **Description** | **Type** |
+| **Type** | **Description** | **Type** |
 |---|---|---|
 | **Inpatient** |  |  |
 | [PF-send-imp-01](./TestScript-hospitalnotification-PF-send-imp-01.html) | Send: Admit patient, register patient as being on leave, register patient as returned from leave, discharge patient. | STIN, STOR, SLOR, SLHJ |
@@ -110,13 +108,17 @@ When sending a HospitalNotification, a POST operation is required for all types 
 When receiving a HospitalNotification, a GET operation is required for all types of messages, valid for both the precondition messages and actual messages being tested. 
 
 **Test examples/fixtures:**
-Test examples are, in TouchStone testing, called fixtures. These fixtures are uploaded to TouchStone. During setup of a test, all relevant fixtures will be uploadet to the server. From a client application e.g. a vendor's system, it is possible to request relevant fixture.
+Test examples are, in TouchStone testing, called fixtures. These fixtures are uploaded to TouchStone. During setup of a test, all relevant fixtures will be uploadet to the server used during test. From a client application e.g. a vendor's system, it is possible to request relevant fixture.
 
 **HospitalNotifications:** 
-Timestamps in most fixtures (HospitalNotifications) are sent between the 28th of February 2023 and 7th of March 2023. Only the fixture used for PF-receive-tec-05 is on the 29th of February 2024. All corrections and cancellation messages are sent one hour after the message it revises or cancels.
+Timestamps in most fixtures (HospitalNotifications) are sent between the 28th of February 2023 and 7th of March 2023. The only exception are the fixture used for PF-receive-tec-04 which is on the 28th of February 2023 and the fixture used for PF-receive-tec-05 which is on the 29th of February 2024. All corrections and cancellation messages are sent one hour after the message it revises or cancels.
+
+All fixtures are based on the test patient:
+* Family name: Elmer
+* CPR-nr.: 250947-9989 
 
 #### Placeholders
-[Placeholders](https://touchstone.aegis.net/touchstone/userguide/html/testscript-authoring/placeholders.html?highlight=placeholder) are used in the fixtures. Placeholders are use to ensure uniqueness in the fixture, and to ensure that vendors testing at the same time won't interfere with eachother. 
+[Placeholders](https://touchstone.aegis.net/touchstone/userguide/html/testscript-authoring/placeholders.html?highlight=placeholder) are used in the fixtures. Placeholders are used to ensure uniqueness in a fixture, and to ensure that vendors testing at the same time won't interfere with eachother. 
 
 **UUID:**
 Bundle.id will be generate during the test setup. The following line is included in the fixtures.
@@ -127,10 +129,9 @@ Which results in the following being generated during setup. For instance:
 **Digits:**
 MessageHeader.destination.endpoint and id of the MessageHeader, used in the elements MessageHeader.id, Provenance.target and Provenance.entity.what, includes the placeholder D6. 
 The following line is included in the fixtures.
-  `<id value="hefc6d95-6161-4493-99c9-f35948${D6}"/>` or `<endpoint value="https://sor2.sum.dsdn.dk/#id=953741000016009${D6}"/>`
-
+  `<id value="hefc6d95-6161-4493-99c9-f35948${D6}"/>` or `<endpoint value="https://sor2.sum.dsdn.dk/#id=953741000016009${D6}"/>`. <br>
 Which results in the following being generated during setup. For instance: 
-  `<id value="b9b4818e-02de-4cc4-b418-d20cbc399006"/>` or `<endpoint value="https://sor2.sum.dsdn.dk/#id=953741000016009399006"/>`
+  `<id value="b9b4818e-02de-4cc4-b418-d20cbc399006"/>` or `<endpoint value="https://sor2.sum.dsdn.dk/#id=953741000016009"/>`
 
 #### GET operation
 When searching for a HospitalNotification message, the GET operation requires a variable to search for a specific message. The variable used in the request is constituted by client information and two search parameters 1) the destination endpoint with placeholder ${D6}, and 2) the Bundle.id. 
@@ -145,7 +146,7 @@ Which results in the following variable to be used in the GET operation. For ins
 [Test scripts for test of the recieving use cases, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/UseCases&activeOnly=false&contentEntry=TEST_SCRIPTS)
 
 
-| **Test script** | **Use case code** | **Description** | **Type** | **Precondition** |
+| **Type** | **Use case <br> code** | **Description** | **Type** | **Precondition** |
 |---|---|---|---|---|
 | **Inpatient** |  |  |  |  |
 | [STIN](./TestScript-hospitalnotification-receive-stin.html) | R1 | Receive: Start hospital stay - admitted | STIN |  |
@@ -189,7 +190,7 @@ Which results in the following variable to be used in the GET operation. For ins
 
 [Test scripts for test of the recieving patient flows, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/PatientFlows&activeOnly=false&contentEntry=TEST_SCRIPTS)
 
-| **Test script** | **Description** | **Type** |
+| **Type** | **Description** | **Type** |
 |---|---|---|
 | **Inpatient** |  |  |
 | [PF-receive-imp-01](./TestScript-hospitalnotification-PF-receive-imp-01.html) | Receive: Patient is admitted, patient is registered as being on leave, patient returns from leave, patient is discharged | STIN, STOR, SLOR, SLHJ |
@@ -202,7 +203,7 @@ Which results in the following variable to be used in the GET operation. For ins
 | [PF-receive-emer-01](./TestScript-hospitalnotification-PF-receive-emer-01.html) | Receive: Patient is admitted, message is corrected due to incorrect hospital department | STAA, RE_STAA |
 | [PF-receive-emer-02](./TestScript-hospitalnotification-PF-receive-emer-02.html) | Receive: Patient is admitted, message is corrected due to incorrect time of admission | STAA, RE_STAA |
 | **Emergency/Inpatient** |  |  |
-| [PF-receive-emer/imp-01](./TestScript-hospitalnotification-PF-receive-emer-imp-01.html) | Receive: Patient is admitted as emergency, patient is admitted as inpatient, patient is discharged | STAA, STIN, SLHJ |
+| [PF-receive-emer-imp-01](./TestScript-hospitalnotification-PF-receive-emer-imp-01.html) | Receive: Patient is admitted as emergency, patient is admitted as inpatient, patient is discharged | STAA, STIN, SLHJ |
 | **Technical** |  |  |
 | [PF-receive-tec-01](./TestScript-hospitalnotification-PF-receive-tec-01.html) | Receive dublicate: Patient is admitted, doesn't get acknowledged, patient is admitted | STIN, STIN |
 | [PF-receive-tec-02](./TestScript-hospitalnotification-PF-receive-tec-02.html) | Receive: Receive cancellation of admit patient: Patient is admitted, correction of admit patient and cancellation admit patient | STIN, RE_STIN, AN_STIN |
