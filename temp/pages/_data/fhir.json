@@ -1,10 +1,10 @@
 {
   "path" : "http://hl7.org/fhir/R4/",
   "canonical" : "http://medcomfhir.dk/ig/hospitalnotificationtestscripts",
-  "igId" : "medcom.fhir.dk.testscripts.hospitalnotification",
+  "igId" : "medcom.fhir.dk.hospitalnotificationtestscripts",
   "igName" : "HospitalNotificationTestscripts",
-  "packageId" : "medcom.fhir.dk.testscripts.hospitalnotification",
-  "igVer" : "1.0.0",
+  "packageId" : "medcom.fhir.dk.hospitalnotificationtestscripts",
+  "igVer" : "3.0.0",
   "errorCount" : 309,
   "version" : "4.0.1",
   "revision" : "a53ec6ee1b",
@@ -14,7 +14,7 @@
   "toolingVersionFull" : "5.0.0 (3)",
   "totalFiles" : 133,
   "processedFiles" : 145,
-  "genDate" : "Mon, May 1, 2023 13:22+0200",
+  "genDate" : "Mon, May 1, 2023 14:40+0200",
   "genDay" : "01/05/2023",
   "resourceTypes" : [
     "Account",
@@ -228,11 +228,11 @@
     "xhtml"
   ],
   "ig" : {
-    "id" : "medcom.fhir.dk.testscripts.hospitalnotification",
+    "id" : "medcom.fhir.dk.hospitalnotificationtestscripts",
     "name" : "HospitalNotificationTestscripts",
     "title" : "HospitalNotification Testscripts",
-    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscripts/ImplementationGuide/medcom.fhir.dk.testscripts.hospitalnotification",
-    "version" : "1.0.0",
+    "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscripts/ImplementationGuide/medcom.fhir.dk.hospitalnotificationtestscripts",
+    "version" : "3.0.0",
     "status" : "active",
     "experimental" : false,
     "publisher" : null,
@@ -243,7 +243,7 @@
         "telecom" : ["mailto:fhir@medcom.dk"]
       }
     ],
-    "date" : "2023-05-01T13:22:27+02:00",
+    "date" : "2023-05-01T14:40:46+02:00",
     "description" : "Testscripts for HospitalNotification v. 3.0.0",
     "copyright" : null,
     "fhirVersion" : "4.0.1"

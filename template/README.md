@@ -1,4 +1,6 @@
-# ig-template-base
-package-id = fhir.base.template
+# ig-template-dk
+Template for all MedCom FHIR implementation guides
 
-Base IG template managed by HL7 but usable by anyone (no logos).  The foundation for most HL7-published IGs
+Use it by stating 
+
+`template = medcom.dk.fhir.template#current`

@@ -3,9 +3,9 @@
 # │  supported properties, see:                                                                    │
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: medcom.fhir.dk.testscripts.hospitalnotification
-canonical: http://medcomfhir.dk/ig/hospitalnotificationtestscripts
-version: 1.0.0
+id: medcom.fhir.dk.hospitalnotificationtestscripts
+canonical: http://medcomfhir.dk/ig/hospitalnotificationtestscripts 
+version: 3.0.0
 name: HospitalNotification Testscripts
 title: HospitalNotification Testscripts
 status: active
