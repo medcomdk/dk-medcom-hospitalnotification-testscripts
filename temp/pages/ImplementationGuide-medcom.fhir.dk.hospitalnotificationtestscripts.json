@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HospitalNotificationTestscripts</h2><p>The official URL for this implementation guide is: </p><pre>http://medcomfhir.dk/ig/hospitalnotificationtestscripts/ImplementationGuide/medcom.fhir.dk.hospitalnotificationtestscripts</pre><div><p>Testscripts for HospitalNotification v. 3.0.0</p>\n</div></div>"
   },
   "url" : "http://medcomfhir.dk/ig/hospitalnotificationtestscripts/ImplementationGuide/medcom.fhir.dk.hospitalnotificationtestscripts",
-  "version" : "3.0.0",
+  "version" : "3.0.1",
   "name" : "HospitalNotificationTestscripts",
   "title" : "HospitalNotification Testscripts",
   "status" : "active",
-  "date" : "2023-05-01T14:40:46+02:00",
+  "date" : "2023-05-16T15:37:10+02:00",
   "contact" : [{
     "name" : "MedCom",
     "telecom" : [{
@@ -37,6 +37,12 @@
     "uri" : "http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/medcom.fhir.dk.hospitalnotification",
     "packageId" : "medcom.fhir.dk.hospitalnotification",
     "version" : "current"
+  },
+  {
+    "id" : "net_aegis_touchstone_fhir_testing",
+    "uri" : "http://touchstone.aegis.net/touchstone/fhir/testing/ImplementationGuide/net.aegis.touchstone.touchstone.fhir.testing",
+    "packageId" : "net.aegis.touchstone.fhir.testing",
+    "version" : "1.6.0"
   }],
   "definition" : {
     "extension" : [{

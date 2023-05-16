@@ -136,7 +136,7 @@
   fhir:episodeOfCare ( [
      fhir:identifier [
        fhir:system [ fhir:v "https://sor2.sum.dsdn.dk/#id=265161000016000"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "bd481c38-a921-11ed-afa1-0242ac120002" ]
+       fhir:value [ fhir:v "9840fa2e-3cfc-4a5b-ba2d-bb62d9b080d4" ]
      ]
   ] ) ; # 
   fhir:period [

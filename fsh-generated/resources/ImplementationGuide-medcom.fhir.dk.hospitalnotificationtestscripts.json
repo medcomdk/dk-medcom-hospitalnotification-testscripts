@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "medcom.fhir.dk.hospitalnotificationtestscripts",
   "url": "http://medcomfhir.dk/ig/hospitalnotificationtestscripts/ImplementationGuide/medcom.fhir.dk.hospitalnotificationtestscripts",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "name": "HospitalNotificationTestscripts",
   "title": "HospitalNotification Testscripts",
   "status": "active",
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Testscripts for HospitalNotification v. 3.0.0",
+  "description": "Testscripts for HospitalNotification v. 3.0.1",
   "packageId": "medcom.fhir.dk.hospitalnotificationtestscripts",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -27,8 +27,14 @@
     {
       "packageId": "medcom.fhir.dk.hospitalnotification",
       "uri": "http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/medcom.fhir.dk.hospitalnotification",
-      "version": "current",
+      "version": "3.0.1",
       "id": "medcom_fhir_dk_hospitalnotification"
+    },
+    {
+      "packageId": "net.aegis.touchstone.fhir.testing",
+      "uri": "http://touchstone.aegis.net/touchstone/fhir/testing/ImplementationGuide/net.aegis.touchstone.touchstone.fhir.testing",
+      "version": "1.6.0",
+      "id": "net_aegis_touchstone_fhir_testing"
     }
   ],
   "definition": {

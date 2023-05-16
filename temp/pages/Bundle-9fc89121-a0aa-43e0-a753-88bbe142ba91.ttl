@@ -136,7 +136,7 @@
   fhir:episodeOfCare ( [
      fhir:identifier [
        fhir:system [ fhir:v "https://www.esundhed.dk/Registre/Landspatientregisteret"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7" ]
+       fhir:value [ fhir:v "urn:uuid:15d54a58-507e-40ec-b5ce-9c4df248d842" ]
      ]
   ] ) ; # 
   fhir:period [
