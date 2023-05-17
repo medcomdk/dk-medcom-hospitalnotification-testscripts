@@ -5,7 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: medcom.fhir.dk.hospitalnotificationtestscripts
 canonical: http://medcomfhir.dk/ig/hospitalnotificationtestscripts 
-version: 3.0.0
+version: 3.0.1
 name: HospitalNotification Testscripts
 title: HospitalNotification Testscripts
 status: active
@@ -15,7 +15,7 @@ contact:
     telecom:
       - system: email
         value: "mailto:fhir@medcom.dk"
-description: Testscripts for HospitalNotification v. 3.0.0
+description: Testscripts for HospitalNotification v. 3.0.1
 license: CC0-1.0
 fhirVersion: 4.0.1
 parameters:
@@ -26,11 +26,11 @@ copyrightYear: 2020+
 releaseLabel: ci-build
 dependencies: 
   medcom.fhir.dk.hospitalnotification: 
-    version: current
     uri: http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/medcom.fhir.dk.hospitalnotification
-  #net.aegis.touchstone.touchstone.fhir.testing: 
-  #  version: dev
-  #  uri: https://touchstone.aegis.net/touchstone/fhir/testing/
+    version: current
+#  net.aegis.touchstone.fhir.testing:
+#    uri: 'http://touchstone.aegis.net/touchstone/fhir/testing/ImplementationGuide/net.aegis.touchstone.touchstone.fhir.testing'
+#    version: 1.6.0
 
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮

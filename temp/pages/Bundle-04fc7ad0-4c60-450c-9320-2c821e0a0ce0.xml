@@ -110,7 +110,7 @@
         <episodeOfCare>
           <identifier>
             <system value="https://sor2.sum.dsdn.dk/#id=265161000016000"/>
-            <value value="bd481c38-a921-11ed-afa1-0242ac120002"/>
+            <value value="5bdbd69c-8dd2-46c3-8530-accec273bc59"/>
           </identifier>
         </episodeOfCare>
         <period>

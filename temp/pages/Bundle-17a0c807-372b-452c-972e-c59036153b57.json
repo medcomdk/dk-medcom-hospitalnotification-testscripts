@@ -93,7 +93,7 @@
       "episodeOfCare" : [{
         "identifier" : {
           "system" : "https://sor2.sum.dsdn.dk/#id=265161000016000",
-          "value" : "aba0b466-7933-418c-925d-e60ebe0fb870"
+          "value" : "e2e8453c-2ad1-4c60-b94e-e69699443e03"
         }
       }],
       "period" : {
