@@ -1,4 +1,4 @@
-RuleSet: createInitialMessageSetup(type, number, fixture, destinationUri)
+RuleSet: createInitialMessageSetup(type, number, fixture, destinationUri, bundleid)
 
 /* 
 Beskriver server og client for dette testsetup
@@ -30,7 +30,7 @@ Beskriver de operationer der udføres i denne test. Her er det kun setup operati
 */
 * insert operationDeleteSetup({destinationUri})
 * insert operationCreateSetup({type}, {number})
-
+* insert operationUpdateCreateSetup({type}, {number}, {bundleid})
 /* 
 Beskriver den vurdering der sker af setup'et. Er det gået ok?
 */

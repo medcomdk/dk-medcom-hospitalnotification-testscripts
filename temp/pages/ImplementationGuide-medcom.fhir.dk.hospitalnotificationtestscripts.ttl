@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "medcom.fhir.dk.hospitalnotificationtestscripts"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HospitalNotificationTestscripts</h2><p>The official URL for this implementation guide is: </p><pre>http://medcomfhir.dk/ig/hospitalnotificationtestscripts/ImplementationGuide/medcom.fhir.dk.hospitalnotificationtestscripts</pre><div><p>Testscripts for HospitalNotification v. 3.0.0</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HospitalNotificationTestscripts</h2><p>The official URL for this implementation guide is: </p><pre>http://medcomfhir.dk/ig/hospitalnotificationtestscripts/ImplementationGuide/medcom.fhir.dk.hospitalnotificationtestscripts</pre><div><p>Testscripts for HospitalNotification v. 3.0.1</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://medcomfhir.dk/ig/hospitalnotificationtestscripts/ImplementationGuide/medcom.fhir.dk.hospitalnotificationtestscripts"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "3.0.1"] ; # 
   fhir:name [ fhir:v "HospitalNotificationTestscripts"] ; # 
   fhir:title [ fhir:v "HospitalNotification Testscripts"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-16T15:37:10+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-24T10:24:06+02:00"^^xsd:dateTime] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MedCom" ] ;
      fhir:telecom ( [
@@ -25,7 +25,7 @@
        fhir:value [ fhir:v "mailto:fhir@medcom.dk" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Testscripts for HospitalNotification v. 3.0.0"] ; # 
+  fhir:description [ fhir:v "Testscripts for HospitalNotification v. 3.0.1"] ; # 
   fhir:packageId [ fhir:v "medcom.fhir.dk.hospitalnotificationtestscripts"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
@@ -48,15 +48,7 @@
        fhir:link <http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/medcom.fhir.dk.hospitalnotification>
      ] ;
      fhir:packageId [ fhir:v "medcom.fhir.dk.hospitalnotification" ] ;
-     fhir:version [ fhir:v "current" ]
-  ] [
-     fhir:id [ fhir:v "net_aegis_touchstone_fhir_testing" ] ;
-     fhir:uri [
-       fhir:v "http://touchstone.aegis.net/touchstone/fhir/testing/ImplementationGuide/net.aegis.touchstone.touchstone.fhir.testing"^^xsd:anyURI ;
-       fhir:link <http://touchstone.aegis.net/touchstone/fhir/testing/ImplementationGuide/net.aegis.touchstone.touchstone.fhir.testing>
-     ] ;
-     fhir:packageId [ fhir:v "net.aegis.touchstone.fhir.testing" ] ;
-     fhir:version [ fhir:v "1.6.0" ]
+     fhir:version [ fhir:v "3.0.1" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [

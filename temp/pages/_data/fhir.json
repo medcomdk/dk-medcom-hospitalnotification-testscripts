@@ -5,7 +5,7 @@
   "igName" : "HospitalNotificationTestscripts",
   "packageId" : "medcom.fhir.dk.hospitalnotificationtestscripts",
   "igVer" : "3.0.1",
-  "errorCount" : 405,
+  "errorCount" : 291,
   "version" : "4.0.1",
   "revision" : "a53ec6ee1b",
   "versionFull" : "4.0.1-a53ec6ee1b",
@@ -14,8 +14,8 @@
   "toolingVersionFull" : "5.0.0 (3)",
   "totalFiles" : 133,
   "processedFiles" : 145,
-  "genDate" : "Tue, May 16, 2023 15:37+0200",
-  "genDay" : "16/05/2023",
+  "genDate" : "Wed, May 24, 2023 10:24+0200",
+  "genDay" : "24/05/2023",
   "resourceTypes" : [
     "Account",
     "ActivityDefinition",
@@ -243,8 +243,8 @@
         "telecom" : ["mailto:fhir@medcom.dk"]
       }
     ],
-    "date" : "2023-05-16T15:37:10+02:00",
-    "description" : "Testscripts for HospitalNotification v. 3.0.0",
+    "date" : "2023-05-24T10:24:06+02:00",
+    "description" : "Testscripts for HospitalNotification v. 3.0.1",
     "copyright" : null,
     "fhirVersion" : "4.0.1"
   },
@@ -258,7 +258,6 @@
     "medcom.fhir.dk.core_current" : "https://build.fhir.org/ig/medcomdk/dk-medcom-core/",
     "medcom.fhir.dk.terminology_current" : "https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/",
     "medcom.fhir.dk.messaging_current" : "https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/",
-    "net_aegis_touchstone_fhir_testing" : "file://D:\\GitHub\\Touchstone\\testing-ig\\output",
     "igtools" : "https://build.fhir.org/ig/FHIR/fhir-tools-ig/"
   },
   "hl7tx" : "http://terminology.hl7.org",
@@ -268,6 +267,5 @@
   "medcom.fhir.dk.core_current" : "http://medcomfhir.dk/ig/core",
   "medcom.fhir.dk.terminology_current" : "http://medcomfhir.dk/ig/terminology",
   "medcom.fhir.dk.messaging_current" : "http://medcomfhir.dk/ig/messaging",
-  "net_aegis_touchstone_fhir_testing" : "http://touchstone.aegis.net/touchstone/fhir/testing",
   "igtools" : "http://hl7.org/fhir/tools"
 }

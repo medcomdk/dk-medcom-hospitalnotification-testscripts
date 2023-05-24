@@ -19,6 +19,18 @@ RuleSet: operationCreateSetup(type, number)
 //* setup[=].action[=].operation.responseId = "create-message-{type}"
 * setup[=].action[=].operation.sourceId = "create-{type}-{number}"
 
+RuleSet: operationUpdateCreateSetup(type, number, bundleid)
+* setup[=].action[+].operation.type.system = "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+* setup[=].action[=].operation.type.code = #updateCreate
+* setup[=].action[=].operation.resource = #Bundle
+* setup[=].action[=].operation.description = "Update the Bundle.id in XML format on the destination server, so it corresponds to ${bundleid}."
+* setup[=].action[=].operation.accept = #xml
+* setup[=].action[=].operation.contentType = #xml
+* setup[=].action[=].operation.encodeRequestUrl = true
+//* setup[=].action[=].operation.responseId = "create-message-{type}"
+* setup[=].action[=].operation.sourceId = "create-{type}-{number}"
+* setup[=].action[=].operation.params = "/${{bundleid}}"
+
 RuleSet: operationCreateMessage(type, number)
 * test[+].id = "hospitalnotification-create-{type}-{number}" 
 * test[=].name = "Create a HospitalNotification {type} Message {number}" 
@@ -33,7 +45,7 @@ RuleSet: operationCreateMessage(type, number)
 * test[=].action[=].operation.responseId = "create-message-{type}"
 * test[=].action[=].operation.sourceId = "create-{type}-{number}" 
 
-RuleSet: operationReadMessage(type, number, destinationUri, bundleid)
+RuleSet: operationReadMessage(type, number, bundleid)
 * test[+].id = "hospitalnotification-read-{type}-{number}"
 * test[=].name = "Get a HospitalNotification {type} Message {number}"
 * test[=].description = "GET a Hospital notification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format."
@@ -44,8 +56,9 @@ RuleSet: operationReadMessage(type, number, destinationUri, bundleid)
 * test[=].action[=].operation.accept = #xml
 * test[=].action[=].operation.destination = 1
 * test[=].action[=].operation.encodeRequestUrl = true
+* test[=].action[=].operation.contentType = #xml
 * test[=].action[=].operation.origin = 1
-* test[=].action[=].operation.params = "?message.destination-uri=${{destinationUri}}&amp;member._id=${{bundleid}}"
+* test[=].action[=].operation.params = "/${{bundleid}}" //"?message.destination-uri=${{destinationUri}}&amp;member._id=${{bundleid}}"
 
 /* RuleSet: operationSearchMessage(type, number, destinationUri)
 * test[+].id = "hospitalnotification-search-{type}-{number}"

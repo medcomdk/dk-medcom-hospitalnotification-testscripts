@@ -7,7 +7,7 @@
     ]
   },
   "status": "active",
-  "date": "2023-05-01",
+  "date": "2023-05-25",
   "publisher": "MedCom",
   "contact": [
     {
@@ -197,6 +197,14 @@
         },
         {
           "assert": {
+            "description": "Validates the bundle against http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/dk.fhir.ig.dk-medcom-hospitalnotification",
+            "direction": "request",
+            "validateProfileId": "hospitalnotification",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
             "description": "Confirm that the request resource contains the expected eventCoding.code.",
             "direction": "request",
             "expression": "Bundle.entry.resource.ofType(MessageHeader).event.as(Coding).select(code = 'hospital-notification-message').allTrue()",
@@ -301,6 +309,14 @@
             "description": "Confirm that the client request payload contains a Bundle resource type.",
             "direction": "request",
             "resource": "Bundle",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "description": "Validates the bundle against http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/dk.fhir.ig.dk-medcom-hospitalnotification",
+            "direction": "request",
+            "validateProfileId": "hospitalnotification",
             "warningOnly": false
           }
         },
@@ -425,6 +441,14 @@
         },
         {
           "assert": {
+            "description": "Validates the bundle against http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/dk.fhir.ig.dk-medcom-hospitalnotification",
+            "direction": "request",
+            "validateProfileId": "hospitalnotification",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
             "description": "Confirm that the previous MessageHeader fullURL is identical to Provenance.entity.what",
             "direction": "request",
             "expression": "Bundle.entry.resource.ofType(Provenance).where(entity.what.reference = '${messageHeaderid-STOR}').count() = 1",
@@ -544,6 +568,14 @@
         },
         {
           "assert": {
+            "description": "Validates the bundle against http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/dk.fhir.ig.dk-medcom-hospitalnotification",
+            "direction": "request",
+            "validateProfileId": "hospitalnotification",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
             "description": "Confirm that the previous MessageHeader fullURL is identical to Provenance.entity.what",
             "direction": "request",
             "expression": "Bundle.entry.resource.ofType(Provenance).where(entity.what.reference = '${messageHeaderid-STIN}').count() = 1",
@@ -658,6 +690,14 @@
             "description": "Confirm that the client request payload contains a Bundle resource type.",
             "direction": "request",
             "resource": "Bundle",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "description": "Validates the bundle against http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/dk.fhir.ig.dk-medcom-hospitalnotification",
+            "direction": "request",
+            "validateProfileId": "hospitalnotification",
             "warningOnly": false
           }
         },

@@ -7,7 +7,7 @@
          <p>The official URL for this implementation guide is: </p>
          <pre>http://medcomfhir.dk/ig/hospitalnotificationtestscripts/ImplementationGuide/medcom.fhir.dk.hospitalnotificationtestscripts</pre>
          <div>
-            <p>Testscripts for HospitalNotification v. 3.0.0</p>
+            <p>Testscripts for HospitalNotification v. 3.0.1</p>
          </div>
       </div>
    </text>
@@ -16,7 +16,7 @@
    <name value="HospitalNotificationTestscripts"/>
    <title value="HospitalNotification Testscripts"/>
    <status value="active"/>
-   <date value="2023-05-16T15:37:10+02:00"/>
+   <date value="2023-05-24T10:24:06+02:00"/>
    <contact>
       <name value="MedCom"/>
       <telecom>
@@ -24,7 +24,7 @@
          <value value="mailto:fhir@medcom.dk"/>
       </telecom>
    </contact>
-   <description value="Testscripts for HospitalNotification v. 3.0.0"/>
+   <description value="Testscripts for HospitalNotification v. 3.0.1"/>
    <packageId value="medcom.fhir.dk.hospitalnotificationtestscripts"/>
    <license value="CC0-1.0"/>
    <fhirVersion value="4.0.1"/>
@@ -39,12 +39,7 @@
    <dependsOn id="medcom_fhir_dk_hospitalnotification">
       <uri value="http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/medcom.fhir.dk.hospitalnotification"/>
       <packageId value="medcom.fhir.dk.hospitalnotification"/>
-      <version value="current"/>
-   </dependsOn>
-   <dependsOn id="net_aegis_touchstone_fhir_testing">
-      <uri value="http://touchstone.aegis.net/touchstone/fhir/testing/ImplementationGuide/net.aegis.touchstone.touchstone.fhir.testing"/>
-      <packageId value="net.aegis.touchstone.fhir.testing"/>
-      <version value="1.6.0"/>
+      <version value="3.0.1"/>
    </dependsOn>
    <definition>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

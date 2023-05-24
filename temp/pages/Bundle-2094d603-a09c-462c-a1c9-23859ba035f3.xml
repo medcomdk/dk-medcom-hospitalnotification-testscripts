@@ -19,7 +19,7 @@
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="bd146532-0884-407d-85e2-da9a0c399006"/></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader "bd146532-0884-407d-85e2-da9a0c399006"</p><p style="margin-bottom: 0px">Profile: 
                                 <a href="StructureDefinition-medcom-hospitalNotification-messageHeader.html">MedComHospitalNotificationMessageHeader</a></p></div><p><b>event</b>: Hospital Notification Message (Details: http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes code hospital-notification-message = 'Hospital Notification Message', stated as 'null')
                         </p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td/><td><a href="https://sor2.sum.dsdn.dk/#id=953741000016009">https://sor2.sum.dsdn.dk/#id=953741000016009</a></td><td><a href="#Organization_8858e7e6-81c6-11ed-a1eb-0242ac120002">See above (Organization/8858e7e6-81c6-11ed-a1eb-0242ac120002)</a></td></tr></table><p><b>sender</b>: 
-                            <a href="#Organization_abb09e14-81c6-11ed-a1eb-0242ac120002">See above (Organization/abb09e14-81c6-11ed-a1eb-0242ac120002)</a></p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href="https://sor2.sum.dsdn.dk/#id=265161000016000">https://sor2.sum.dsdn.dk/#id=265161000016000</a></td></tr></table><p><b>focus</b>: 
+                            <a href="#Organization_o7056980-a8b2-42aa-8a0e-c1fc85d1f40d">See above (Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)</a></p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href="https://sor2.sum.dsdn.dk/#id=265161000016000">https://sor2.sum.dsdn.dk/#id=265161000016000</a></td></tr></table><p><b>focus</b>: 
                             <a href="#Encounter_d00b09e6-b7e7-4c42-8187-a67b94888d34">See above (Encounter/d00b09e6-b7e7-4c42-8187-a67b94888d34)</a></p></div>
         </text>
         <eventCoding>
@@ -39,7 +39,7 @@
           </receiver>
         </destination>
         <sender>
-          <reference value="Organization/abb09e14-81c6-11ed-a1eb-0242ac120002"/>
+          <reference value="Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"/>
         </sender>
         <source>
           <endpoint value="https://sor2.sum.dsdn.dk/#id=265161000016000"/>
@@ -91,7 +91,7 @@
                             <a href="#Patient_48393486-81c6-11ed-a1eb-0242ac120002">See above (Patient/48393486-81c6-11ed-a1eb-0242ac120002)</a></p><p><b>episodeOfCare</b>: 
                             <span/></p><p><b>period</b>: 2023-03-01 13:00:00+0200 --&gt; (ongoing)
                         </p><p><b>serviceProvider</b>: 
-                            <a href="#Organization_abb09e14-81c6-11ed-a1eb-0242ac120002">See above (Organization/abb09e14-81c6-11ed-a1eb-0242ac120002)</a></p></div>
+                            <a href="#Organization_o7056980-a8b2-42aa-8a0e-c1fc85d1f40d">See above (Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)</a></p></div>
         </text>
         <status value="in-progress"/>
         <class>
@@ -111,21 +111,21 @@
           <start value="2023-03-01T08:00:00+01:00"/>
         </period>
         <serviceProvider>
-          <reference value="Organization/abb09e14-81c6-11ed-a1eb-0242ac120002"/>
+          <reference value="Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"/>
         </serviceProvider>
       </Encounter>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="Organization/abb09e14-81c6-11ed-a1eb-0242ac120002"/>
+    <fullUrl value="Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"/>
     <resource>
       <Organization>
-        <id value="abb09e14-81c6-11ed-a1eb-0242ac120002"/>
+        <id value="o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"/>
         <meta>
           <profile value="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="abb09e14-81c6-11ed-a1eb-0242ac120002"/></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization "abb09e14-81c6-11ed-a1eb-0242ac120002"</p><p style="margin-bottom: 0px">Profile: 
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"/></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization "o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"</p><p style="margin-bottom: 0px">Profile: 
                                 <a href="http://medcomfhir.dk/ig/messaging/2.0.0/StructureDefinition-medcom-messaging-organization.html">MedComMessagingOrganization</a></p></div><p><b>identifier</b>: id: 5790000209354, id: 265161000016000
                         </p><p><b>name</b>: Hjerteafdelingen på Herlev og Gentofte hospital
                         </p></div>
@@ -184,7 +184,7 @@
                         </p><p><b>activity</b>: Update of start hospital stay-admission 
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">(
                                 <a href="http://medcomfhir.dk/ig/terminology/1.1.1/CodeSystem-medcom-messaging-activityCodes.html">MedComMessagingActivityCodes</a>#revise-admit-inpatient)
-                            </span></p><h3>Agents</h3><table class="grid"><tr><td>-</td><td><b>Who</b></td></tr><tr><td>*</td><td><a href="#Organization_abb09e14-81c6-11ed-a1eb-0242ac120002">See above (Organization/abb09e14-81c6-11ed-a1eb-0242ac120002)</a></td></tr></table><h3>Entities</h3><table class="grid"><tr><td>-</td><td><b>Role</b></td><td><b>What</b></td></tr><tr><td>*</td><td>revision</td><td><a href="MessageHeader-b9b4818e-02de-4cc4-b418-d20cbc399006.html">MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006</a></td></tr></table></div>
+                            </span></p><h3>Agents</h3><table class="grid"><tr><td>-</td><td><b>Who</b></td></tr><tr><td>*</td><td><a href="#Organization_o7056980-a8b2-42aa-8a0e-c1fc85d1f40d">See above (Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)</a></td></tr></table><h3>Entities</h3><table class="grid"><tr><td>-</td><td><b>Role</b></td><td><b>What</b></td></tr><tr><td>*</td><td>revision</td><td><a href="MessageHeader-b9b4818e-02de-4cc4-b418-d20cbc399006.html">MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006</a></td></tr></table></div>
         </text>
         <target>
           <reference value="MessageHeader/bd146532-0884-407d-85e2-da9a0c399006"/>
@@ -199,7 +199,7 @@
         </activity>
         <agent>
           <who>
-            <reference value="Organization/abb09e14-81c6-11ed-a1eb-0242ac120002"/>
+            <reference value="Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"/>
           </who>
         </agent>
         <entity>

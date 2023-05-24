@@ -25,9 +25,9 @@ parameters:
 copyrightYear: 2020+
 releaseLabel: ci-build
 dependencies: 
-  medcom.fhir.dk.hospitalnotification: 
-    uri: http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/medcom.fhir.dk.hospitalnotification
-    version: current
+#  medcom.fhir.dk.hospitalnotification: 
+#    uri: http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/medcom.fhir.dk.hospitalnotification
+#    version: 3.0.1
 #  net.aegis.touchstone.fhir.testing:
 #    uri: 'http://touchstone.aegis.net/touchstone/fhir/testing/ImplementationGuide/net.aegis.touchstone.touchstone.fhir.testing'
 #    version: 1.6.0

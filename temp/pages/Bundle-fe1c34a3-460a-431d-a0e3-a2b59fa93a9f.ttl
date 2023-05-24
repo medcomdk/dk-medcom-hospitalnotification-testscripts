@@ -29,8 +29,8 @@
      fhir:fullUrl [ fhir:v "Organization/55eb90b8-81d2-11ed-a1eb-0242ac120002"^^xsd:anyURI ] ;
      fhir:resource ( <Organization/55eb90b8-81d2-11ed-a1eb-0242ac120002> )
   ] [
-     fhir:fullUrl [ fhir:v "Organization/66c12a92-81d2-11ed-a1eb-0242ac120002"^^xsd:anyURI ] ;
-     fhir:resource ( <Organization/66c12a92-81d2-11ed-a1eb-0242ac120002> )
+     fhir:fullUrl [ fhir:v "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"^^xsd:anyURI ] ;
+     fhir:resource ( <Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d> )
   ] [
      fhir:fullUrl [ fhir:v "Provenance/h60bd482-9c47-43c5-9b77-1134eaa2d5f0"^^xsd:anyURI ] ;
      fhir:resource ( <Provenance/h60bd482-9c47-43c5-9b77-1134eaa2d5f0> )
@@ -49,7 +49,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"nabb68aa-c97b-4905-a60c-71ff32399006\"/></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader \"nabb68aa-c97b-4905-a60c-71ff32399006\"</p><p style=\"margin-bottom: 0px\">Profile: \n                                <a href=\"StructureDefinition-medcom-hospitalNotification-messageHeader.html\">MedComHospitalNotificationMessageHeader</a></p></div><p><b>event</b>: Hospital Notification Message (Details: http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes code hospital-notification-message = 'Hospital Notification Message', stated as 'null')\n                        </p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td/><td><a href=\"https://sor2.sum.dsdn.dk/#id=953741000016009\">https://sor2.sum.dsdn.dk/#id=953741000016009</a></td><td><a href=\"#Organization_55eb90b8-81d2-11ed-a1eb-0242ac120002\">See above (Organization/55eb90b8-81d2-11ed-a1eb-0242ac120002)</a></td></tr></table><p><b>sender</b>: \n                            <a href=\"#Organization_66c12a92-81d2-11ed-a1eb-0242ac120002\">See above (Organization/66c12a92-81d2-11ed-a1eb-0242ac120002)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"https://sor2.sum.dsdn.dk/#id=265161000016000\">https://sor2.sum.dsdn.dk/#id=265161000016000</a></td></tr></table><p><b>focus</b>: \n                            <a href=\"#Encounter_l001c640-6b5d-414c-b6bd-e00ec6d4ceee\">See above (Encounter/l001c640-6b5d-414c-b6bd-e00ec6d4ceee)</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"nabb68aa-c97b-4905-a60c-71ff32399006\"/></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader \"nabb68aa-c97b-4905-a60c-71ff32399006\"</p><p style=\"margin-bottom: 0px\">Profile: \n                                <a href=\"StructureDefinition-medcom-hospitalNotification-messageHeader.html\">MedComHospitalNotificationMessageHeader</a></p></div><p><b>event</b>: Hospital Notification Message (Details: http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes code hospital-notification-message = 'Hospital Notification Message', stated as 'null')\n                        </p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td/><td><a href=\"https://sor2.sum.dsdn.dk/#id=953741000016009\">https://sor2.sum.dsdn.dk/#id=953741000016009</a></td><td><a href=\"#Organization_55eb90b8-81d2-11ed-a1eb-0242ac120002\">See above (Organization/55eb90b8-81d2-11ed-a1eb-0242ac120002)</a></td></tr></table><p><b>sender</b>: \n                            <a href=\"#Organization_o7056980-a8b2-42aa-8a0e-c1fc85d1f40d\">See above (Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"https://sor2.sum.dsdn.dk/#id=265161000016000\">https://sor2.sum.dsdn.dk/#id=265161000016000</a></td></tr></table><p><b>focus</b>: \n                            <a href=\"#Encounter_l001c640-6b5d-414c-b6bd-e00ec6d4ceee\">See above (Encounter/l001c640-6b5d-414c-b6bd-e00ec6d4ceee)</a></p></div>"
   ] ; # 
   fhir:event [
      a fhir:Coding ;
@@ -72,8 +72,8 @@
      ]
   ] ) ; # 
   fhir:sender [
-     fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Organization/66c12a92-81d2-11ed-a1eb-0242ac120002> ;
-     fhir:reference [ fhir:v "Organization/66c12a92-81d2-11ed-a1eb-0242ac120002" ]
+     fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d> ;
+     fhir:reference [ fhir:v "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" ]
   ] ; # 
   fhir:source [
      fhir:endpoint [ fhir:v "https://sor2.sum.dsdn.dk/#id=265161000016000"^^xsd:anyURI ]
@@ -115,12 +115,12 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"l001c640-6b5d-414c-b6bd-e00ec6d4ceee\"/></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter \"l001c640-6b5d-414c-b6bd-e00ec6d4ceee\"</p><p style=\"margin-bottom: 0px\">Profile: \n                                <a href=\"StructureDefinition-medcom-hospitalNotification-encounter.html\">MedComHospitalNotificationEncounter</a></p></div><p><b>status</b>: finished\n                        </p><p><b>class</b>: emergency (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code EMER = 'emergency', stated as 'null')\n                        </p><p><b>subject</b>: \n                            <a href=\"#Patient_384b4a58-81d2-11ed-a1eb-0242ac120002\">See above (Patient/384b4a58-81d2-11ed-a1eb-0242ac120002)</a></p><p><b>episodeOfCare</b>: \n                            <span/></p><p><b>period</b>: 2023-03-01 10:00:04+0200 --&gt; 2023-03-04 07:00:00+0200\n                        </p><p><b>serviceProvider</b>: \n                            <a href=\"#Organization_66c12a92-81d2-11ed-a1eb-0242ac120002\">See above (Organization/66c12a92-81d2-11ed-a1eb-0242ac120002)</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"l001c640-6b5d-414c-b6bd-e00ec6d4ceee\"/></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter \"l001c640-6b5d-414c-b6bd-e00ec6d4ceee\"</p><p style=\"margin-bottom: 0px\">Profile: \n                                <a href=\"StructureDefinition-medcom-hospitalNotification-encounter.html\">MedComHospitalNotificationEncounter</a></p></div><p><b>status</b>: finished\n                        </p><p><b>class</b>: inpatient (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient', stated as 'null')\n                        </p><p><b>subject</b>: \n                            <a href=\"#Patient_384b4a58-81d2-11ed-a1eb-0242ac120002\">See above (Patient/384b4a58-81d2-11ed-a1eb-0242ac120002)</a></p><p><b>episodeOfCare</b>: \n                            <span/></p><p><b>period</b>: 2023-03-01 10:00:04+0200 --&gt; 2023-03-04 07:00:00+0200\n                        </p><p><b>serviceProvider</b>: \n                            <a href=\"#Organization_o7056980-a8b2-42aa-8a0e-c1fc85d1f40d\">See above (Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)</a></p></div>"
   ] ; # 
   fhir:status [ fhir:v "finished"] ; # 
   fhir:class [
      fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
-     fhir:code [ fhir:v "EMER" ]
+     fhir:code [ fhir:v "IMP" ]
   ] ; # 
   fhir:subject [
      fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Patient/384b4a58-81d2-11ed-a1eb-0242ac120002> ;
@@ -137,8 +137,8 @@
      fhir:end [ fhir:v "2023-03-04T07:00:00+01:00"^^xsd:dateTime ]
   ] ; # 
   fhir:serviceProvider [
-     fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Organization/66c12a92-81d2-11ed-a1eb-0242ac120002> ;
-     fhir:reference [ fhir:v "Organization/66c12a92-81d2-11ed-a1eb-0242ac120002" ]
+     fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d> ;
+     fhir:reference [ fhir:v "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" ]
   ] . # 
 
 <Organization/55eb90b8-81d2-11ed-a1eb-0242ac120002> a fhir:Organization ;
@@ -162,8 +162,8 @@
   ] ) ; # 
   fhir:name [ fhir:v "Plejecenter Herlev"] . # 
 
-<Organization/66c12a92-81d2-11ed-a1eb-0242ac120002> a fhir:Organization ;
-  fhir:id [ fhir:v "66c12a92-81d2-11ed-a1eb-0242ac120002"] ; # 
+<Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d> a fhir:Organization ;
+  fhir:id [ fhir:v "o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"] ; # 
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization"^^xsd:anyURI ;
@@ -172,7 +172,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"66c12a92-81d2-11ed-a1eb-0242ac120002\"/></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization \"66c12a92-81d2-11ed-a1eb-0242ac120002\"</p><p style=\"margin-bottom: 0px\">Profile: \n                                <a href=\"http://medcomfhir.dk/ig/messaging/2.0.0/StructureDefinition-medcom-messaging-organization.html\">MedComMessagingOrganization</a></p></div><p><b>identifier</b>: id: 5790000209354, id: 265161000016000\n                        </p><p><b>name</b>: Hjerteafdelingen på Herlev og Gentofte hospital\n                        </p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"o7056980-a8b2-42aa-8a0e-c1fc85d1f40d\"/></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization \"o7056980-a8b2-42aa-8a0e-c1fc85d1f40d\"</p><p style=\"margin-bottom: 0px\">Profile: \n                                <a href=\"http://medcomfhir.dk/ig/messaging/2.0.0/StructureDefinition-medcom-messaging-organization.html\">MedComMessagingOrganization</a></p></div><p><b>identifier</b>: id: 5790000209354, id: 265161000016000\n                        </p><p><b>name</b>: Hjerteafdelingen på Herlev og Gentofte hospital\n                        </p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "https://www.gs1.org/gln"^^xsd:anyURI ] ;
@@ -193,24 +193,24 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Provenance</b><a name=\"h60bd482-9c47-43c5-9b77-1134eaa2d5f0\"/></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Provenance \"h60bd482-9c47-43c5-9b77-1134eaa2d5f0\"</p><p style=\"margin-bottom: 0px\">Profile: \n                                <a href=\"http://medcomfhir.dk/ig/messaging/2.0.0/StructureDefinition-medcom-messaging-provenance.html\">MedComMessagingProvenance</a></p></div><p><b>target</b>: \n                            <a href=\"MessageHeader-i50fc5fe-2d11-4ef3-acac-2e2e5c399006.html\">MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006</a></p><p><b>occurred</b>: 2023-03-01 10:00:06+0200\n                        </p><p><b>recorded</b>: 1. dec. 2022 09.00.06\n                        </p><p><b>activity</b>: Start hospital stay-acute ambulant \n                            <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">(\n                                <a href=\"http://medcomfhir.dk/ig/terminology/1.1.1/CodeSystem-medcom-messaging-activityCodes.html\">MedComMessagingActivityCodes</a>#admit-emergency)\n                            </span></p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td></tr><tr><td>*</td><td><a href=\"Organization-1f5882b4-81d1-11ed-a1eb-0242ac120002.html\">Organization/1f5882b4-81d1-11ed-a1eb-0242ac120002</a> \"Hjerteafdelingen på Herlev og Gentofte hospital\"\n                                </td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Provenance</b><a name=\"h60bd482-9c47-43c5-9b77-1134eaa2d5f0\"/></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Provenance \"h60bd482-9c47-43c5-9b77-1134eaa2d5f0\"</p><p style=\"margin-bottom: 0px\">Profile: \n                                <a href=\"http://medcomfhir.dk/ig/messaging/2.0.0/StructureDefinition-medcom-messaging-provenance.html\">MedComMessagingProvenance</a></p></div><p><b>target</b>: \n                            <a href=\"MessageHeader-b9b4818e-02de-4cc4-b418-d20cbc399006.html\">MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006</a></p><p><b>occurred</b>: 2023-03-01 10:00:06+0200\n                        </p><p><b>recorded</b>: 1. dec. 2022 09.00.06\n                        </p><p><b>activity</b>: Start hospital stay-acute ambulant \n                            <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">(\n                                <a href=\"http://medcomfhir.dk/ig/terminology/1.1.1/CodeSystem-medcom-messaging-activityCodes.html\">MedComMessagingActivityCodes</a>#admit-inpatient)\n                            </span></p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td></tr><tr><td>*</td><td><a href=\"Organization-o7056980-a8b2-42aa-8a0e-c1fc85d1f40d.html\">Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d</a> \"Hjerteafdelingen på Herlev og Gentofte hospital\"\n                                </td></tr></table></div>"
   ] ; # 
   fhir:target ( [
-     fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006> ;
-     fhir:reference [ fhir:v "MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006" ]
+     fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006> ;
+     fhir:reference [ fhir:v "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006" ]
   ] ) ; # 
   fhir:occurred [ fhir:v "2023-03-01T10:00:06+01:00"^^xsd:dateTime] ; # 
   fhir:recorded [ fhir:v "2023-03-01T10:00:06+01:00"^^xsd:dateTime] ; # 
   fhir:activity [
      fhir:coding ( [
        fhir:system [ fhir:v "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "admit-emergency" ]
+       fhir:code [ fhir:v "admit-inpatient" ]
      ] )
   ] ; # 
   fhir:agent ( [
      fhir:who [
-       fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Organization/1f5882b4-81d1-11ed-a1eb-0242ac120002> ;
-       fhir:reference [ fhir:v "Organization/1f5882b4-81d1-11ed-a1eb-0242ac120002" ]
+       fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d> ;
+       fhir:reference [ fhir:v "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" ]
      ]
   ] ) . # 
 
@@ -224,7 +224,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Provenance</b><a name=\"l17de5f5-abb0-4701-93aa-6b0d7b4127bc\"/></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Provenance \"l17de5f5-abb0-4701-93aa-6b0d7b4127bc\"</p><p style=\"margin-bottom: 0px\">Profile: \n                                <a href=\"http://medcomfhir.dk/ig/messaging/2.0.0/StructureDefinition-medcom-messaging-provenance.html\">MedComMessagingProvenance</a></p></div><p><b>target</b>: \n                            <a href=\"#MessageHeader_nabb68aa-c97b-4905-a60c-71ff32399006\">See above (MessageHeader/nabb68aa-c97b-4905-a60c-71ff32399006)</a></p><p><b>occurred</b>: 2023-03-04 07:00:02+0200\n                        </p><p><b>recorded</b>: 2. dec. 2022 06.00.02\n                        </p><p><b>activity</b>: Start hospital stay-acute ambulant \n                            <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">(\n                                <a href=\"http://medcomfhir.dk/ig/terminology/1.1.1/CodeSystem-medcom-messaging-activityCodes.html\">MedComMessagingActivityCodes</a>#admit-emergency)\n                            </span></p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td></tr><tr><td>*</td><td><a href=\"#Organization_66c12a92-81d2-11ed-a1eb-0242ac120002\">See above (Organization/66c12a92-81d2-11ed-a1eb-0242ac120002)</a></td></tr></table><h3>Entities</h3><table class=\"grid\"><tr><td>-</td><td><b>Role</b></td><td><b>What</b></td></tr><tr><td>*</td><td>revision</td><td><a href=\"MessageHeader-i50fc5fe-2d11-4ef3-acac-2e2e5c399006.html\">MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006</a></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Provenance</b><a name=\"l17de5f5-abb0-4701-93aa-6b0d7b4127bc\"/></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Provenance \"l17de5f5-abb0-4701-93aa-6b0d7b4127bc\"</p><p style=\"margin-bottom: 0px\">Profile: \n                                <a href=\"http://medcomfhir.dk/ig/messaging/2.0.0/StructureDefinition-medcom-messaging-provenance.html\">MedComMessagingProvenance</a></p></div><p><b>target</b>: \n                            <a href=\"#MessageHeader_nabb68aa-c97b-4905-a60c-71ff32399006\">See above (MessageHeader/nabb68aa-c97b-4905-a60c-71ff32399006)</a></p><p><b>occurred</b>: 2023-03-04 07:00:02+0200\n                        </p><p><b>recorded</b>: 2. dec. 2022 06.00.02\n                        </p><p><b>activity</b>: Start hospital stay-acute ambulant \n                            <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\">(\n                                <a href=\"http://medcomfhir.dk/ig/terminology/1.1.1/CodeSystem-medcom-messaging-activityCodes.html\">MedComMessagingActivityCodes</a>#admit-inpatient)\n                            </span></p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Who</b></td></tr><tr><td>*</td><td><a href=\"#Organization_o7056980-a8b2-42aa-8a0e-c1fc85d1f40d\">See above (Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)</a></td></tr></table><h3>Entities</h3><table class=\"grid\"><tr><td>-</td><td><b>Role</b></td><td><b>What</b></td></tr><tr><td>*</td><td>revision</td><td><a href=\"MessageHeader-b9b4818e-02de-4cc4-b418-d20cbc399006.html\">MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006</a></td></tr></table></div>"
   ] ; # 
   fhir:target ( [
      fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/MessageHeader/nabb68aa-c97b-4905-a60c-71ff32399006> ;
@@ -235,20 +235,20 @@
   fhir:activity [
      fhir:coding ( [
        fhir:system [ fhir:v "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "admit-emergency" ]
+       fhir:code [ fhir:v "admit-inpatient" ]
      ] )
   ] ; # 
   fhir:agent ( [
      fhir:who [
-       fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Organization/66c12a92-81d2-11ed-a1eb-0242ac120002> ;
-       fhir:reference [ fhir:v "Organization/66c12a92-81d2-11ed-a1eb-0242ac120002" ]
+       fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d> ;
+       fhir:reference [ fhir:v "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" ]
      ]
   ] ) ; # 
   fhir:entity ( [
      fhir:role [ fhir:v "revision" ] ;
      fhir:what [
-       fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006> ;
-       fhir:reference [ fhir:v "MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006" ]
+       fhir:link <http://medcomfhir.dk/ig/hospitalnotificationtestscripts/MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006> ;
+       fhir:reference [ fhir:v "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006" ]
      ]
   ] ) . # 
 
