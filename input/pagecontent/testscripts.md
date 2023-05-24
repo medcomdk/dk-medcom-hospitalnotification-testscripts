@@ -126,20 +126,13 @@ Bundle.id will be generate during the test setup. The following line is included
 Which results in the following being generated during setup. For instance: 
   `<id value="b9b4818e-02de-4cc4-b418-d20cbc399006"/>`
 
-**Digits:**
-MessageHeader.destination.endpoint and id of the MessageHeader, used in the elements MessageHeader.id, Provenance.target and Provenance.entity.what, includes the placeholder D6. 
-The following line is included in the fixtures.
-  `<id value="hefc6d95-6161-4493-99c9-f35948${D6}"/>` or `<endpoint value="https://sor2.sum.dsdn.dk/#id=953741000016009${D6}"/>`. <br>
-Which results in the following being generated during setup. For instance: 
-  `<id value="b9b4818e-02de-4cc4-b418-d20cbc399006"/>` or `<endpoint value="https://sor2.sum.dsdn.dk/#id=953741000016009"/>`
-
 #### GET operation
-When searching for a HospitalNotification message, the GET operation requires a variable to search for a specific message. The variable used in the request is constituted by client information and two search parameters 1) the destination endpoint with placeholder ${D6}, and 2) the Bundle.id. 
+When searching for a HospitalNotification message, the GET operation requires Bundle.id to search for a specific message. 
 
 In the test scripts, the search parameter are: 
-  `"params": "?message.destination-uri=${destinationUri-STIN}&amp;member._id=${bundleid-STIN}"`
+  `"params": "/${bundleid-STIN}"`
 Which results in the following variable to be used in the GET operation. For instance: 
-  `http://touchstone.aegis.net:49917/fhir4-0-1/Bundle?message.destination-uri=https://sor2.sum.dsdn.dk/#id=953741000016009399006&amp;member._id=b9b4818e-02de-4cc4-b418-d20cbc399006`
+  `http://touchstone.aegis.net:49917/fhir4-0-1/Bundle/88e6c08e-10b6-4c7e-aa70-c0db45933e50`
 
 #### Use Cases
 
