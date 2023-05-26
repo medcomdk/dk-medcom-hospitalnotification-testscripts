@@ -10,8 +10,8 @@
   fhir:id [ fhir:v "4d747862-61ab-48c1-a00e-8f527c985169"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://medcomfhir.dk/fhir/hospitalnotification/StructureDefinition/medcom-hospitalNotification-message"^^xsd:anyURI ;
-       fhir:link <http://medcomfhir.dk/fhir/hospitalnotification/StructureDefinition/medcom-hospitalNotification-message>
+       fhir:v "http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-hospitalNotification-message"^^xsd:anyURI ;
+       fhir:link <http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-hospitalNotification-message>
      ] )
   ] ; # 
   fhir:type [ fhir:v "message"] ; # 

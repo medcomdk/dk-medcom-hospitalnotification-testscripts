@@ -229,7 +229,7 @@
                         </p><p><b>activity</b>: Start leave 
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">( 
                                 <a href="http://medcomfhir.dk/ig/terminology/1.1.1/CodeSystem-medcom-messaging-activityCodes.html">MedComMessagingActivityCodes</a>#start-leave-inpatient)
-                            </span></p><h3>Agents</h3><table class="grid"><tr><td>-</td><td><b>Who</b></td></tr><tr><td>*</td><td><a href="Organization-b79a7914-81c8-11ed-a1eb-0242ac120002.html">Organization/b79a7914-81c8-11ed-a1eb-0242ac120002</a> "Hjerteafdelingen på Herlev og Gentofte hospital"
+                            </span></p><h3>Agents</h3><table class="grid"><tr><td>-</td><td><b>Who</b></td></tr><tr><td>*</td><td><a href="Organization-o7056980-a8b2-42aa-8a0e-c1fc85d1f40d.html">Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d</a> "Hjerteafdelingen på Herlev og Gentofte hospital"
                                 </td></tr></table><h3>Entities</h3><table class="grid"><tr><td>-</td><td><b>Role</b></td><td><b>What</b></td></tr><tr><td>*</td><td>revision</td><td><a href="MessageHeader-b9b4818e-02de-4cc4-b418-d20cbc399006.html">MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006</a></td></tr></table></div>
         </text>
         <target>
@@ -245,7 +245,7 @@
         </activity>
         <agent>
           <who>
-            <reference value="Organization/b79a7914-81c8-11ed-a1eb-0242ac120002"/>
+            <reference value="Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"/>
           </who>
         </agent>
         <entity>

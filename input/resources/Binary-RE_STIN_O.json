@@ -3,7 +3,7 @@
   "id": "2094d603-a09c-462c-a1c9-23859ba035f3",
   "meta": {
     "profile": [
-      "http://medcomfhir.dk/fhir/hospitalnotification/StructureDefinition/medcom-hospitalNotification-message"
+      "http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-hospitalNotification-message"
     ]
   },
   "type": "message",

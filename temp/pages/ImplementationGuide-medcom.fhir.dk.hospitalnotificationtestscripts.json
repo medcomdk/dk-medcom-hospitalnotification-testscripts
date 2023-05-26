@@ -10,7 +10,7 @@
   "name" : "HospitalNotificationTestscripts",
   "title" : "HospitalNotification Testscripts",
   "status" : "active",
-  "date" : "2023-05-24T10:24:06+02:00",
+  "date" : "2023-05-26T07:40:57+02:00",
   "contact" : [{
     "name" : "MedCom",
     "telecom" : [{
@@ -31,12 +31,6 @@
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
     "version" : "5.0.0"
-  },
-  {
-    "id" : "medcom_fhir_dk_hospitalnotification",
-    "uri" : "http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/medcom.fhir.dk.hospitalnotification",
-    "packageId" : "medcom.fhir.dk.hospitalnotification",
-    "version" : "3.0.1"
   }],
   "definition" : {
     "extension" : [{

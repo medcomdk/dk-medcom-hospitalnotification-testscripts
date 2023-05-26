@@ -2,7 +2,7 @@
   "resourceType" : "Bundle",
   "id" : "4d747862-61ab-48c1-a00e-8f527c985169",
   "meta" : {
-    "profile" : ["http://medcomfhir.dk/fhir/hospitalnotification/StructureDefinition/medcom-hospitalNotification-message"]
+    "profile" : ["http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-hospitalNotification-message"]
   },
   "type" : "message",
   "timestamp" : "2023-03-01T15:00:02+01:00",

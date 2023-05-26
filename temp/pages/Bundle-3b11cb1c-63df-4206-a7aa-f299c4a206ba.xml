@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="3b11cb1c-63df-4206-a7aa-f299c4a206ba"/>
   <meta>
-    <profile value="http://medcomfhir.dk/fhir/hospitalnotification/StructureDefinition/medcom-hospitalNotification-message"/>
+    <profile value="http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-hospitalNotification-message"/>
   </meta>
   <type value="message"/>
   <timestamp value="2023-03-01T17:00:02+01:00"/>

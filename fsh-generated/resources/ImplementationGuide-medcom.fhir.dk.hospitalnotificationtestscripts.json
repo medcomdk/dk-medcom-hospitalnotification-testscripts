@@ -23,14 +23,6 @@
   "fhirVersion": [
     "4.0.1"
   ],
-  "dependsOn": [
-    {
-      "packageId": "medcom.fhir.dk.hospitalnotification",
-      "uri": "http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/medcom.fhir.dk.hospitalnotification",
-      "version": "3.0.1",
-      "id": "medcom_fhir_dk_hospitalnotification"
-    }
-  ],
   "definition": {
     "resource": [
       {

@@ -5,7 +5,7 @@
   "igName" : "HospitalNotificationTestscripts",
   "packageId" : "medcom.fhir.dk.hospitalnotificationtestscripts",
   "igVer" : "3.0.1",
-  "errorCount" : 291,
+  "errorCount" : 467,
   "version" : "4.0.1",
   "revision" : "a53ec6ee1b",
   "versionFull" : "4.0.1-a53ec6ee1b",
@@ -14,8 +14,8 @@
   "toolingVersionFull" : "5.0.0 (3)",
   "totalFiles" : 133,
   "processedFiles" : 145,
-  "genDate" : "Wed, May 24, 2023 10:24+0200",
-  "genDay" : "24/05/2023",
+  "genDate" : "Fri, May 26, 2023 07:40+0200",
+  "genDay" : "26/05/2023",
   "resourceTypes" : [
     "Account",
     "ActivityDefinition",
@@ -243,7 +243,7 @@
         "telecom" : ["mailto:fhir@medcom.dk"]
       }
     ],
-    "date" : "2023-05-24T10:24:06+02:00",
+    "date" : "2023-05-26T07:40:57+02:00",
     "description" : "Testscripts for HospitalNotification v. 3.0.1",
     "copyright" : null,
     "fhirVersion" : "4.0.1"
@@ -252,20 +252,8 @@
   "ver" : {
     "basespec" : null,
     "hl7tx" : "http://terminology.hl7.org/5.0.0",
-    "medcom_fhir_dk_hospitalnotification" : "https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/",
-    "hl7.fhir.dk.core_2.0.0" : "http://hl7.dk/fhir/core/2.0.0",
-    "hl7.terminology.r4_3.1.0" : "http://terminology.hl7.org/3.1.0",
-    "medcom.fhir.dk.core_current" : "https://build.fhir.org/ig/medcomdk/dk-medcom-core/",
-    "medcom.fhir.dk.terminology_current" : "https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/",
-    "medcom.fhir.dk.messaging_current" : "https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/",
     "igtools" : "https://build.fhir.org/ig/FHIR/fhir-tools-ig/"
   },
   "hl7tx" : "http://terminology.hl7.org",
-  "medcom_fhir_dk_hospitalnotification" : "http://medcomfhir.dk/ig/hospitalnotification",
-  "hl7.fhir.dk.core_2.0.0" : "http://hl7.dk/fhir/core",
-  "hl7.terminology.r4_3.1.0" : "http://terminology.hl7.org",
-  "medcom.fhir.dk.core_current" : "http://medcomfhir.dk/ig/core",
-  "medcom.fhir.dk.terminology_current" : "http://medcomfhir.dk/ig/terminology",
-  "medcom.fhir.dk.messaging_current" : "http://medcomfhir.dk/ig/messaging",
   "igtools" : "http://hl7.org/fhir/tools"
 }
