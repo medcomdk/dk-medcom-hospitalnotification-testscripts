@@ -23,7 +23,7 @@ Beskriver anvendte variable
 * insert variableMessageHeaderId({type})
 * insert variableEpisodeOfCareIdentifier({type})
 * insert variableSearchParamIdentifier({type})
-* insert variableOccurredDateTime({type})
+//* insert variableOccurredDateTime({type})
 
 /* 
 Beskriver den operation der udføres i denne test.

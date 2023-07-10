@@ -1,4 +1,4 @@
- //PF-receive-imp-01 - STIN-STOR-SLOR-SLHJ
+//PF-receive-imp-01 - STIN-STOR-SLOR-SLHJ
 Instance: HospitalNotification_TestScript_PF-receive-imp-01
 InstanceOf: TestScript
 * insert Metadata
@@ -228,4 +228,4 @@ InstanceOf: TestScript
 * url = "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-tec-06" 
 * name = "HospitalNotificationTestScript"
 * insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-STIN-diffServiceProvider.xml, destinationUri-STIN)
-* insert readMessage(STIN, 01, destinationUri-STIN, bundleid-STIN)
+* insert readMessage(STIN, 01, destinationUri-STIN, bundleid-STIN) 

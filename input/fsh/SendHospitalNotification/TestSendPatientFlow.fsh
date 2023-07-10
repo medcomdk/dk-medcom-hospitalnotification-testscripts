@@ -10,7 +10,7 @@ InstanceOf: TestScript
 * insert createInitialMessage(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, true)
 * insert createMessage(STOR, 02, /FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml, start-leave-inpatient, IMP, onleave, revision, messageHeaderid-STIN, 2, episodeOfCareID-STIN)
 * insert createMessage(SLOR, 03, /FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml, end-leave-inpatient, IMP, in-progress, revision, messageHeaderid-STOR, 3, episodeOfCareID-STOR)
-* insert createMessage(SLHJ, 04, /FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml, discharge-patient-home, IMP, finished, revision, messageHeaderid-SLOR, 4, episodeOfCareID-SLOR)
+* insert createMessage(SLHJ, 04, /FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml, discharge-inpatient-home, IMP, finished, revision, messageHeaderid-SLOR, 4, episodeOfCareID-SLOR)
 
  //PF-send-imp-02 - STIN-STOR-SLHJ
 Instance: HospitalNotification_TestScript_PF-send-imp-02
@@ -23,7 +23,7 @@ InstanceOf: TestScript
 * name = "HospitalNotificationTestScript"
 * insert createInitialMessage(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, true)
 * insert createMessage(STOR, 02, /FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml, start-leave-inpatient, IMP, onleave, revision, messageHeaderid-STIN, 2, episodeOfCareID-STIN)
-* insert createMessage(SLHJ, 03, /FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml, discharge-patient-home, IMP, finished, revision, messageHeaderid-STOR, 3, episodeOfCareID-STOR)
+* insert createMessage(SLHJ, 03, /FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml, discharge-inpatient-home, IMP, finished, revision, messageHeaderid-STOR, 3, episodeOfCareID-STOR)
 
  //PF-send-imp-03 - MORS - SLOR
 Instance: HospitalNotification_TestScript_PF-send-imp-03
