@@ -10,7 +10,7 @@ For the example TEK_LOV, the follwoing patient is used:
 
 #### Test examples for receiving HospitalNotification
 
-[Download test examples for receiving a HospitalNotification (.zip)](./TestExamples/CareCommunication_Ex_receive.zip)
+[Download test examples for receiving a HospitalNotification (.zip)](./HospitalNotification/HospitalNotification_Ex_receive.zip)
 
 |  Test example     |     Description     |
 |---|---|

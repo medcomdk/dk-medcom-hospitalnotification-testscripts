@@ -7,7 +7,7 @@
     ]
   },
   "status": "active",
-  "date": "2023-07-10",
+  "date": "2023-08-14",
   "publisher": "MedCom",
   "contact": [
     {
@@ -53,7 +53,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-STIN.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml"
       }
     },
     {
@@ -61,7 +61,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-STOR.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STOR.xml"
       }
     },
     {
@@ -69,7 +69,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-MORS-STOR.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-MORS-STOR.xml"
       }
     },
     {
@@ -77,7 +77,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/Fixtures/HospitalNotification-fixture-RE-MORS-STOR.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-MORS-STOR.xml"
       }
     }
   ],

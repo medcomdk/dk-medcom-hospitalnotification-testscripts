@@ -34,6 +34,7 @@ Beskriver den vurdering der sker af operationen.
 */
 * insert assertResponseCodeTest
 * insert assertPayload
+* insert assertValidateProfiles
 * insert assertMessageHeaderid({messageHeaderid})
 * insert assertMessageHeaderEventCoding
 * insert assertProvenanceEntityRole({role})

@@ -7,7 +7,7 @@
     ]
   },
   "status": "active",
-  "date": "2023-07-10",
+  "date": "2023-08-14",
   "publisher": "MedCom",
   "contact": [
     {
@@ -59,7 +59,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300-send/Fixtures/HospitalNotification-fixture.xml"
       }
     },
     {
@@ -67,7 +67,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300-send/Fixtures/HospitalNotification-fixture.xml"
       }
     },
     {
@@ -75,7 +75,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300-send/Fixtures/HospitalNotification-fixture.xml"
       }
     }
   ],
@@ -156,6 +156,14 @@
         },
         {
           "assert": {
+            "description": "Validates the bundle against http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/dk.fhir.ig.dk-medcom-hospitalnotification",
+            "direction": "request",
+            "validateProfileId": "hospitalnotification",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
             "description": "Confirm that the request resource contains the expected eventCoding.code.",
             "direction": "request",
             "expression": "Bundle.entry.resource.ofType(MessageHeader).event.as(Coding).select(code = 'hospital-notification-message').allTrue()",
@@ -212,7 +220,7 @@
           "assert": {
             "description": "Confirm that the episodeOfCare-identifier has the structure of an UUID",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Encounter).episodeOfCare.identifier.value.matches('^[0-9(a-f|A-F)]{8}-[0-9(a-f|A-F)]{4}-4[0-9(a-f|A-F)]{3}-[89ab][0-9(a-f|A-F)]{3}-[0-9(a-f|A-F)]{12}$') or Bundle.entry.resource.ofType(Encounter).episodeOfCare.identifier.value.matches('urn:uuid:[0-9(a-f|A-F)]{8}-[0-9(a-f|A-F)]{4}-4[0-9(a-f|A-F)]{3}-[89ab][0-9(a-f|A-F)]{3}-[0-9(a-f|A-F)]{12}')",
+            "expression": "Bundle.entry.resource.ofType(Encounter).episodeOfCare.identifier.value.matches('^[0-9(a-f|A-F)]{8}-[0-9(a-f|A-F)]{4}-4[0-9(a-f|A-F)]{3}-[89ab][0-9(a-f|A-F)]{3}-[0-9(a-f|A-F)]{12}$') or Bundle.entry.resource.ofType(Encounter).episodeOfCare.identifier.system = 'https://www.esundhed.dk/Registre/Landspatientregisteret'",
             "warningOnly": false
           }
         },
@@ -260,6 +268,14 @@
             "description": "Confirm that the client request payload contains a Bundle resource type.",
             "direction": "request",
             "resource": "Bundle",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "description": "Validates the bundle against http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/dk.fhir.ig.dk-medcom-hospitalnotification",
+            "direction": "request",
+            "validateProfileId": "hospitalnotification",
             "warningOnly": false
           }
         },
@@ -389,6 +405,14 @@
             "description": "Confirm that the client request payload contains a Bundle resource type.",
             "direction": "request",
             "resource": "Bundle",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "description": "Validates the bundle against http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/dk.fhir.ig.dk-medcom-hospitalnotification",
+            "direction": "request",
+            "validateProfileId": "hospitalnotification",
             "warningOnly": false
           }
         },
