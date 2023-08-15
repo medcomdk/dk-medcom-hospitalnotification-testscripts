@@ -7,7 +7,7 @@
     ]
   },
   "status": "active",
-  "date": "2023-05-01",
+  "date": "2023-08-14",
   "publisher": "MedCom",
   "contact": [
     {
@@ -59,14 +59,14 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300-send/Fixtures/HospitalNotification-fixture.xml"
       }
     }
   ],
   "variable": [
     {
       "name": "messageHeaderid-STAA",
-      "expression": "Bundle.entry[0].fullUrl",
+      "expression": "Bundle.entry[0].resource.id",
       "sourceId": "create-message-STAA"
     },
     {
@@ -77,11 +77,6 @@
     {
       "name": "searchParamIdentifier-STAA",
       "expression": "Bundle.entry.resource.ofType(MessageHeader).id",
-      "sourceId": "create-message-STAA"
-    },
-    {
-      "name": "occurredDateTime-STAA",
-      "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference = %resource.entry[0].fullUrl).occurred",
       "sourceId": "create-message-STAA"
     }
   ],
@@ -120,6 +115,14 @@
             "description": "Confirm that the client request payload contains a Bundle resource type.",
             "direction": "request",
             "resource": "Bundle",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "description": "Validates the bundle against http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/dk.fhir.ig.dk-medcom-hospitalnotification",
+            "direction": "request",
+            "validateProfileId": "hospitalnotification",
             "warningOnly": false
           }
         },
@@ -173,7 +176,7 @@
           "assert": {
             "description": "Confirm that the target reference in Provenance equals MessageHeader.id",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference = %resource.entry[0].fullUrl).exists()",
+            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference.contains(%resource.entry[0].resource.id)).exists()",
             "warningOnly": false
           }
         },
@@ -181,7 +184,7 @@
           "assert": {
             "description": "Confirm that the episodeOfCare-identifier has the structure of an UUID",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Encounter).episodeOfCare.identifier.value.matches('[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')",
+            "expression": "Bundle.entry.resource.ofType(Encounter).episodeOfCare.identifier.value.matches('^[0-9(a-f|A-F)]{8}-[0-9(a-f|A-F)]{4}-4[0-9(a-f|A-F)]{3}-[89ab][0-9(a-f|A-F)]{3}-[0-9(a-f|A-F)]{12}$') or Bundle.entry.resource.ofType(Encounter).episodeOfCare.identifier.system = 'https://www.esundhed.dk/Registre/Landspatientregisteret'",
             "warningOnly": false
           }
         },

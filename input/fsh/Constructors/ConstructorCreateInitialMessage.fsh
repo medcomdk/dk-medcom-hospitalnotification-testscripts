@@ -23,7 +23,7 @@ Beskriver anvendte variable
 * insert variableMessageHeaderId({type})
 * insert variableEpisodeOfCareIdentifier({type})
 * insert variableSearchParamIdentifier({type})
-* insert variableOccurredDateTime({type})
+//* insert variableOccurredDateTime({type})
 
 /* 
 Beskriver den operation der udføres i denne test.
@@ -35,6 +35,7 @@ Beskriver den vurdering der sker af operationen
 */
 * insert assertResponseCodeTest
 * insert assertPayload
+* insert assertValidateProfiles
 * insert assertMessageHeaderEventCoding
 * insert assertEncounterClass({encounterClass})
 * insert assertEncounterStatus({encounterStatus})

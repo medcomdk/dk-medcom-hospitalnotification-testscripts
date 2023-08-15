@@ -27,9 +27,9 @@ RuleSet: assertValidateProfiles
 * test[=].action[=].assert.warningOnly = false
 
 RuleSet: assertMessageHeaderid(messageHeaderid)
-* test[=].action[+].assert.description = "Confirm that the previous MessageHeader fullURL is identical to Provenance.entity.what" 
+* test[=].action[+].assert.description = "Confirm that MessageHeader.id from the previous message is contained to Provenance.entity.what.reference" 
 * test[=].action[=].assert.direction = #request
-* test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Provenance).where(entity.what.reference = '${{messageHeaderid}}').count() = 1"
+* test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Provenance).where(entity.what.reference.contains('${{messageHeaderid}}')).exists()"
 * test[=].action[=].assert.warningOnly = false
 
 RuleSet: assertPayload
@@ -58,13 +58,13 @@ RuleSet: assertEncounterClass(encounterClass)
 * test[=].action[=].assert.value = "{encounterClass}"
 * test[=].action[=].assert.warningOnly = false
 
-RuleSet: assertOccurredTimeStamp(occurredDateTime)
+/* RuleSet: assertOccurredTimeStamp(occurredDateTime)
 * test[=].action[+].assert.description = "Confirm that the Provenance.occurredDateTime in the latest Provenance is after the previous"
 * test[=].action[=].assert.direction = #request
 * test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Provenance).where(target.reference = %resource.entry[0].fullUrl).occurred > ${{occurredDateTime}}"
-/* * test[=].action[=].assert.operator = #greaterThan
-* test[=].action[=].assert.value = "{occurredDateTime}" */
-* test[=].action[=].assert.warningOnly = false                               
+// * test[=].action[=].assert.operator = #greaterThan
+// * test[=].action[=].assert.value = "{occurredDateTime}"
+* test[=].action[=].assert.warningOnly = false       */                         
 
 RuleSet: assertEncounterStatus(encounterStatus)
 * test[=].action[+].assert.description = "Confirm that the Encounter status of the request resource is {encounterStatus}."
@@ -92,7 +92,7 @@ RuleSet: assertMessageHeaderReportOfAdmissionReceiver(reportOfAdmission)
 RuleSet: assertProvenanceTarget
 * test[=].action[+].assert.description = "Confirm that the target reference in Provenance equals MessageHeader.id"
 * test[=].action[=].assert.direction = #request
-* test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Provenance).where(target.reference = %resource.entry[0].fullUrl).exists()"
+* test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Provenance).where(target.reference.contains(%resource.entry[0].resource.id)).exists()"
 * test[=].action[=].assert.warningOnly = false
 
 RuleSet: assertProvenanceEntityCount(countProvenances)
@@ -106,7 +106,7 @@ RuleSet: assertProvenanceEntityCount(countProvenances)
 RuleSet: assertProvenanceEntityRole(role)
 * test[=].action[+].assert.description = "Confirm that the role is set to {role}. Not used when testing the first message in a stream"
 * test[=].action[=].assert.direction = #request
-* test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Provenance).entity.role"
+* test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Provenance).where(target.reference.contains(%resource.entry[0].resource.id)).entity.role"
 * test[=].action[=].assert.operator = #equals
 * test[=].action[=].assert.value = "{role}"
 * test[=].action[=].assert.warningOnly = false
@@ -129,26 +129,26 @@ RuleSet: assertEpisodeOfCareID(episodeOfCareID)
 RuleSet: assertStructureEpisodeOfCareID
 * test[=].action[+].assert.description = "Confirm that the episodeOfCare-identifier has the structure of an UUID"
 * test[=].action[=].assert.direction = #request
-* test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Encounter).episodeOfCare.identifier.value.matches('[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')"
+* test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Encounter).episodeOfCare.identifier.value.matches('^[0-9(a-f|A-F)]{8}-[0-9(a-f|A-F)]{4}-4[0-9(a-f|A-F)]{3}-[89ab][0-9(a-f|A-F)]{3}-[0-9(a-f|A-F)]{12}$') or Bundle.entry.resource.ofType(Encounter).episodeOfCare.identifier.system = 'https://www.esundhed.dk/Registre/Landspatientregisteret'"
 * test[=].action[=].assert.warningOnly = false
 
 
 RuleSet: assertSenderSOR(hospitalSOR)
-* test[=].action[+].assert.description = "Confirm that the sender SOR number is different from the previous message."
+* test[=].action[+].assert.description = "Confirm that the sender SOR code is different from the previous message."
 * test[=].action[=].assert.direction = #request
-* test[=].action[=].assert.expression = "Bundle.entry.where(fullUrl = %resource.entry.resource[0].sender.reference).resource.identifier.where(system = 'urn:oid:1.2.208.176.1.1').value != ${{hospitalSOR}}"
+* test[=].action[=].assert.expression = "Bundle.entry.resource[0].sender.reference.resolve().identifier.where(system = 'urn:oid:1.2.208.176.1.1').value != ${{hospitalSOR}}"
 * test[=].action[=].assert.warningOnly = false
 
 RuleSet: assertSenderGLN(hospitalGLN)
-* test[=].action[+].assert.description = "Confirm that the sender SOR number is different from the previous message."
+* test[=].action[+].assert.description = "Confirm that the sender GLN number is different from the previous message."
 * test[=].action[=].assert.direction = #request
-* test[=].action[=].assert.expression = "Bundle.entry.where(fullUrl = %resource.entry.resource[0].sender.reference).resource.identifier.where(system = 'https://www.gs1.org/gln').value != ${{hospitalGLN}}"
+* test[=].action[=].assert.expression = "Bundle.entry.resource[0].sender.reference.resolve().identifier.where(system = 'https://www.gs1.org/gln').value != ${{hospitalGLN}}"
 * test[=].action[=].assert.warningOnly = true
 
 RuleSet: assertEncounterDateTime(encounterDateTime)
 * test[=].action[+].assert.description = "Confirm that Encounter.period.start has been updated."
 * test[=].action[=].assert.direction = #request
-* test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Encounter).period.start != ${{encounterDateTime}}"
+* test[=].action[=].assert.expression = "Bundle.entry.resource.ofType(Encounter).period.start != '${{encounterDateTime}}'"
 * test[=].action[=].assert.warningOnly = false
 
 RuleSet: assertEncounterStartTimeZone

@@ -7,7 +7,7 @@
     ]
   },
   "status": "active",
-  "date": "2023-05-01",
+  "date": "2023-08-14",
   "publisher": "MedCom",
   "contact": [
     {
@@ -59,7 +59,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300-send/Fixtures/HospitalNotification-fixture.xml"
       }
     },
     {
@@ -67,7 +67,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300-send/Fixtures/HospitalNotification-fixture.xml"
       }
     },
     {
@@ -75,7 +75,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300-send/Fixtures/HospitalNotification-fixture.xml"
       }
     },
     {
@@ -83,7 +83,7 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300-send/Fixtures/HospitalNotification-fixture.xml"
       }
     },
     {
@@ -91,14 +91,14 @@
       "autocreate": false,
       "autodelete": false,
       "resource": {
-        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300/Send/Fixtures/HospitalNotification-fixture.xml"
+        "reference": "/FHIRSandbox/MedCom/HospitalNotification/v300-send/Fixtures/HospitalNotification-fixture.xml"
       }
     }
   ],
   "variable": [
     {
       "name": "messageHeaderid-STIN",
-      "expression": "Bundle.entry[0].fullUrl",
+      "expression": "Bundle.entry[0].resource.id",
       "sourceId": "create-message-STIN"
     },
     {
@@ -112,13 +112,8 @@
       "sourceId": "create-message-STIN"
     },
     {
-      "name": "occurredDateTime-STIN",
-      "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference = %resource.entry[0].fullUrl).occurred",
-      "sourceId": "create-message-STIN"
-    },
-    {
       "name": "messageHeaderid-STOR",
-      "expression": "Bundle.entry[0].fullUrl",
+      "expression": "Bundle.entry[0].resource.id",
       "sourceId": "create-message-STOR"
     },
     {
@@ -128,7 +123,7 @@
     },
     {
       "name": "messageHeaderid-SLOR",
-      "expression": "Bundle.entry[0].fullUrl",
+      "expression": "Bundle.entry[0].resource.id",
       "sourceId": "create-message-SLOR"
     },
     {
@@ -138,7 +133,7 @@
     },
     {
       "name": "messageHeaderid-STOR",
-      "expression": "Bundle.entry[0].fullUrl",
+      "expression": "Bundle.entry[0].resource.id",
       "sourceId": "create-message-STOR"
     },
     {
@@ -148,7 +143,7 @@
     },
     {
       "name": "messageHeaderid-SLOR",
-      "expression": "Bundle.entry[0].fullUrl",
+      "expression": "Bundle.entry[0].resource.id",
       "sourceId": "create-message-SLOR"
     },
     {
@@ -192,6 +187,14 @@
             "description": "Confirm that the client request payload contains a Bundle resource type.",
             "direction": "request",
             "resource": "Bundle",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "description": "Validates the bundle against http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/dk.fhir.ig.dk-medcom-hospitalnotification",
+            "direction": "request",
+            "validateProfileId": "hospitalnotification",
             "warningOnly": false
           }
         },
@@ -245,7 +248,7 @@
           "assert": {
             "description": "Confirm that the target reference in Provenance equals MessageHeader.id",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference = %resource.entry[0].fullUrl).exists()",
+            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference.contains(%resource.entry[0].resource.id)).exists()",
             "warningOnly": false
           }
         },
@@ -253,7 +256,7 @@
           "assert": {
             "description": "Confirm that the episodeOfCare-identifier has the structure of an UUID",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Encounter).episodeOfCare.identifier.value.matches('[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')",
+            "expression": "Bundle.entry.resource.ofType(Encounter).episodeOfCare.identifier.value.matches('^[0-9(a-f|A-F)]{8}-[0-9(a-f|A-F)]{4}-4[0-9(a-f|A-F)]{3}-[89ab][0-9(a-f|A-F)]{3}-[0-9(a-f|A-F)]{12}$') or Bundle.entry.resource.ofType(Encounter).episodeOfCare.identifier.system = 'https://www.esundhed.dk/Registre/Landspatientregisteret'",
             "warningOnly": false
           }
         },
@@ -306,9 +309,17 @@
         },
         {
           "assert": {
-            "description": "Confirm that the previous MessageHeader fullURL is identical to Provenance.entity.what",
+            "description": "Validates the bundle against http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/dk.fhir.ig.dk-medcom-hospitalnotification",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Provenance).where(entity.what.reference = '${messageHeaderid-STIN}').count() = 1",
+            "validateProfileId": "hospitalnotification",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "description": "Confirm that MessageHeader.id from the previous message is contained to Provenance.entity.what.reference",
+            "direction": "request",
+            "expression": "Bundle.entry.resource.ofType(Provenance).where(entity.what.reference.contains('${messageHeaderid-STIN}')).exists()",
             "warningOnly": false
           }
         },
@@ -324,7 +335,7 @@
           "assert": {
             "description": "Confirm that the role is set to revision. Not used when testing the first message in a stream",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Provenance).entity.role",
+            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference.contains(%resource.entry[0].resource.id)).entity.role",
             "operator": "equals",
             "value": "revision",
             "warningOnly": false
@@ -362,7 +373,7 @@
           "assert": {
             "description": "Confirm that the target reference in Provenance equals MessageHeader.id",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference = %resource.entry[0].fullUrl).exists()",
+            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference.contains(%resource.entry[0].resource.id)).exists()",
             "warningOnly": false
           }
         },
@@ -425,9 +436,17 @@
         },
         {
           "assert": {
-            "description": "Confirm that the previous MessageHeader fullURL is identical to Provenance.entity.what",
+            "description": "Validates the bundle against http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/dk.fhir.ig.dk-medcom-hospitalnotification",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Provenance).where(entity.what.reference = '${messageHeaderid-STOR}').count() = 1",
+            "validateProfileId": "hospitalnotification",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "description": "Confirm that MessageHeader.id from the previous message is contained to Provenance.entity.what.reference",
+            "direction": "request",
+            "expression": "Bundle.entry.resource.ofType(Provenance).where(entity.what.reference.contains('${messageHeaderid-STOR}')).exists()",
             "warningOnly": false
           }
         },
@@ -443,7 +462,7 @@
           "assert": {
             "description": "Confirm that the role is set to revision. Not used when testing the first message in a stream",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Provenance).entity.role",
+            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference.contains(%resource.entry[0].resource.id)).entity.role",
             "operator": "equals",
             "value": "revision",
             "warningOnly": false
@@ -481,7 +500,7 @@
           "assert": {
             "description": "Confirm that the target reference in Provenance equals MessageHeader.id",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference = %resource.entry[0].fullUrl).exists()",
+            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference.contains(%resource.entry[0].resource.id)).exists()",
             "warningOnly": false
           }
         },
@@ -544,9 +563,17 @@
         },
         {
           "assert": {
-            "description": "Confirm that the previous MessageHeader fullURL is identical to Provenance.entity.what",
+            "description": "Validates the bundle against http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/dk.fhir.ig.dk-medcom-hospitalnotification",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Provenance).where(entity.what.reference = '${messageHeaderid-STIN}').count() = 1",
+            "validateProfileId": "hospitalnotification",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "description": "Confirm that MessageHeader.id from the previous message is contained to Provenance.entity.what.reference",
+            "direction": "request",
+            "expression": "Bundle.entry.resource.ofType(Provenance).where(entity.what.reference.contains('${messageHeaderid-STIN}')).exists()",
             "warningOnly": false
           }
         },
@@ -562,7 +589,7 @@
           "assert": {
             "description": "Confirm that the role is set to revision. Not used when testing the first message in a stream",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Provenance).entity.role",
+            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference.contains(%resource.entry[0].resource.id)).entity.role",
             "operator": "equals",
             "value": "revision",
             "warningOnly": false
@@ -600,7 +627,7 @@
           "assert": {
             "description": "Confirm that the target reference in Provenance equals MessageHeader.id",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference = %resource.entry[0].fullUrl).exists()",
+            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference.contains(%resource.entry[0].resource.id)).exists()",
             "warningOnly": false
           }
         },
@@ -663,9 +690,17 @@
         },
         {
           "assert": {
-            "description": "Confirm that the previous MessageHeader fullURL is identical to Provenance.entity.what",
+            "description": "Validates the bundle against http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/dk.fhir.ig.dk-medcom-hospitalnotification",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Provenance).where(entity.what.reference = '${messageHeaderid-STOR}').count() = 1",
+            "validateProfileId": "hospitalnotification",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "description": "Confirm that MessageHeader.id from the previous message is contained to Provenance.entity.what.reference",
+            "direction": "request",
+            "expression": "Bundle.entry.resource.ofType(Provenance).where(entity.what.reference.contains('${messageHeaderid-STOR}')).exists()",
             "warningOnly": false
           }
         },
@@ -681,7 +716,7 @@
           "assert": {
             "description": "Confirm that the role is set to revision. Not used when testing the first message in a stream",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Provenance).entity.role",
+            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference.contains(%resource.entry[0].resource.id)).entity.role",
             "operator": "equals",
             "value": "revision",
             "warningOnly": false
@@ -719,7 +754,7 @@
           "assert": {
             "description": "Confirm that the target reference in Provenance equals MessageHeader.id",
             "direction": "request",
-            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference = %resource.entry[0].fullUrl).exists()",
+            "expression": "Bundle.entry.resource.ofType(Provenance).where(target.reference.contains(%resource.entry[0].resource.id)).exists()",
             "warningOnly": false
           }
         },

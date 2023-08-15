@@ -5,7 +5,7 @@
   "igName" : "HospitalNotificationTestscripts",
   "packageId" : "medcom.fhir.dk.hospitalnotificationtestscripts",
   "igVer" : "3.0.1",
-  "errorCount" : 405,
+  "errorCount" : 315,
   "version" : "4.0.1",
   "revision" : "a53ec6ee1b",
   "versionFull" : "4.0.1-a53ec6ee1b",
@@ -13,9 +13,9 @@
   "toolingRevision" : "3",
   "toolingVersionFull" : "5.0.0 (3)",
   "totalFiles" : 133,
-  "processedFiles" : 145,
-  "genDate" : "Tue, May 16, 2023 15:37+0200",
-  "genDay" : "16/05/2023",
+  "processedFiles" : 146,
+  "genDate" : "Mon, Jul 10, 2023 10:50+0200",
+  "genDay" : "10/07/2023",
   "resourceTypes" : [
     "Account",
     "ActivityDefinition",
@@ -236,15 +236,15 @@
     "status" : "active",
     "experimental" : false,
     "publisher" : null,
-    "gitstatus" : "v.3.0.1-rc1",
+    "gitstatus" : "v.3.0.2-rc1",
     "contact" : [
       {
         "name" : "MedCom",
         "telecom" : ["mailto:fhir@medcom.dk"]
       }
     ],
-    "date" : "2023-05-16T15:37:10+02:00",
-    "description" : "Testscripts for HospitalNotification v. 3.0.0",
+    "date" : "2023-07-10T10:50:43+02:00",
+    "description" : "Testscripts for HospitalNotification v. 3.0.1",
     "copyright" : null,
     "fhirVersion" : "4.0.1"
   },
@@ -255,19 +255,19 @@
     "medcom_fhir_dk_hospitalnotification" : "https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/",
     "hl7.fhir.dk.core_2.0.0" : "http://hl7.dk/fhir/core/2.0.0",
     "hl7.terminology.r4_3.1.0" : "http://terminology.hl7.org/3.1.0",
-    "medcom.fhir.dk.core_current" : "https://build.fhir.org/ig/medcomdk/dk-medcom-core/",
-    "medcom.fhir.dk.terminology_current" : "https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/",
-    "medcom.fhir.dk.messaging_current" : "https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/",
-    "net_aegis_touchstone_fhir_testing" : "file://D:\\GitHub\\Touchstone\\testing-ig\\output",
+    "medcom.fhir.dk.core_2.1.0" : "https://build.fhir.org/ig/medcomdk/dk-medcom-core/",
+    "hl7.fhir.uv.extensions.r4_1.0.0" : "http://hl7.org/fhir/extensions/1.0.0",
+    "medcom.fhir.dk.terminology_1.3.0" : "https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/",
+    "medcom.fhir.dk.messaging_2.0.0" : "https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/",
     "igtools" : "https://build.fhir.org/ig/FHIR/fhir-tools-ig/"
   },
   "hl7tx" : "http://terminology.hl7.org",
   "medcom_fhir_dk_hospitalnotification" : "http://medcomfhir.dk/ig/hospitalnotification",
   "hl7.fhir.dk.core_2.0.0" : "http://hl7.dk/fhir/core",
   "hl7.terminology.r4_3.1.0" : "http://terminology.hl7.org",
-  "medcom.fhir.dk.core_current" : "http://medcomfhir.dk/ig/core",
-  "medcom.fhir.dk.terminology_current" : "http://medcomfhir.dk/ig/terminology",
-  "medcom.fhir.dk.messaging_current" : "http://medcomfhir.dk/ig/messaging",
-  "net_aegis_touchstone_fhir_testing" : "http://touchstone.aegis.net/touchstone/fhir/testing",
+  "medcom.fhir.dk.core_2.1.0" : "http://medcomfhir.dk/ig/core",
+  "hl7.fhir.uv.extensions.r4_1.0.0" : "http://hl7.org/fhir/extensions",
+  "medcom.fhir.dk.terminology_1.3.0" : "http://medcomfhir.dk/ig/terminology",
+  "medcom.fhir.dk.messaging_2.0.0" : "http://medcomfhir.dk/ig/messaging",
   "igtools" : "http://hl7.org/fhir/tools"
 }

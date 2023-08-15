@@ -11,8 +11,8 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestscripts",
     "title" : "HospitalNotification Testscripts",
-    "date" : "2023-05-16T15:37:10+02:00",
-    "description" : "Testscripts for HospitalNotification v. 3.0.0",
+    "date" : "2023-07-10T10:50:43+02:00",
+    "description" : "Testscripts for HospitalNotification v. 3.0.1",
     "status" : {
       "class" : "colsi",
       "status" : "Active"
@@ -408,7 +408,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Patient is admitted, message is corrected due to incorrect hospital department - PF-receive-emer-01",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Patient is admitted, message is corrected due to incorrect hospital department",
     "status" : {
       "class" : "colsi",
@@ -429,7 +429,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Patient is admitted, message is corrected due to incorrect time of admission - PF-receive-emer-02",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Patient is admitted, message is corrected due to incorrect time of admission",
     "status" : {
       "class" : "colsi",
@@ -450,7 +450,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Patient is admitted as emergency, patient is admitted as inpatient, patient is discharged - PF-receive-emer-imp-01",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Patient is admitted as emergency, patient is admitted as inpatient, patient is discharged",
     "status" : {
       "class" : "colsi",
@@ -471,7 +471,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Patient is admitted, patient is registered as being on leave, patient returns from leave, patient is discharged - PF-receive-imp-01",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Patient is admitted, patient is registered as being on leave, patient returns from leave, patient is discharged",
     "status" : {
       "class" : "colsi",
@@ -492,7 +492,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Patient is admitted, patient is registered as being on leave, patient doesn't return from leave, patient is discharged - PF-receive-imp-02",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Patient is admitted, patient is registered as being on leave, patient doesn't return from leave, patient is discharged",
     "status" : {
       "class" : "colsi",
@@ -513,7 +513,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Patient is admitted, patient is registered as being on leave, patient returns from leave, patient is registered as dead - PF-receive-imp-03",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Patient is admitted, patient is registered as being on leave, patient returns from leave, patient is registered as dead",
     "status" : {
       "class" : "colsi",
@@ -534,7 +534,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Patient is admitted, 'patient is registered as being on leave, patient returns from leave', ' to ' x 2 - PF-receive-imp-04",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Patient is admitted, 'patient is registered as being on leave, patient returns from leave', ' to ' x 2",
     "status" : {
       "class" : "colsi",
@@ -555,7 +555,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Patient is admitted, message is corrected due to incorrect hospital department - PF-receive-imp-05",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Patient is admitted, message is corrected due to incorrect hospital department",
     "status" : {
       "class" : "colsi",
@@ -576,7 +576,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Patient is admitted, message is corrected due to incorrect time of admission - PF-receive-imp-06",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Patient is admitted, message is corrected due to incorrect time of admission",
     "status" : {
       "class" : "colsi",
@@ -597,7 +597,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive dublicate: Patient is admitted, doesn't get acknowledged, patient is admitted. - PF-receive-tec-01",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive dublicate: Patient is admitted, doesn't get acknowledged, patient is admitted",
     "status" : {
       "class" : "colsi",
@@ -618,7 +618,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Receive cancellation of admit patient: Patient is admitted, correction of admit patient and cancellation admit patient - PF-receive-tec-02",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Receive cancellation of admit patient: Patient is admitted, correction of admit patient and cancellation admit patient",
     "status" : {
       "class" : "colsi",
@@ -639,7 +639,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Messages received in wrong order: Patient is admitted as emergency, patient is discharged, patient is admitted as inpatient. - PF-receive-tec-03",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Messages received in wrong order: Patient is admitted as emergency, patient is discharged, patient is admitted as inpatient.",
     "status" : {
       "class" : "colsi",
@@ -660,7 +660,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Receive a message with different timezones (+01:00 and +02:00): Patient is admitted in one timezone, patient is discharged in a different timezone. - PF-receive-tec-04",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Receive a message with different timezones (+01:00 and +02:00): Patient is admitted in one timezone, patient is discharged in a different timezone.",
     "status" : {
       "class" : "colsi",
@@ -681,7 +681,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Receive a message on the 29th of February 2024 (leap year): Patient is admitted on the date of leap year - PF-receive-tec-05",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Receive a message on the 29th of February 2024 (leap year): Patient is admitted on the date of leap year",
     "status" : {
       "class" : "colsi",
@@ -702,7 +702,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Receive a message where the serviceprovider is different from the sender: Patient is admitted - PF-receive-tec-06",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Receive a message where the serviceprovider is different from the sender: Patient is admitted",
     "status" : {
       "class" : "colsi",
@@ -723,7 +723,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Register patient as acute ambulant, correct message due to incorrect hospital department - PF-send-emer-01",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Register patient as acute ambulant, correct message due to incorrect hospital department",
     "status" : {
       "class" : "colsi",
@@ -744,7 +744,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Register patient as acute ambulant, correct message due to incorrect time of admission - PF-send-emer-02",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Register patient as acute ambulant, correct message due to incorrect time of admission.",
     "status" : {
       "class" : "colsi",
@@ -765,7 +765,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Register patient as acute ambulant, admit patient (inpatient), discharge patient - PF-send-emer-imp-01",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Register patient as acute ambulant, admit patient (inpatient), discharge patient",
     "status" : {
       "class" : "colsi",
@@ -786,7 +786,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Admit patient, register patient as being on leave, register patient as returned from leave, discharge patient. - PF-send-imp-01",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Admit patient, register patient as being on leave, register patient as returned from leave, discharge patient.",
     "status" : {
       "class" : "colsi",
@@ -807,7 +807,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Admit patient, register patient as being on leave, patient doesn't return from leave, discharge patient. - PF-send-imp-02",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Admit patient, register patient as being on leave, patient doesn't return from leave, discharge patient.",
     "status" : {
       "class" : "colsi",
@@ -828,7 +828,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Admit patient, register patient as being on leave, patient returns from leave, patient dies - PF-send-imp-03",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Admit patient, register patient as being on leave, patient returns from leave, patient dies",
     "status" : {
       "class" : "colsi",
@@ -849,7 +849,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Admit patient, *register patient as being on leave, patient returns from leave*, * to * x2 - PF-send-imp-04",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Admit patient, *register patient as being on leave, patient returns from leave*, * to * x2 ",
     "status" : {
       "class" : "colsi",
@@ -870,7 +870,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Admit patient, correct message due to incorrect hospital department. Evaluation is based on SOR number.- PF-send-imp-05",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Admit patient, correct message due to incorrect hospital department. Evaluation is based on SOR number.",
     "status" : {
       "class" : "colsi",
@@ -891,7 +891,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Admit patient, correct message due to incorrect time of admission - PF-send-imp-06",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Admit patient, correct message due to incorrect time of admission.",
     "status" : {
       "class" : "colsi",
@@ -912,7 +912,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Cancel a corrected admission: Admit patient, correct admit patient and cancel admit patient - PF-send-tec-01",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Cancel a corrected admission: Admit patient, correct admit patient and cancel admit patient",
     "status" : {
       "class" : "colsi",
@@ -933,7 +933,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Send a message on the 29th of February 2024 (leap year). - PF-send-tec-02",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Send a message on the 29th of February 2024 (leap year)",
     "status" : {
       "class" : "colsi",
@@ -954,7 +954,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Send dublicate: Admit patient, doesn't get acknowledged, send admit patient. IDs are handled correct - PF-send-tec-03",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Send dublicate: Admit patient, doesn't get acknowledged, send admit patient. IDs are handled correct",
     "status" : {
       "class" : "colsi",
@@ -975,7 +975,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Admit patient and End hospital stay in different timezones. Correct use of timezone of summertime (+02:00) and vintertime (+01:00). - PF-send-tec-04",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Admit patient and End hospital stay in different timezones. Correct use of timezone of summertime (+02:00) and vintertime (+01:00).",
     "status" : {
       "class" : "colsi",
@@ -996,7 +996,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Cancellation Deceased - deceased during acute ambulant - AN-MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Cancellation Deceased - deceased during acute ambulant",
     "status" : {
       "class" : "colsi",
@@ -1017,7 +1017,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Cancellation Deceased - deceased during hospital stay - AN-MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Cancellation Deceased - deceased during hospital stay",
     "status" : {
       "class" : "colsi",
@@ -1038,7 +1038,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Cancellation Deceased - deceased during a period of leave - AN-MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Cancellation Deceased - deceased during a period of leave",
     "status" : {
       "class" : "colsi",
@@ -1059,7 +1059,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Cancellation Deceased - is dead at arrival to the hospital - AN-MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Cancellation Deceased - is dead at arrival to the hospital",
     "status" : {
       "class" : "colsi",
@@ -1080,7 +1080,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Cancellation End hospital stay - patient completed to home/primary sector - AN-SLHJ",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Cancellation End hospital stay - patient completed to home/primary sector",
     "status" : {
       "class" : "colsi",
@@ -1101,7 +1101,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Cancellation End hospital stay - patient completed to home/primary sector - AN-SLHJ",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Cancellation End hospital stay - patient completed to home/primary sector",
     "status" : {
       "class" : "colsi",
@@ -1122,7 +1122,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Cancellation End leave\t- AN-SLOR",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Cancellation End leave",
     "status" : {
       "class" : "colsi",
@@ -1143,7 +1143,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Cancellation Start hospital stay - acute ambulant - AN-STAA",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Cancellation Start hospital stay - acute ambulant",
     "status" : {
       "class" : "colsi",
@@ -1164,7 +1164,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Cancellation Start hospital stay - AN-STIN",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Cancellation Start hospital stay",
     "status" : {
       "class" : "colsi",
@@ -1185,7 +1185,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Cancellation Start leave - AN-STOR",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Cancellation Start leave",
     "status" : {
       "class" : "colsi",
@@ -1206,7 +1206,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Deceased - deceased during acute ambulant - MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Deceased - deceased during acute ambulant",
     "status" : {
       "class" : "colsi",
@@ -1227,7 +1227,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Deceased - deceased during hospital stay - MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Deceased - deceased during hospital stay",
     "status" : {
       "class" : "colsi",
@@ -1248,7 +1248,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Deceased - deceased during a period of leave - MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Deceased - deceased during a period of leave",
     "status" : {
       "class" : "colsi",
@@ -1269,7 +1269,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Deceased - is dead at arrival to the hospital - MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Deceased - is dead at arrival to the hospital",
     "status" : {
       "class" : "colsi",
@@ -1290,7 +1290,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Update Deceased - deceased during acute ambulant - RE-MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Update Deceased - deceased during acute ambulant",
     "status" : {
       "class" : "colsi",
@@ -1311,7 +1311,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Update Deceased - deceased during hospital stay - RE-MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Update Deceased - deceased during hospital stay",
     "status" : {
       "class" : "colsi",
@@ -1332,7 +1332,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Update Deceased - deceased during a period of leave - RE-MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Update Deceased - deceased during a period of leave",
     "status" : {
       "class" : "colsi",
@@ -1353,7 +1353,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Update Deceased - is dead at arrival to the hospital - RE-MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Update Deceased - is dead at arrival to the hospital",
     "status" : {
       "class" : "colsi",
@@ -1374,7 +1374,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Update End hospital stay - patient completed to home/primary sector - RE-SLHJ",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Update End hospital stay - patient completed to home/primary sector",
     "status" : {
       "class" : "colsi",
@@ -1395,7 +1395,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Update End hospital stay - patient completed to home/primary sector - RE-SLHJ",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Update End hospital stay - patient completed to home/primary sector",
     "status" : {
       "class" : "colsi",
@@ -1416,7 +1416,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Update End leave\t- RE-SLOR",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Update End leave",
     "status" : {
       "class" : "colsi",
@@ -1437,7 +1437,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Update Start hospital stay - acute ambulant - RE-STAA",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Update Start hospital stay - acute ambulant",
     "status" : {
       "class" : "colsi",
@@ -1458,7 +1458,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Update Start hospital stay - RE_STIN",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Update Start hospital stay",
     "status" : {
       "class" : "colsi",
@@ -1479,7 +1479,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Update Start leave - RE-STOR",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Update Start leave",
     "status" : {
       "class" : "colsi",
@@ -1500,7 +1500,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: End hospital stay - patient completed to home/primary sector - SLHJ-emer",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: End hospital stay - patient completed to home/primary sector",
     "status" : {
       "class" : "colsi",
@@ -1521,7 +1521,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: End hospital stay - patient completed to home/primary sector - SLHJ",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: End hospital stay - patient completed to home/primary sector",
     "status" : {
       "class" : "colsi",
@@ -1542,7 +1542,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: End leave - SLOR",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: End leave",
     "status" : {
       "class" : "colsi",
@@ -1563,7 +1563,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Start hospital stay - acute ambulant - STAA",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Start hospital stay - acute ambulant",
     "status" : {
       "class" : "colsi",
@@ -1584,7 +1584,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Start hospital stay - admitted, without request for reportOfAdmission - STIN",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Start hospital stay - admitted, without request for reportOfAdmission",
     "status" : {
       "class" : "colsi",
@@ -1605,7 +1605,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Start hospital stay - admitted - STIN",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Start hospital stay - admitted",
     "status" : {
       "class" : "colsi",
@@ -1626,7 +1626,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Receive: Start leave - STOR",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Receive: Start leave",
     "status" : {
       "class" : "colsi",
@@ -1647,7 +1647,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Cancellation Deceased - deceased during acute ambulant - AN_MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Cancellation Deceased - deceased during acute ambulant",
     "status" : {
       "class" : "colsi",
@@ -1668,7 +1668,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Cancellation Deceased - deceased during admission - AN_MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Cancellation Deceased - deceased during admission",
     "status" : {
       "class" : "colsi",
@@ -1689,7 +1689,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Cancellation Deceased - deceased during a period of leave - AN_MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Cancellation Deceased - deceased during a period of leave",
     "status" : {
       "class" : "colsi",
@@ -1710,7 +1710,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Cancellation Deceased - dead at arrival to the hospital - MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Cancellation Deceased - dead at arrival to the hospital",
     "status" : {
       "class" : "colsi",
@@ -1731,7 +1731,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Cancellation End hospital stay - patient completed to home/primary sector - AN_SLHJ",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Cancellation End hospital stay - patient completed to home/primary sector",
     "status" : {
       "class" : "colsi",
@@ -1752,7 +1752,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Cancellation End hospital stay - patient completed to home/primary sector - AN_SLHJ",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Cancellation End hospital stay - patient completed to home/primary sector",
     "status" : {
       "class" : "colsi",
@@ -1773,7 +1773,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Cancellation End leave - AN_SLOR",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Cancellation End leave",
     "status" : {
       "class" : "colsi",
@@ -1794,7 +1794,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Cancellation Start hospital stay - acute ambulant - AN_STAA",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Cancellation Start hospital stay - acute ambulant",
     "status" : {
       "class" : "colsi",
@@ -1815,7 +1815,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Cancellation Start hospital stay - admitted - AN_STIN",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Cancellation Start hospital stay - admitted",
     "status" : {
       "class" : "colsi",
@@ -1836,7 +1836,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Cancellation Start leave - AN_STOR",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Cancellation Start leave",
     "status" : {
       "class" : "colsi",
@@ -1857,7 +1857,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Deceased - deceased during hospital stay - MORS-EMER",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Deceased - deceased during hospital stay",
     "status" : {
       "class" : "colsi",
@@ -1878,7 +1878,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Deceased - deceased during admission - MORS-IMP",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Deceased - deceased during admission",
     "status" : {
       "class" : "colsi",
@@ -1899,7 +1899,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Deceased - deceased during period of leave - MORS-STOR",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Deceased - deceased during a period of leave",
     "status" : {
       "class" : "colsi",
@@ -1920,7 +1920,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Deceased - dead at arrival to the hospital - MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Deceased - dead at arrival to the hospital.",
     "status" : {
       "class" : "colsi",
@@ -1941,7 +1941,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Update Deceased - deceased during acute ambulant - RE-MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Update Deceased - deceased during acute ambulant",
     "status" : {
       "class" : "colsi",
@@ -1962,7 +1962,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Update Deceased - deceased during hospital Stay - RE-MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Update Deceased - deceased during hospital Stay",
     "status" : {
       "class" : "colsi",
@@ -1983,7 +1983,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Update Deceased - deceased during a period of leave - RE-MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Update Deceased - deceased during a period of leave",
     "status" : {
       "class" : "colsi",
@@ -2004,7 +2004,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Update Deceased - dead at arrival to the hospital - RE-MORS",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Update Deceased - dead at arrival to the hospital",
     "status" : {
       "class" : "colsi",
@@ -2025,7 +2025,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Update End hospital stay - patient completed to home/primary sector - RE_SLHJ",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Update End hospital stay - patient completed to home/primary sector",
     "status" : {
       "class" : "colsi",
@@ -2046,7 +2046,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Update End hospital stay - patient completed to home/primary sector - RE_SLHJ",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Update End hospital stay - patient completed to home/primary sector",
     "status" : {
       "class" : "colsi",
@@ -2067,7 +2067,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Update End leave - RE_SLOR",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Update End leave",
     "status" : {
       "class" : "colsi",
@@ -2088,7 +2088,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Update Start hospital stay - acute ambulant - RE_STAA",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Update Start hospital stay - acute ambulant",
     "status" : {
       "class" : "colsi",
@@ -2109,7 +2109,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Update Start hospital stay - admitted - RE_STIN",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Update Start hospital stay - admitted",
     "status" : {
       "class" : "colsi",
@@ -2130,7 +2130,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Update Start leave - RE_STOR",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Update Start leave",
     "status" : {
       "class" : "colsi",
@@ -2151,7 +2151,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: End hospital stay - patient completed to home/primary sector - SLHJ-emer",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: End hospital stay - patient completed to home/primary sector",
     "status" : {
       "class" : "colsi",
@@ -2172,7 +2172,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: End hospital stay - patient completed to home/primary sector - SLHJ-imp",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: End hospital stay - patient completed to home/primary sector",
     "status" : {
       "class" : "colsi",
@@ -2193,7 +2193,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: End leave - SLOR",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: End leave",
     "status" : {
       "class" : "colsi",
@@ -2214,7 +2214,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Start hospital stay - acute ambulant - STAA",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Start hospital stay - acute ambulant.",
     "status" : {
       "class" : "colsi",
@@ -2235,7 +2235,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Start hospital stay - admitted - STIN.A1",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Start hospital stay - admitted, without request for a reportOfAdmission.",
     "status" : {
       "class" : "colsi",
@@ -2256,7 +2256,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Start hospital stay - admitted - STIN",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Start hospital stay - admitted.",
     "status" : {
       "class" : "colsi",
@@ -2277,7 +2277,7 @@
     "version" : "3.0.1",
     "name" : "HospitalNotificationTestScript",
     "title" : "Send: Start leave - STOR",
-    "date" : "2023-05-01",
+    "date" : "2023-07-10",
     "description" : "Send: Start leave",
     "status" : {
       "class" : "colsi",

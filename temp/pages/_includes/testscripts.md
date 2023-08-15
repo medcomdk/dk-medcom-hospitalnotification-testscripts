@@ -36,7 +36,7 @@ When sending a HospitalNotification, a POST operation is required for all types 
 
 [Test scripts for test of sending use cases, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300/Send/PatientFlows&activeOnly=false&contentEntry=TEST_SCRIPTS)
 
-| **Type** | **Use case <br> code** | **Description** | **Type** | **Precondition** |
+| **Type** | **Use case <br> code** | **Description** | **HospitalNotification** | **Precondition** |
 |---|---|---|---|---|
 | **Inpatient** |  |  |  |  |
 | [STIN](./TestScript-hospitalnotification-send-stin.html) | S1 | Send: Start hospital stay - admitted | STIN |  |
@@ -81,7 +81,7 @@ When sending a HospitalNotification, a POST operation is required for all types 
 
 [Test scripts for test of sending patient flows, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300/Send/PatientFlows&activeOnly=false&contentEntry=TEST_SCRIPTS)
 
-| **Type** | **Description** | **Type** |
+| **Type** | **Description** | **HospitalNotifications** |
 |---|---|---|
 | **Inpatient** |  |  |
 | [PF-send-imp-01](./TestScript-hospitalnotification-PF-send-imp-01.html) | Send: Admit patient, register patient as being on leave, register patient as returned from leave, discharge patient. | STIN, STOR, SLOR, SLHJ |
@@ -104,7 +104,7 @@ When sending a HospitalNotification, a POST operation is required for all types 
 [^1]: In this flow it is allowed to add a SLOR-message between STOR and SLHJ. In case the system does so, please skip this test script.
 
 
-### Receive HospitalNotification message
+### Receive HospitalNotification test scripts
 When receiving a HospitalNotification, a GET operation is required for all types of messages, valid for both the precondition messages and actual messages being tested. 
 
 **Test examples/fixtures:**
@@ -146,7 +146,7 @@ Which results in the following variable to be used in the GET operation. For ins
 [Test scripts for test of the recieving use cases, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/UseCases&activeOnly=false&contentEntry=TEST_SCRIPTS)
 
 
-| **Type** | **Use case <br> code** | **Description** | **Type** | **Precondition** |
+| **Type** | **Use case <br> code** | **Description** | **HospitalNotification** | **Precondition** |
 |---|---|---|---|---|
 | **Inpatient** |  |  |  |  |
 | [STIN](./TestScript-hospitalnotification-receive-stin.html) | R1 | Receive: Start hospital stay - admitted | STIN |  |
@@ -156,7 +156,7 @@ Which results in the following variable to be used in the GET operation. For ins
 | [SLHJ-imp](./TestScript-hospitalnotification-receive-slhj-imp.html) | R6 | Receive: End hospital stay - patient completed to home/primary sector | SLHJ | STIN |
 | [MORS](./TestScript-hospitalnotification-receive-mors.html) | R7 | Receive: Deceased - is dead at arrival to the hospital | MORS | |
 | [MORS-imp](./TestScript-hospitalnotification-receive-mors-imp.html) | R7 | Receive: Deceased - deceased during hospital stay | MORS | STIN |
-| [MORS-STOR](./TestScript-hospitalnotification-receive-mors-stor.html) | R7 | Receive: Deceased - deceased during a period of leave | STIN, STOR |
+| [MORS-STOR](./TestScript-hospitalnotification-receive-mors-stor.html) | R7 | Receive: Deceased - deceased during a period of leave | MORS | STIN, STOR |
 | **Emergency** |  |  |  |  |
 | [STAA](./TestScript-hospitalnotification-receive-staa.html) | R2 | Receive: Start hospital stay - acute ambulant | STAA |  |
 | [SLHJ-emer](./TestScript-hospitalnotification-receive-slhj-emer.html) | R6 | Receive: End hospital stay - patient completed to home/primary sector | SLHJ | STAA |
@@ -172,7 +172,7 @@ Which results in the following variable to be used in the GET operation. For ins
 | **Emergency** | | | |  |
 | [RE_STAA](./TestScript-hospitalnotification-receive-re-staa.html) | R.CORR | Receive: Update Start hospital stay - acute ambulant | RE_STAA | STAA |
 | [RE_SLHJ-emer](./TestScript-hospitalnotification-receive-re-slhj-emer.html) | R.CORR | Receive: Update End hospital stay – patient completed to home/primary sector| RE_SLHJ | STAA, SLHJ |
-| [RE_MORS-emer](./TestScript-hospitalnotification-receive-re-mors-emer.html) | R.CORR | Receive: Update Deceased - deceased during acute ambulant | STAA, MORS |
+| [RE_MORS-emer](./TestScript-hospitalnotification-receive-re-mors-emer.html) | R.CORR | Receive: Update Deceased - deceased during acute ambulant | RE_MORS | STAA, MORS |
 | **Inpatient** |  |  |  |  |
 | [AN_STIN](./TestScript-hospitalnotification-receive-an-stin.html) | R.CANC | Receive: Cancellation Start hospital stay | AN_STIN | STIN |
 | [AN_STOR](./TestScript-hospitalnotification-receive-an-stor.html) | R.CANC | Receive: Cancellation Start leave | AN_STOR | STIN, STOR |
@@ -190,7 +190,7 @@ Which results in the following variable to be used in the GET operation. For ins
 
 [Test scripts for test of the recieving patient flows, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/PatientFlows&activeOnly=false&contentEntry=TEST_SCRIPTS)
 
-| **Type** | **Description** | **Type** |
+| **Type** | **Description** | **HospitalNotifications** |
 |---|---|---|
 | **Inpatient** |  |  |
 | [PF-receive-imp-01](./TestScript-hospitalnotification-PF-receive-imp-01.html) | Receive: Patient is admitted, patient is registered as being on leave, patient returns from leave, patient is discharged | STIN, STOR, SLOR, SLHJ |

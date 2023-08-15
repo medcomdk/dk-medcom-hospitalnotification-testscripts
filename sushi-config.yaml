@@ -25,9 +25,7 @@ parameters:
 copyrightYear: 2020+
 releaseLabel: ci-build
 dependencies: 
-  medcom.fhir.dk.hospitalnotification: 
-    uri: http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/medcom.fhir.dk.hospitalnotification
-    version: current
+  medcom.fhir.dk.hospitalnotification: current
 #  net.aegis.touchstone.fhir.testing:
 #    uri: 'http://touchstone.aegis.net/touchstone/fhir/testing/ImplementationGuide/net.aegis.touchstone.touchstone.fhir.testing'
 #    version: 1.6.0
@@ -38,8 +36,8 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   IG Home: index.html
-  Test scripts: testscripts.html
-  Test examples: testexamples.html
+  Test scripts used in TouchStone: testscripts.html
+  Test examples for test protocol: testexamples.html
   Artifacts Summary: artifacts.html
   Download: downloads.html
 

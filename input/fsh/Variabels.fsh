@@ -5,7 +5,7 @@ RuleSet: variableEncounterResourceIdentifier(type, number)
 
 RuleSet: variableMessageHeaderId(type)
 * variable[+].name = "messageHeaderid-{type}"
-* variable[=].expression = "Bundle.entry[0].fullUrl"
+* variable[=].expression = "Bundle.entry[0].resource.id"
 * variable[=].sourceId = "create-message-{type}"
 
 RuleSet: variableEpisodeOfCareIdentifier(type)
@@ -38,19 +38,19 @@ RuleSet: variableCorrectMessageID(type, number)
 * variable[=].expression = "Bundle.entry.resource.ofType(Bundle).id"
 * variable[=].sourceId = "bundle-get-{type}{number}"
 
-RuleSet: variableOccurredDateTime(type) // skal kun anvendes ved den initielle meddelelse
+/* RuleSet: variableOccurredDateTime(type) // skal kun anvendes ved den initielle meddelelse
 * variable[+].name = "occurredDateTime-{type}"
 * variable[=].expression = "Bundle.entry.resource.ofType(Provenance).where(target.reference = %resource.entry[0].fullUrl).occurred"
-* variable[=].sourceId = "create-message-{type}"
+* variable[=].sourceId = "create-message-{type}" */
 
 RuleSet: variableHospitalSOR(type) 
 * variable[+].name = "hospitalSOR-{type}"
-* variable[=].expression = "Bundle.entry.where(fullUrl = %resource.entry.resource[0].sender.reference).resource.identifier.where(system = 'urn:oid:1.2.208.176.1.1').value"
+* variable[=].expression = "Bundle.entry.resource[0].sender.reference.resolve().identifier.where(system = 'urn:oid:1.2.208.176.1.1').value"
 * variable[=].sourceId = "create-message-{type}"
 
 RuleSet: variableHospitalGLN(type) 
 * variable[+].name = "hospitalGLN-{type}"
-* variable[=].expression = "Bundle.entry.where(fullUrl = %resource.entry.resource[0].sender.reference).resource.identifier.where(system = 'https://www.gs1.org/gln').value"
+* variable[=].expression = "Bundle.entry.resource[0].sender.reference.resolve().identifier.where(system = 'https://www.gs1.org/gln').value"
 * variable[=].sourceId = "create-message-{type}"
 
 /* RuleSet: variableEndpoint(type, number) // skal kun anvendes ved den initielle meddelelse
