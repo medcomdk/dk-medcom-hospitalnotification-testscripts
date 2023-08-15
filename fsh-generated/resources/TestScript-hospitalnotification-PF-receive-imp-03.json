@@ -95,7 +95,7 @@
     },
     {
       "name": "bundleid-STIN",
-      "expression": "Bundle.entry.resource.ofType(MessageHeader).id",
+      "expression": "Bundle.id",
       "sourceId": "create-STIN-01"
     },
     {
@@ -105,7 +105,7 @@
     },
     {
       "name": "bundleid-STOR",
-      "expression": "Bundle.entry.resource.ofType(MessageHeader).id",
+      "expression": "Bundle.id",
       "sourceId": "create-STOR-02"
     },
     {
@@ -115,7 +115,7 @@
     },
     {
       "name": "bundleid-SLOR",
-      "expression": "Bundle.entry.resource.ofType(MessageHeader).id",
+      "expression": "Bundle.id",
       "sourceId": "create-SLOR-03"
     },
     {
@@ -125,7 +125,7 @@
     },
     {
       "name": "bundleid-MORS",
-      "expression": "Bundle.entry.resource.ofType(MessageHeader).id",
+      "expression": "Bundle.id",
       "sourceId": "create-MORS-04"
     }
   ],
@@ -242,7 +242,7 @@
     {
       "id": "hospitalnotification-read-STIN-01",
       "name": "Get a HospitalNotification STIN Message 01",
-      "description": "GET a Hospital notification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format.",
+      "description": "GET a HospitalNotification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format.",
       "action": [
         {
           "operation": {
@@ -251,12 +251,12 @@
               "code": "read"
             },
             "resource": "Bundle",
-            "description": "Receive Hospital Notification",
+            "description": "Receive HospitalNotification",
             "accept": "xml",
             "destination": 1,
             "encodeRequestUrl": true,
             "origin": 1,
-            "params": "?message.destination-uri=${destinationUri-STIN}&amp;member._id=${bundleid-STIN}"
+            "params": "/${bundleid-STIN}"
           }
         },
         {
@@ -273,7 +273,7 @@
     {
       "id": "hospitalnotification-read-STOR-02",
       "name": "Get a HospitalNotification STOR Message 02",
-      "description": "GET a Hospital notification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format.",
+      "description": "GET a HospitalNotification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format.",
       "action": [
         {
           "operation": {
@@ -282,12 +282,12 @@
               "code": "read"
             },
             "resource": "Bundle",
-            "description": "Receive Hospital Notification",
+            "description": "Receive HospitalNotification",
             "accept": "xml",
             "destination": 1,
             "encodeRequestUrl": true,
             "origin": 1,
-            "params": "?message.destination-uri=${destinationUri-STOR}&amp;member._id=${bundleid-STOR}"
+            "params": "/${bundleid-STOR}"
           }
         },
         {
@@ -304,7 +304,7 @@
     {
       "id": "hospitalnotification-read-SLOR-03",
       "name": "Get a HospitalNotification SLOR Message 03",
-      "description": "GET a Hospital notification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format.",
+      "description": "GET a HospitalNotification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format.",
       "action": [
         {
           "operation": {
@@ -313,12 +313,12 @@
               "code": "read"
             },
             "resource": "Bundle",
-            "description": "Receive Hospital Notification",
+            "description": "Receive HospitalNotification",
             "accept": "xml",
             "destination": 1,
             "encodeRequestUrl": true,
             "origin": 1,
-            "params": "?message.destination-uri=${destinationUri-SLOR}&amp;member._id=${bundleid-SLOR}"
+            "params": "/${bundleid-SLOR}"
           }
         },
         {
@@ -335,7 +335,7 @@
     {
       "id": "hospitalnotification-read-MORS-04",
       "name": "Get a HospitalNotification MORS Message 04",
-      "description": "GET a Hospital notification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format.",
+      "description": "GET a HospitalNotification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format.",
       "action": [
         {
           "operation": {
@@ -344,12 +344,12 @@
               "code": "read"
             },
             "resource": "Bundle",
-            "description": "Receive Hospital Notification",
+            "description": "Receive HospitalNotification",
             "accept": "xml",
             "destination": 1,
             "encodeRequestUrl": true,
             "origin": 1,
-            "params": "?message.destination-uri=${destinationUri-MORS}&amp;member._id=${bundleid-MORS}"
+            "params": "/${bundleid-MORS}"
           }
         },
         {

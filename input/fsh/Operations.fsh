@@ -33,19 +33,19 @@ RuleSet: operationCreateMessage(type, number)
 * test[=].action[=].operation.responseId = "create-message-{type}"
 * test[=].action[=].operation.sourceId = "create-{type}-{number}" 
 
-RuleSet: operationReadMessage(type, number, destinationUri, bundleid)
+RuleSet: operationReadMessage(type, number, bundleid)
 * test[+].id = "hospitalnotification-read-{type}-{number}"
 * test[=].name = "Get a HospitalNotification {type} Message {number}"
-* test[=].description = "GET a Hospital notification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format."
+* test[=].description = "GET a HospitalNotification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format."
 * test[=].action[+].operation.type.system = "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
 * test[=].action[=].operation.type.code = #read
 * test[=].action[=].operation.resource = #Bundle
-* test[=].action[=].operation.description = "Receive Hospital Notification"
+* test[=].action[=].operation.description = "Receive HospitalNotification"
 * test[=].action[=].operation.accept = #xml
 * test[=].action[=].operation.destination = 1
 * test[=].action[=].operation.encodeRequestUrl = true
 * test[=].action[=].operation.origin = 1
-* test[=].action[=].operation.params = "?message.destination-uri=${{destinationUri}}&amp;member._id=${{bundleid}}"
+* test[=].action[=].operation.params = "/${{bundleid}}"
 
 /* RuleSet: operationSearchMessage(type, number, destinationUri)
 * test[+].id = "hospitalnotification-search-{type}-{number}"

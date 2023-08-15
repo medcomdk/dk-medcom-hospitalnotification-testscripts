@@ -79,7 +79,7 @@
     },
     {
       "name": "bundleid-STAA",
-      "expression": "Bundle.entry.resource.ofType(MessageHeader).id",
+      "expression": "Bundle.id",
       "sourceId": "create-STAA-01"
     },
     {
@@ -89,7 +89,7 @@
     },
     {
       "name": "bundleid-RE-STAA",
-      "expression": "Bundle.entry.resource.ofType(MessageHeader).id",
+      "expression": "Bundle.id",
       "sourceId": "create-RE-STAA-02"
     }
   ],
@@ -160,7 +160,7 @@
     {
       "id": "hospitalnotification-read-STAA-01",
       "name": "Get a HospitalNotification STAA Message 01",
-      "description": "GET a Hospital notification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format.",
+      "description": "GET a HospitalNotification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format.",
       "action": [
         {
           "operation": {
@@ -169,12 +169,12 @@
               "code": "read"
             },
             "resource": "Bundle",
-            "description": "Receive Hospital Notification",
+            "description": "Receive HospitalNotification",
             "accept": "xml",
             "destination": 1,
             "encodeRequestUrl": true,
             "origin": 1,
-            "params": "?message.destination-uri=${destinationUri-STAA}&amp;member._id=${bundleid-STAA}"
+            "params": "/${bundleid-STAA}"
           }
         },
         {
@@ -191,7 +191,7 @@
     {
       "id": "hospitalnotification-read-RE-STAA-02",
       "name": "Get a HospitalNotification RE-STAA Message 02",
-      "description": "GET a Hospital notification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format.",
+      "description": "GET a HospitalNotification. The expected response is a 200(OK) with a payload of the Hospital notification resource in XML format.",
       "action": [
         {
           "operation": {
@@ -200,12 +200,12 @@
               "code": "read"
             },
             "resource": "Bundle",
-            "description": "Receive Hospital Notification",
+            "description": "Receive HospitalNotification",
             "accept": "xml",
             "destination": 1,
             "encodeRequestUrl": true,
             "origin": 1,
-            "params": "?message.destination-uri=${destinationUri-RE-STAA}&amp;member._id=${bundleid-RE-STAA}"
+            "params": "/${bundleid-RE-STAA}"
           }
         },
         {

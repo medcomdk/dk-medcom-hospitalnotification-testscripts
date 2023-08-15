@@ -10,6 +10,8 @@ For the example TEK_LOV, the follwoing patient is used:
 
 #### Test examples for receiving HospitalNotification
 
+[Download test examples for receiving a HospitalNotification (.zip)](./HospitalNotification/HospitalNotification_Ex_receive.zip)
+
 |  Test example     |     Description     |
 |---|---|
 | [STIN_A](./Bundle-a5e5b880-c087-4055-b9ec-99108695f81d.html) | Notification with   information that a citizen has been admitted to hospital (including request   for XDIS16)    |

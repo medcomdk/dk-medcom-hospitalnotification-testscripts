@@ -11,10 +11,10 @@ InstanceOf: TestScript
 * insert createMessageSetup(STOR, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STOR.xml, destinationUri-STOR)
 * insert createMessageSetup(SLOR, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-SLOR.xml, destinationUri-SLOR)
 * insert createMessageSetup(SLHJ, 04, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-SLOR-SLHJ.xml, destinationUri-SLHJ)
-* insert readMessage(STIN, 01, destinationUri-STIN, bundleid-STIN)
-* insert readMessage(STOR, 02, destinationUri-STOR, bundleid-STOR)
-* insert readMessage(SLOR, 03, destinationUri-SLOR, bundleid-SLOR)
-* insert readMessage(SLHJ, 04, destinationUri-SLHJ, bundleid-SLHJ)
+* insert readMessage(STIN, 01, bundleid-STIN)
+* insert readMessage(STOR, 02, bundleid-STOR)
+* insert readMessage(SLOR, 03, bundleid-SLOR)
+* insert readMessage(SLHJ, 04, bundleid-SLHJ)
 
 
  //PF-receive-imp-02 - STIN-STOR-SLHJ
@@ -29,9 +29,9 @@ InstanceOf: TestScript
 * insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN)
 * insert createMessageSetup(STOR, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STOR.xml, destinationUri-STOR)
 * insert createMessageSetup(SLHJ, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STOR-SLHJ.xml, destinationUri-SLHJ)
-* insert readMessage(STIN, 01, destinationUri-STIN, bundleid-STIN)
-* insert readMessage(STOR, 02, destinationUri-STOR, bundleid-STOR)
-* insert readMessage(SLHJ, 03, destinationUri-SLHJ, bundleid-SLHJ)
+* insert readMessage(STIN, 01, bundleid-STIN)
+* insert readMessage(STOR, 02, bundleid-STOR)
+* insert readMessage(SLHJ, 03, bundleid-SLHJ)
 
 
  //PF-receive-imp-03 - MORS - SLOR
@@ -47,10 +47,10 @@ InstanceOf: TestScript
 * insert createMessageSetup(STOR, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STOR.xml, destinationUri-STOR)
 * insert createMessageSetup(SLOR, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-SLOR.xml, destinationUri-SLOR)
 * insert createMessageSetup(MORS, 04, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-SLOR-MORS.xml, destinationUri-MORS)
-* insert readMessage(STIN, 01, destinationUri-STIN, bundleid-STIN)
-* insert readMessage(STOR, 02, destinationUri-STOR, bundleid-STOR)
-* insert readMessage(SLOR, 03, destinationUri-SLOR, bundleid-SLOR)
-* insert readMessage(MORS, 04, destinationUri-MORS, bundleid-MORS)
+* insert readMessage(STIN, 01, bundleid-STIN)
+* insert readMessage(STOR, 02, bundleid-STOR)
+* insert readMessage(SLOR, 03, bundleid-SLOR)
+* insert readMessage(MORS, 04, bundleid-MORS)
 
  //PF-receive-imp-04 - STIN-STOR-SLOR-STOR-SLOR-SLHJ
 Instance: HospitalNotification_TestScript_PF-receive-imp-04
@@ -66,11 +66,11 @@ InstanceOf: TestScript
 * insert createMessageSetup(SLOR, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-SLOR.xml, destinationUri-SLOR)
 * insert createMessageSetup(STOR2, 04, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STOR2.xml, destinationUri-STOR2)
 * insert createMessageSetup(SLOR2, 05, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-SLOR2.xml, destinationUri-SLOR2)
-* insert readMessage(STIN, 01, destinationUri-STIN, bundleid-STIN)
-* insert readMessage(STOR, 02, destinationUri-STOR, bundleid-STOR)
-* insert readMessage(SLOR, 03, destinationUri-SLOR, bundleid-SLOR)
-* insert readMessage(STOR2, 04, destinationUri-STOR2, bundleid-STOR2)
-* insert readMessage(SLOR2, 05, destinationUri-SLOR2, bundleid-SLOR2)
+* insert readMessage(STIN, 01, bundleid-STIN)
+* insert readMessage(STOR, 02, bundleid-STOR)
+* insert readMessage(SLOR, 03, bundleid-SLOR)
+* insert readMessage(STOR2, 04, bundleid-STOR2)
+* insert readMessage(SLOR2, 05, bundleid-SLOR2)
 
  //PF-receive-imp-05 - STIN-RE_STIN
 Instance: HospitalNotification_TestScript_PF-receive-imp-05
@@ -83,8 +83,8 @@ InstanceOf: TestScript
 * name = "HospitalNotificationTestScript"
 * insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN)
 * insert createMessageSetup(RE-STIN, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-STIN-Hospital.xml, destinationUri-RE-STIN)
-* insert readMessage(STIN, 01, destinationUri-STIN, bundleid-STIN)
-* insert readMessage(RE-STIN, 02, destinationUri-RE-STIN, bundleid-RE-STIN)
+* insert readMessage(STIN, 01, bundleid-STIN)
+* insert readMessage(RE-STIN, 02, bundleid-RE-STIN)
 
  //PF-receive-imp-06 - STIN-RE_STIN
 Instance: HospitalNotification_TestScript_PF-receive-imp-06
@@ -97,8 +97,8 @@ InstanceOf: TestScript
 * name = "HospitalNotificationTestScript"
 * insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN)
 * insert createMessageSetup(RE-STIN, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-STIN-admissionTime.xml, destinationUri-RE-STIN)
-* insert readMessage(STIN, 01, destinationUri-STIN, bundleid-STIN)
-* insert readMessage(RE-STIN, 02, destinationUri-RE-STIN, bundleid-RE-STIN)
+* insert readMessage(STIN, 01, bundleid-STIN)
+* insert readMessage(RE-STIN, 02, bundleid-RE-STIN)
 
  //PF-receive-emer-02 - STAA-RE_STAA
 Instance: HospitalNotification_TestScript_PF-receive-emer-01
@@ -111,8 +111,8 @@ InstanceOf: TestScript
 * name = "HospitalNotificationTestScript"
 * insert createInitialMessageSetup(STAA, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STAA.xml, destinationUri-STAA)
 * insert createMessageSetup(RE-STAA, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-STAA-Hospital.xml, destinationUri-RE-STAA)
-* insert readMessage(STAA, 01, destinationUri-STAA, bundleid-STAA)
-* insert readMessage(RE-STAA, 02, destinationUri-RE-STAA, bundleid-RE-STAA)
+* insert readMessage(STAA, 01, bundleid-STAA)
+* insert readMessage(RE-STAA, 02, bundleid-RE-STAA)
 
  //PF-receive-emer-01 - STAA-RE_STAA
 Instance: HospitalNotification_TestScript_PF-receive-emer-02
@@ -125,8 +125,8 @@ InstanceOf: TestScript
 * name = "HospitalNotificationTestScript"
 * insert createInitialMessageSetup(STAA, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STAA.xml, destinationUri-STAA)
 * insert createMessageSetup(RE-STAA, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-STAA-admissionTime.xml, destinationUri-RE-STAA)
-* insert readMessage(STAA, 01, destinationUri-STAA, bundleid-STAA)
-* insert readMessage(RE-STAA, 02, destinationUri-RE-STAA, bundleid-RE-STAA)
+* insert readMessage(STAA, 01, bundleid-STAA)
+* insert readMessage(RE-STAA, 02, bundleid-RE-STAA)
 
 
  //PF-receive-emer-imp-01 
@@ -141,9 +141,9 @@ InstanceOf: TestScript
 * insert createInitialMessageSetup(STAA, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STAA.xml, destinationUri-STAA)
 * insert createMessageSetup(STIN, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STAA-STIN.xml, destinationUri-STIN)
 * insert createMessageSetup(SLHJ, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STAA-STIN-SLHJ.xml, destinationUri-SLHJ)
-* insert readMessage(STAA, 01, destinationUri-STAA, bundleid-STAA)
-* insert readMessage(STIN, 02, destinationUri-STIN, bundleid-STIN)
-* insert readMessage(SLHJ, 03, destinationUri-SLHJ, bundleid-SLHJ)
+* insert readMessage(STAA, 01, bundleid-STAA)
+* insert readMessage(STIN, 02, bundleid-STIN)
+* insert readMessage(SLHJ, 03, bundleid-SLHJ)
 
 
  //PF-receive-tec-01 - STIN-STIN
@@ -157,8 +157,8 @@ InstanceOf: TestScript
 * name = "HospitalNotificationTestScript"
 * insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN)
 * insert createMessageSetup(STIN2, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN2)
-* insert readMessage(STIN, 01, destinationUri-STIN, bundleid-STIN)
-* insert readMessage(STIN2, 02, destinationUri-STIN2, bundleid-STIN2)
+* insert readMessage(STIN, 01, bundleid-STIN)
+* insert readMessage(STIN2, 02, bundleid-STIN2)
 
 //PF-receive-tec-02 - STIN, RE, AN
 Instance: HospitalNotification_TestScript_PF-receive-tec-02
@@ -172,9 +172,9 @@ InstanceOf: TestScript
 * insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN)
 * insert createMessageSetup(RE-STIN, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-STIN-admissionTime.xml, destinationUri-RE-STIN)
 * insert createMessageSetup(AN-STIN, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-AN-RE-STIN.xml, destinationUri-AN-STIN)
-* insert readMessage(STIN, 01, destinationUri-STIN, bundleid-STIN)
-* insert readMessage(RE-STIN, 02, destinationUri-RE-STIN, bundleid-RE-STIN) 
-* insert readMessage(AN-STIN, 03, destinationUri-AN-STIN, bundleid-AN-STIN) 
+* insert readMessage(STIN, 01, bundleid-STIN)
+* insert readMessage(RE-STIN, 02, bundleid-RE-STIN) 
+* insert readMessage(AN-STIN, 03, bundleid-AN-STIN) 
  
  //PF-receive-tec-03 - STAA-SLHJ-STIN
 Instance: HospitalNotification_TestScript_PF-receive-tec-03
@@ -188,9 +188,9 @@ InstanceOf: TestScript
 * insert createInitialMessageSetup(STAA, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STAA.xml, destinationUri-STAA)
 * insert createMessageSetup(SLHJ, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STAA-STIN-SLHJ.xml, destinationUri-SLHJ)
 * insert createMessageSetup(STIN, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STAA-STIN.xml, destinationUri-STIN)
-* insert readMessage(STAA, 01, destinationUri-STAA, bundleid-STAA)
-* insert readMessage(SLHJ, 02, destinationUri-SLHJ, bundleid-SLHJ)
-* insert readMessage(STIN, 03, destinationUri-STIN, bundleid-STIN)
+* insert readMessage(STAA, 01, bundleid-STAA)
+* insert readMessage(SLHJ, 02, bundleid-SLHJ)
+* insert readMessage(STIN, 03, bundleid-STIN)
 
 //PF-receive-tec-04 - different timezone
 Instance: HospitalNotification_TestScript_PF-receive-tec-04
@@ -203,8 +203,8 @@ InstanceOf: TestScript
 * name = "HospitalNotificationTestScript"
 * insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN)
 * insert createMessageSetup(SLHJ, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-SLHJ-difftimezone.xml, destinationUri-SLHJ)
-* insert readMessage(STIN, 01, destinationUri-STIN, bundleid-STIN)
-* insert readMessage(SLHJ, 02, destinationUri-SLHJ, bundleid-SLHJ)
+* insert readMessage(STIN, 01, bundleid-STIN)
+* insert readMessage(SLHJ, 02, bundleid-SLHJ)
 
 //PF-receive-tec-05 - leapyear
 Instance: HospitalNotification_TestScript_PF-receive-tec-05
@@ -216,7 +216,7 @@ InstanceOf: TestScript
 * url = "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-tec-05" 
 * name = "HospitalNotificationTestScript"
 * insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN-leapyear.xml, destinationUri-STIN)
-* insert readMessage(STIN, 01, destinationUri-STIN, bundleid-STIN)
+* insert readMessage(STIN, 01, bundleid-STIN)
 
 //PF-receive-tec-05 - different serviceprovider
 Instance: HospitalNotification_TestScript_PF-receive-tec-06
@@ -228,4 +228,4 @@ InstanceOf: TestScript
 * url = "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-PF-receive-tec-06" 
 * name = "HospitalNotificationTestScript"
 * insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN-diffServiceProvider.xml, destinationUri-STIN)
-* insert readMessage(STIN, 01, destinationUri-STIN, bundleid-STIN) 
+* insert readMessage(STIN, 01, bundleid-STIN) 

@@ -32,9 +32,13 @@ Most of the send test scripts requires that SUT has executed one or more use cas
 ### Send HospitalNotification test scripts
 When sending a HospitalNotification, a POST operation is required for all types of messages, and is therefore valid for both the precondition messages and actual messages being tested. 
 
+During test and certification, vendors must conform to test scripts included in the [conformance suite for sending HospitalNotification messages.](https://touchstone.aegis.net/touchstone/conformance/current?suite=FHIR4-0-1-HospitalNotification-send-Client)
+
+
 #### Use Cases
 
-[Test scripts for test of sending use cases, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300/Send/PatientFlows&activeOnly=false&contentEntry=TEST_SCRIPTS)
+[Test scripts for test of sending use cases, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300-send/PatientFlows&activeOnly=false&contentEntry=TEST_SCRIPTS)
+
 
 | **Type** | **Use case <br> code** | **Description** | **HospitalNotification** | **Precondition** |
 |---|---|---|---|---|
@@ -79,7 +83,7 @@ When sending a HospitalNotification, a POST operation is required for all types 
 
 #### Patient Flow
 
-[Test scripts for test of sending patient flows, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300/Send/PatientFlows&activeOnly=false&contentEntry=TEST_SCRIPTS)
+[Test scripts for test of sending patient flows, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300-send/PatientFlows&activeOnly=false&contentEntry=TEST_SCRIPTS)
 
 | **Type** | **Description** | **HospitalNotifications** |
 |---|---|---|
@@ -107,11 +111,13 @@ When sending a HospitalNotification, a POST operation is required for all types 
 ### Receive HospitalNotification test scripts
 When receiving a HospitalNotification, a GET operation is required for all types of messages, valid for both the precondition messages and actual messages being tested. 
 
+During test and certification, vendors must conform to test scripts included in the [conformance suite for receiving HospitalNotification messages.](https://touchstone.aegis.net/touchstone/conformance/current?suite=FHIR4-0-1-HospitalNotification-receive-Client)
+
 **Test examples/fixtures:**
 Test examples are, in TouchStone testing, called fixtures. These fixtures are uploaded to TouchStone. During setup of a test, all relevant fixtures will be uploadet to the server used during test. From a client application e.g. a vendor's system, it is possible to request relevant fixture.
 
 **HospitalNotifications:** 
-Timestamps in most fixtures (HospitalNotifications) are sent between the 28th of February 2023 and 7th of March 2023. The only exception are the fixture used for PF-receive-tec-04 which is on the 28th of February 2023 and the fixture used for PF-receive-tec-05 which is on the 29th of February 2024. All corrections and cancellation messages are sent one hour after the message it revises or cancels.
+Timestamps in most fixtures (HospitalNotifications) are sent between the 28th of February 2023 and 7th of March 2023. The only exception is the fixture used for PF-receive-tec-04 which is on the 28th of February 2023 and the fixture used for PF-receive-tec-05 which is on the 29th of February 2024. All corrections and cancellation messages are sent one hour after the message it revises or cancels.
 
 All fixtures are based on the test patient:
 * Family name: Elmer
@@ -143,7 +149,7 @@ Which results in the following variable to be used in the GET operation. For ins
 
 #### Use Cases
 
-[Test scripts for test of the recieving use cases, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/UseCases&activeOnly=false&contentEntry=TEST_SCRIPTS)
+[Test scripts for test of the recieving use cases, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300-receive/UseCases&activeOnly=false&contentEntry=TEST_SCRIPTS)
 
 
 | **Type** | **Use case <br> code** | **Description** | **HospitalNotification** | **Precondition** |
@@ -188,7 +194,7 @@ Which results in the following variable to be used in the GET operation. For ins
 
 #### Patient Flow
 
-[Test scripts for test of the recieving patient flows, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300/Receive/PatientFlows&activeOnly=false&contentEntry=TEST_SCRIPTS)
+[Test scripts for test of the recieving patient flows, can be found here in TouchStone.](https://touchstone.aegis.net/touchstone/testdefinitions?selectedTestGrp=/FHIRSandbox/MedCom/HospitalNotification/v300-receive/PatientFlows&activeOnly=false&contentEntry=TEST_SCRIPTS)
 
 | **Type** | **Description** | **HospitalNotifications** |
 |---|---|---|

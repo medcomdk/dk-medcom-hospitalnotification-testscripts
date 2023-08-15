@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "medcom.fhir.dk.hospitalnotificationtestscripts",
   "url": "http://medcomfhir.dk/ig/hospitalnotificationtestscripts/ImplementationGuide/medcom.fhir.dk.hospitalnotificationtestscripts",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "name": "HospitalNotificationTestscripts",
   "title": "HospitalNotification Testscripts",
   "status": "active",
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Testscripts for HospitalNotification v. 3.0.1",
+  "description": "Testscripts for HospitalNotification v. 3.0.0",
   "packageId": "medcom.fhir.dk.hospitalnotificationtestscripts",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -26,7 +26,7 @@
   "dependsOn": [
     {
       "packageId": "medcom.fhir.dk.hospitalnotification",
-      "version": "current",
+      "version": "3.0.1",
       "uri": "http://medcomfhir.dk/ig/hospitalnotification/ImplementationGuide/medcom.fhir.dk.hospitalnotification",
       "id": "medcom_fhir_dk_hospitalnotification"
     }

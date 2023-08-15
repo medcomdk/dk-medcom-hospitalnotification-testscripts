@@ -117,7 +117,7 @@ During test and certification, vendors must conform to test scripts included in 
 Test examples are, in TouchStone testing, called fixtures. These fixtures are uploaded to TouchStone. During setup of a test, all relevant fixtures will be uploadet to the server used during test. From a client application e.g. a vendor's system, it is possible to request relevant fixture.
 
 **HospitalNotifications:** 
-Timestamps in most fixtures (HospitalNotifications) are sent between the 28th of February 2023 and 7th of March 2023. The only exception are the fixture used for PF-receive-tec-04 which is on the 28th of February 2023 and the fixture used for PF-receive-tec-05 which is on the 29th of February 2024. All corrections and cancellation messages are sent one hour after the message it revises or cancels.
+Timestamps in most fixtures (HospitalNotifications) are sent between the 28th of February 2023 and 7th of March 2023. The only exception is the fixture used for PF-receive-tec-04 which is on the 28th of February 2023 and the fixture used for PF-receive-tec-05 which is on the 29th of February 2024. All corrections and cancellation messages are sent one hour after the message it revises or cancels.
 
 All fixtures are based on the test patient:
 * Family name: Elmer
