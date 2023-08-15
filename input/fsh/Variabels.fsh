@@ -25,7 +25,7 @@ RuleSet: variableDestinationUri(type, number)
 
 RuleSet: variableBundleid(type, number)
 * variable[+].name = "bundleid-{type}"
-* variable[=].expression = "Bundle.entry.resource.ofType(MessageHeader).id"
+* variable[=].expression = "Bundle.id"
 * variable[=].sourceId = "create-{type}-{number}" 
  
 RuleSet: variableSearchParamIdentifier(type)
