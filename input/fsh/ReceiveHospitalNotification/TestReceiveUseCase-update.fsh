@@ -8,8 +8,8 @@ InstanceOf: TestScript
 * url = "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-stin" 
 * name = "HospitalNotificationTestScript"
 // Fixturen indeholder en placeholder ved MessageHeader.destination.endpoint.
-* insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN)
-* insert createMessageSetup(RE-STIN, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-STIN.xml, destinationUri-RE-STIN)
+* insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN, bundleid-STIN)
+* insert createMessageSetup(RE-STIN, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-STIN.xml, destinationUri-RE-STIN, bundleid-RE-STIN)
 * insert readMessage(STIN, 01, bundleid-STIN)
 * insert readMessage(RE-STIN, 02, bundleid-RE-STIN)
 
@@ -23,9 +23,9 @@ InstanceOf: TestScript
 * title = "Receive: Update End hospital stay - patient completed to home/primary sector - RE-SLHJ"
 * url = "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-slhj-imp" 
 * name = "HospitalNotificationTestScript"
-* insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN)
-* insert createMessageSetup(SLHJ, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-SLHJ-imp.xml, destinationUri-SLHJ)
-* insert createMessageSetup(RE-SLHJ, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-SLHJ-imp.xml, destinationUri-RE-SLHJ)
+* insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN, bundleid-STIN)
+* insert createMessageSetup(SLHJ, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-SLHJ-imp.xml, destinationUri-SLHJ, bundleid-SLHJ)
+* insert createMessageSetup(RE-SLHJ, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-SLHJ-imp.xml, destinationUri-RE-SLHJ, bundleid-RE-SLHJ)
 * insert readMessage(STIN, 01, bundleid-STIN)
 * insert readMessage(SLHJ, 02, bundleid-SLHJ)
 * insert readMessage(RE-SLHJ, 03, bundleid-RE-SLHJ)
@@ -40,8 +40,8 @@ InstanceOf: TestScript
 * title = "Receive: Update Start hospital stay - acute ambulant - RE-STAA"
 * url = "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-staa" 
 * name = "HospitalNotificationTestScript"
-* insert createInitialMessageSetup(STAA, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STAA.xml, destinationUri-STAA)
-* insert createMessageSetup(RE-STAA, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-STAA.xml, destinationUri-RE-STAA)
+* insert createInitialMessageSetup(STAA, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STAA.xml, destinationUri-STAA, bundleid-STAA)
+* insert createMessageSetup(RE-STAA, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-STAA.xml, destinationUri-RE-STAA, bundleid-RE-STAA)
 * insert readMessage(STAA, 01, bundleid-STAA)
 * insert readMessage(RE-STAA, 02, bundleid-RE-STAA)
 
@@ -54,9 +54,9 @@ InstanceOf: TestScript
 * title = "Receive: Update End hospital stay - patient completed to home/primary sector - RE-SLHJ"
 * url = "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-slhj-emer" 
 * name = "HospitalNotificationTestScript"
-* insert createInitialMessageSetup(STAA, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STAA.xml, destinationUri-STAA)
-* insert createMessageSetup(SLHJ, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-SLHJ-emer.xml, destinationUri-SLHJ)
-* insert createMessageSetup(RE-SLHJ, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-SLHJ-emer.xml, destinationUri-RE-SLHJ)
+* insert createInitialMessageSetup(STAA, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STAA.xml, destinationUri-STAA, bundleid-STAA)
+* insert createMessageSetup(SLHJ, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-SLHJ-emer.xml, destinationUri-SLHJ, bundleid-SLHJ)
+* insert createMessageSetup(RE-SLHJ, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-SLHJ-emer.xml, destinationUri-RE-SLHJ, bundleid-RE-SLHJ)
 * insert readMessage(STAA, 01, bundleid-STAA)
 * insert readMessage(SLHJ, 02, bundleid-SLHJ)
 * insert readMessage(RE-SLHJ, 03, bundleid-RE-SLHJ)
@@ -70,9 +70,9 @@ InstanceOf: TestScript
 * title = "Receive: Update Start leave - RE-STOR"
 * url = "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-stor" 
 * name = "HospitalNotificationTestScript"
-* insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN)
-* insert createMessageSetup(STOR, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STOR.xml, destinationUri-STOR)
-* insert createMessageSetup(RE-STOR, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-STOR.xml, destinationUri-RE-STOR)
+* insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN, bundleid-STIN)
+* insert createMessageSetup(STOR, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STOR.xml, destinationUri-STOR, bundleid-STOR)
+* insert createMessageSetup(RE-STOR, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-STOR.xml, destinationUri-RE-STOR, bundleid-RE-STOR)
 * insert readMessage(STIN, 01, bundleid-STIN)
 * insert readMessage(STOR, 02, bundleid-STOR)
 * insert readMessage(RE-STOR, 03, bundleid-RE-STOR)
@@ -86,10 +86,10 @@ InstanceOf: TestScript
 * title = "Receive: Update End leave	- RE-SLOR"
 * url = "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-slor" 
 * name = "HospitalNotificationTestScript"
-* insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN)
-* insert createMessageSetup(STOR, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STOR.xml, destinationUri-STOR)
-* insert createMessageSetup(SLOR, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-SLOR.xml, destinationUri-SLOR)
-* insert createMessageSetup(RE-SLOR, 04, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-SLOR.xml, destinationUri-RE-SLOR)
+* insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN, bundleid-STIN)
+* insert createMessageSetup(STOR, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STOR.xml, destinationUri-STOR, bundleid-STOR)
+* insert createMessageSetup(SLOR, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-SLOR.xml, destinationUri-SLOR, bundleid-SLOR)
+* insert createMessageSetup(RE-SLOR, 04, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-SLOR.xml, destinationUri-RE-SLOR, bundleid-RE-SLOR)
 * insert readMessage(STIN, 01, bundleid-STIN)
 * insert readMessage(STOR, 02, bundleid-STOR)
 * insert readMessage(SLOR, 03, bundleid-SLOR)
@@ -104,8 +104,8 @@ InstanceOf: TestScript
 * title = "Receive: Update Deceased - is dead at arrival to the hospital - RE-MORS"
 * url = "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-mors" 
 * name = "HospitalNotificationTestScript"
-* insert createInitialMessageSetup(MORS, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-MORS.xml, destinationUri-MORS)
-* insert createMessageSetup(RE-MORS, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-MORS.xml, destinationUri-RE-MORS)
+* insert createInitialMessageSetup(MORS, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-MORS.xml, destinationUri-MORS, bundleid-MORS)
+* insert createMessageSetup(RE-MORS, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-MORS.xml, destinationUri-RE-MORS, bundleid-RE-MORS)
 * insert readMessage(MORS, 01, bundleid-MORS)
 * insert readMessage(RE-MORS, 02, bundleid-RE-MORS)
 
@@ -118,9 +118,9 @@ InstanceOf: TestScript
 * title = "Receive: Update Deceased - deceased during hospital stay - RE-MORS"
 * url = "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-mors-imp" 
 * name = "HospitalNotificationTestScript"
-* insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN)
-* insert createMessageSetup(MORS, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-MORS-imp.xml, destinationUri-MORS)
-* insert createMessageSetup(RE-MORS, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-MORS-imp.xml, destinationUri-RE-MORS)
+* insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN, bundleid-STIN)
+* insert createMessageSetup(MORS, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-MORS-imp.xml, destinationUri-MORS, bundleid-MORS)
+* insert createMessageSetup(RE-MORS, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-MORS-imp.xml, destinationUri-RE-MORS, bundleid-RE-MORS)
 * insert readMessage(STIN, 01, bundleid-STIN)
 * insert readMessage(MORS, 02, bundleid-MORS)
 * insert readMessage(RE-MORS, 03, bundleid-RE-MORS)
@@ -135,9 +135,9 @@ InstanceOf: TestScript
 * title = "Receive: Update Deceased - deceased during acute ambulant - RE-MORS"
 * url = "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-mors-emer" 
 * name = "HospitalNotificationTestScript"
-* insert createInitialMessageSetup(STAA, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STAA.xml, destinationUri-STAA)
-* insert createMessageSetup(MORS, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-MORS-emer.xml, destinationUri-MORS)
-* insert createMessageSetup(RE-MORS, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-MORS-emer.xml, destinationUri-RE-MORS)
+* insert createInitialMessageSetup(STAA, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STAA.xml, destinationUri-STAA, bundleid-STAA)
+* insert createMessageSetup(MORS, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-MORS-emer.xml, destinationUri-MORS, bundleid-MORS)
+* insert createMessageSetup(RE-MORS, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-MORS-emer.xml, destinationUri-RE-MORS, bundleid-RE-MORS)
 * insert readMessage(STAA, 01, bundleid-STAA)
 * insert readMessage(MORS, 02, bundleid-MORS)
 * insert readMessage(RE-MORS, 03, bundleid-RE-MORS)
@@ -151,10 +151,10 @@ InstanceOf: TestScript
 * title = "Receive: Update Deceased - deceased during a period of leave - RE-MORS"
 * url = "http://medcomfhir.dk/ig/hospitalnotificationtestscript/hospitalnotification-receive-re-mors-stor" 
 * name = "HospitalNotificationTestScript"
-* insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN)
-* insert createMessageSetup(STOR, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STOR.xml, destinationUri-STOR)
-* insert createMessageSetup(MORS, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-MORS-STOR.xml, destinationUri-MORS)
-* insert createMessageSetup(RE-MORS, 04, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-MORS-STOR.xml, destinationUri-RE-MORS)
+* insert createInitialMessageSetup(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STIN.xml, destinationUri-STIN, bundleid-STIN)
+* insert createMessageSetup(STOR, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-STOR.xml, destinationUri-STOR, bundleid-STOR)
+* insert createMessageSetup(MORS, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-MORS-STOR.xml, destinationUri-MORS, bundleid-MORS)
+* insert createMessageSetup(RE-MORS, 04, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-RE-MORS-STOR.xml, destinationUri-RE-MORS, bundleid-RE-MORS)
 * insert readMessage(STIN, 01, bundleid-STIN)
 * insert readMessage(STOR, 02, bundleid-STOR)
 * insert readMessage(MORS, 03, bundleid-MORS)

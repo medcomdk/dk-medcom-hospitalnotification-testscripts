@@ -1,4 +1,4 @@
-RuleSet: createMessageSetup(type, number, fixture, destinationUri)
+RuleSet: createMessageSetup(type, number, fixture, destinationUri, bundleid)
 /* 
 Beskriver anvendte fixtures
 */
@@ -19,6 +19,7 @@ Beskriver de operationer der udføres i denne test. Her er det kun setup operati
 */
 //* insert operationDeleteSetup({destinationUri})
 * insert operationCreateSetup({type}, {number})
+* insert operationUpdateCreateSetup({type}, {number}, {bundleid})
 
 /* 
 Beskriver den vurdering der sker af setup'et. Er det gået ok?

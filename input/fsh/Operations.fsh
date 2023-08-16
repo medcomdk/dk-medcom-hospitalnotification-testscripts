@@ -19,6 +19,17 @@ RuleSet: operationCreateSetup(type, number)
 //* setup[=].action[=].operation.responseId = "create-message-{type}"
 * setup[=].action[=].operation.sourceId = "create-{type}-{number}"
 
+RuleSet: operationUpdateCreateSetup(type, number, bundleid)
+* setup[=].action[+].operation.type.system = "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+* setup[=].action[=].operation.type.code = #updateCreate
+* setup[=].action[=].operation.resource = #Bundle
+* setup[=].action[=].operation.description = "Update the Bundle.id in XML format on the destination server, so it corresponds to {bundleid}."
+* setup[=].action[=].operation.accept = #xml
+* setup[=].action[=].operation.contentType = #xml
+* setup[=].action[=].operation.encodeRequestUrl = true
+* setup[=].action[=].operation.params = "/${{bundleid}}"
+* setup[=].action[=].operation.sourceId = "create-{type}-{number}"
+
 RuleSet: operationCreateMessage(type, number)
 * test[+].id = "hospitalnotification-create-{type}-{number}" 
 * test[=].name = "Create a HospitalNotification {type} Message {number}" 
