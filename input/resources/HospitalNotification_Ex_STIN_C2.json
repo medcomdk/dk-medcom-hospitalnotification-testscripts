@@ -23,18 +23,6 @@
           "status": "extensions",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"b9b4818e-02de-4cc4-b418-d20cbc399006\"/></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader \"b9b4818e-02de-4cc4-b418-d20cbc399006\"</p><p style=\"margin-bottom: 0px\">Profile: \n                                <a href=\"StructureDefinition-medcom-hospitalNotification-messageHeader.html\">MedComHospitalNotificationMessageHeader</a></p></div><p><b>MedComReportOfAdmissionExtension</b>: true\n                        </p><p><b>MedComReportOfAdmissionRecipientExtension</b>: \n                            <a href=\"#Organization_04f59e9e-a7c8-43f3-8197-9e997cf64fc8\">See above (Organization/04f59e9e-a7c8-43f3-8197-9e997cf64fc8)</a></p><p><b>event</b>: Hospital Notification Message (Details: http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes code hospital-notification-message = 'Hospital Notification Message', stated as 'null')\n                        </p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td/><td><a href=\"https://sor2.sum.dsdn.dk/#id=953741000016009\">https://sor2.sum.dsdn.dk/#id=953741000016009</a></td><td><a href=\"#Organization_o4cdf292-abf3-4f5f-80ea-60a48013ff6d\">See above (Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d)</a></td></tr></table><p><b>sender</b>: \n                            <a href=\"#Organization_04f59e9e-a7c8-43f3-8197-9e997cf64fc8\">See above (Organization/04f59e9e-a7c8-43f3-8197-9e997cf64fc8)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"https://sor2.sum.dsdn.dk/#id=265161000016000\">https://sor2.sum.dsdn.dk/#id=265161000016000</a></td></tr></table><p><b>focus</b>: \n                            <a href=\"#Encounter_a790f964-88d3-4652-bbc8-81d2f3d035f8\">See above (Encounter/a790f964-88d3-4652-bbc8-81d2f3d035f8)</a></p></div>"
         },
-        "extension": [
-          {
-            "url": "http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-messaging-reportOfAdmissionExtension",
-            "valueBoolean": true
-          },
-          {
-            "url": "http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-messaging-reportOfAdmissionRecipientExtension",
-            "valueReference": {
-              "reference": "Organization/04f59e9e-a7c8-43f3-8197-9e997cf64fc8"
-            }
-          }
-        ],
         "eventCoding": {
           "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes",
           "code": "hospital-notification-message"
