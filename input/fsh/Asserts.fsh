@@ -136,13 +136,13 @@ RuleSet: assertStructureEpisodeOfCareID
 RuleSet: assertSenderSOR(hospitalSOR)
 * test[=].action[+].assert.description = "Confirm that the sender SOR code is different from the previous message."
 * test[=].action[=].assert.direction = #request
-* test[=].action[=].assert.expression = "Bundle.entry.resource[0].sender.reference.resolve().identifier.where(system = 'urn:oid:1.2.208.176.1.1').value != ${{hospitalSOR}}"
+* test[=].action[=].assert.expression = "Bundle.entry.resource[0].sender.reference.resolve().identifier.where(system = 'urn:oid:1.2.208.176.1.1').value != '${{hospitalSOR}}'"
 * test[=].action[=].assert.warningOnly = false
 
 RuleSet: assertSenderGLN(hospitalGLN)
 * test[=].action[+].assert.description = "Confirm that the sender GLN number is different from the previous message."
 * test[=].action[=].assert.direction = #request
-* test[=].action[=].assert.expression = "Bundle.entry.resource[0].sender.reference.resolve().identifier.where(system = 'https://www.gs1.org/gln').value != ${{hospitalGLN}}"
+* test[=].action[=].assert.expression = "Bundle.entry.resource[0].sender.reference.resolve().identifier.where(system = 'https://www.gs1.org/gln').value != '${{hospitalGLN}}'"
 * test[=].action[=].assert.warningOnly = true
 
 RuleSet: assertEncounterDateTime(encounterDateTime)

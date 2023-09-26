@@ -109,6 +109,9 @@ During test and certification, vendors must conform to test scripts included in 
 
 
 ### Receive HospitalNotification test scripts
+
+> Note: it is optional to run trough the receive test scripts during test and certification of receiving HospitalNotification messages.
+
 When receiving a HospitalNotification, a GET operation is required for all types of messages, valid for both the precondition messages and actual messages being tested. 
 
 During test and certification, vendors must conform to test scripts included in the [conformance suite for receiving HospitalNotification messages.](https://touchstone.aegis.net/touchstone/conformance/current?suite=FHIR4-0-1-HospitalNotification-receive-Client)
