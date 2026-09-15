@@ -5,10 +5,10 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: medcom.fhir.dk.hospitalnotificationtestscripts
 canonical: http://medcomfhir.dk/ig/hospitalnotificationtestscripts 
-version: 3.0.3
+version: 3.0.x
 name: HospitalNotification Testscripts
 title: HospitalNotification Testscripts
-status: active
+status: draft
 publisher: MedCom
 contact:
   - name: MedCom
