@@ -179,7 +179,7 @@
       "entity" : [{
         "role" : "revision",
         "what" : {
-          "reference" : "MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006"
+          "reference" : "MessageHeader/2f861434-233b-4245-a99c-390c3d658a9c"
         }
       }]
     }
@@ -194,10 +194,10 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Provenance_77c43973-bcae-4981-95ea-a0e523acd34c\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Provenance 77c43973-bcae-4981-95ea-a0e523acd34c</b></p><a name=\"77c43973-bcae-4981-95ea-a0e523acd34c\"> </a><a name=\"hc77c43973-bcae-4981-95ea-a0e523acd34c\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://medcomfhir.dk/ig/messaging/2.1.0/StructureDefinition-medcom-messaging-provenance.html\">MedComMessagingProvenance</a></p></div><p>Provenance for <a href=\"MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006\">MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006</a></p><p>Summary</p><table class=\"grid\"><tr><td>Occurrence</td><td>2026-02-28 14:00:06+0100</td></tr><tr><td>Recorded</td><td>2026-02-28 14:00:06+0100</td></tr><tr><td>Activity</td><td><span title=\"Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes admit-emergency}\">Start hospital stay - acute ambulant</span></td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>who</b></td></tr><tr><td><a href=\"Organization-c1d21101-6556-4fff-8adc-686344180e22.html\">Organization Hjerteafdelingen på Herlev og Gentofte hospital</a></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Provenance_77c43973-bcae-4981-95ea-a0e523acd34c\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Provenance 77c43973-bcae-4981-95ea-a0e523acd34c</b></p><a name=\"77c43973-bcae-4981-95ea-a0e523acd34c\"> </a><a name=\"hc77c43973-bcae-4981-95ea-a0e523acd34c\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://medcomfhir.dk/ig/messaging/2.1.0/StructureDefinition-medcom-messaging-provenance.html\">MedComMessagingProvenance</a></p></div><p>Provenance for <a href=\"MessageHeader-2f861434-233b-4245-a99c-390c3d658a9c.html\">MessageHeader: extension = true,-&gt;Organization Hjerteafdelingen på Herlev og Gentofte hospital; event[x] = Hospital Notification Message (MedComMessagingEventCodes#hospital-notification-message)</a></p><p>Summary</p><table class=\"grid\"><tr><td>Occurrence</td><td>2026-02-28 14:00:06+0100</td></tr><tr><td>Recorded</td><td>2026-02-28 14:00:06+0100</td></tr><tr><td>Activity</td><td><span title=\"Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes admit-emergency}\">Start hospital stay - acute ambulant</span></td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>who</b></td></tr><tr><td><a href=\"Organization-c1d21101-6556-4fff-8adc-686344180e22.html\">Organization Hjerteafdelingen på Herlev og Gentofte hospital</a></td></tr></table></div>"
       },
       "target" : [{
-        "reference" : "MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006"
+        "reference" : "MessageHeader/2f861434-233b-4245-a99c-390c3d658a9c"
       }],
       "occurredDateTime" : "2026-02-28T14:00:06+01:00",
       "recorded" : "2026-02-28T14:00:06+01:00",

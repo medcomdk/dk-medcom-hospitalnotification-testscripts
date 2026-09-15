@@ -165,10 +165,10 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Provenance_d9caec36-0fbf-4004-949d-aaff168a5580\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Provenance d9caec36-0fbf-4004-949d-aaff168a5580</b></p><a name=\"d9caec36-0fbf-4004-949d-aaff168a5580\"> </a><a name=\"hcd9caec36-0fbf-4004-949d-aaff168a5580\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://medcomfhir.dk/ig/messaging/2.1.0/StructureDefinition-medcom-messaging-provenance.html\">MedComMessagingProvenance</a></p></div><p>Provenance for <a href=\"MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006\">MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006</a></p><p>Summary</p><table class=\"grid\"><tr><td>Occurrence</td><td>2026-03-01 12:00:02+0100</td></tr><tr><td>Recorded</td><td>2026-03-01 12:00:02+0100</td></tr><tr><td>Activity</td><td><span title=\"Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes admit-inpatient}\">Start hospital stay - admitted</span></td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>who</b></td></tr><tr><td><a href=\"Organization-daa6be45-276d-4c4b-92ee-89a3ae0c0905.html\">Organization Hjerteafdelingen på Herlev og Gentofte hospital</a></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Provenance_d9caec36-0fbf-4004-949d-aaff168a5580\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Provenance d9caec36-0fbf-4004-949d-aaff168a5580</b></p><a name=\"d9caec36-0fbf-4004-949d-aaff168a5580\"> </a><a name=\"hcd9caec36-0fbf-4004-949d-aaff168a5580\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://medcomfhir.dk/ig/messaging/2.1.0/StructureDefinition-medcom-messaging-provenance.html\">MedComMessagingProvenance</a></p></div><p>Provenance for <a href=\"MessageHeader-fe400034-8a4b-4998-94f4-aef6840c647d.html\">MessageHeader: extension = true,-&gt;Organization Hjerteafdelingen på Herlev og Gentofte hospital; event[x] = Hospital Notification Message (MedComMessagingEventCodes#hospital-notification-message)</a></p><p>Summary</p><table class=\"grid\"><tr><td>Occurrence</td><td>2026-03-01 12:00:02+0100</td></tr><tr><td>Recorded</td><td>2026-03-01 12:00:02+0100</td></tr><tr><td>Activity</td><td><span title=\"Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes admit-inpatient}\">Start hospital stay - admitted</span></td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>who</b></td></tr><tr><td><a href=\"Organization-daa6be45-276d-4c4b-92ee-89a3ae0c0905.html\">Organization Hjerteafdelingen på Herlev og Gentofte hospital</a></td></tr></table></div>"
       },
       "target" : [{
-        "reference" : "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006"
+        "reference" : "MessageHeader/fe400034-8a4b-4998-94f4-aef6840c647d"
       }],
       "occurredDateTime" : "2026-03-01T12:00:02+01:00",
       "recorded" : "2026-03-01T12:00:02+01:00",
@@ -195,10 +195,10 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Provenance_78ef5d47-1c07-472a-a680-ee7852566835\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Provenance 78ef5d47-1c07-472a-a680-ee7852566835</b></p><a name=\"78ef5d47-1c07-472a-a680-ee7852566835\"> </a><a name=\"hc78ef5d47-1c07-472a-a680-ee7852566835\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://medcomfhir.dk/ig/messaging/2.1.0/StructureDefinition-medcom-messaging-provenance.html\">MedComMessagingProvenance</a></p></div><p>Provenance for <a href=\"MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a399006\">MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a399006</a></p><p>Summary</p><table class=\"grid\"><tr><td>Occurrence</td><td>2026-03-03 14:00:12+0100</td></tr><tr><td>Recorded</td><td>2026-03-03 14:00:12+0100</td></tr><tr><td>Activity</td><td><span title=\"Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes start-leave-inpatient}\">Start leave</span></td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>who</b></td></tr><tr><td><a href=\"Organization-daa6be45-276d-4c4b-92ee-89a3ae0c0905.html\">Organization Hjerteafdelingen på Herlev og Gentofte hospital</a></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Provenance_78ef5d47-1c07-472a-a680-ee7852566835\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Provenance 78ef5d47-1c07-472a-a680-ee7852566835</b></p><a name=\"78ef5d47-1c07-472a-a680-ee7852566835\"> </a><a name=\"hc78ef5d47-1c07-472a-a680-ee7852566835\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://medcomfhir.dk/ig/messaging/2.1.0/StructureDefinition-medcom-messaging-provenance.html\">MedComMessagingProvenance</a></p></div><p>Provenance for <a href=\"MessageHeader-fe400034-8a4b-4998-94f4-aef6840c647d.html\">MessageHeader: extension = true,-&gt;Organization Hjerteafdelingen på Herlev og Gentofte hospital; event[x] = Hospital Notification Message (MedComMessagingEventCodes#hospital-notification-message)</a></p><p>Summary</p><table class=\"grid\"><tr><td>Occurrence</td><td>2026-03-03 14:00:12+0100</td></tr><tr><td>Recorded</td><td>2026-03-03 14:00:12+0100</td></tr><tr><td>Activity</td><td><span title=\"Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes start-leave-inpatient}\">Start leave</span></td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>who</b></td></tr><tr><td><a href=\"Organization-daa6be45-276d-4c4b-92ee-89a3ae0c0905.html\">Organization Hjerteafdelingen på Herlev og Gentofte hospital</a></td></tr></table></div>"
       },
       "target" : [{
-        "reference" : "MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a399006"
+        "reference" : "MessageHeader/fe400034-8a4b-4998-94f4-aef6840c647d"
       }],
       "occurredDateTime" : "2026-03-03T14:00:12+01:00",
       "recorded" : "2026-03-03T14:00:12+01:00",
@@ -216,7 +216,7 @@
       "entity" : [{
         "role" : "revision",
         "what" : {
-          "reference" : "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006"
+          "reference" : "MessageHeader/53a5e12e-3f15-4db9-80e2-a38957a2006b"
         }
       }]
     }
@@ -252,7 +252,7 @@
       "entity" : [{
         "role" : "revision",
         "what" : {
-          "reference" : "MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a399006"
+          "reference" : "MessageHeader/53a5e12e-3f15-4db9-80e2-a38957a2006b"
         }
       }]
     }

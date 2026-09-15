@@ -91,6 +91,9 @@
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_db7bdb38-ca3a-483a-8553-2a59b7094cbe\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter db7bdb38-ca3a-483a-8553-2a59b7094cbe</b></p><a name=\"db7bdb38-ca3a-483a-8553-2a59b7094cbe\"> </a><a name=\"hcdb7bdb38-ca3a-483a-8553-2a59b7094cbe\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-medcom-hospitalNotification-encounter.html\">MedComHospitalNotificationEncounter</a></p></div><p><b>status</b>: In Progress</p><p><b>class</b>: [not stated]: IMP (IMP)</p><p><b>subject</b>: <a href=\"Patient-5f896374-076b-4fc3-862d-dc36f3dfb2fb.html\">Elmer (official) (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#DkCoreDanishCivilRegistrationSystem#2509479989)</a></p><p><b>episodeOfCare</b>: Identifier: <code>https://sor2.sum.dsdn.dk/#id=265161000016000</code>/e2e8453c-2ad1-4c60-b94e-e69699443e03</p><p><b>period</b>: 2026-03-01 12:00:00+0100 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href=\"Organization-8c3f2c6f-d23e-41de-97a2-8a25bc977084.html\">Organization Hjerteafdelingen på Herlev og Gentofte hospital</a></p></div>"
       },
       "status" : "in-progress",
+      "class" : {
+        "code" : "IMP"
+      },
       "subject" : {
         "reference" : "Patient/5f896374-076b-4fc3-862d-dc36f3dfb2fb"
       },
