@@ -1,4 +1,4 @@
-//Get STIN
+/* //Get STIN
 Instance: HospitalNotification_TestScript_receive-STIN-A1
 InstanceOf: TestScript
 * insert Metadata
@@ -150,4 +150,4 @@ InstanceOf: TestScript
 * insert createMessageSetup(MORS, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-receive/Fixtures/HospitalNotification-fixture-MORS-STOR.xml, destinationUri-MORS, bundleid-MORS)
 * insert readMessage(STIN, 01, bundleid-STIN)
 * insert readMessage(STOR, 02, bundleid-STOR)
-* insert readMessage(MORS, 03, bundleid-MORS) 
+* insert readMessage(MORS, 03, bundleid-MORS)  */

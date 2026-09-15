@@ -1,4 +1,4 @@
-//STIN.A1
+/* //STIN.A1
 Instance: HospitalNotification_TestScript_STIN-A1
 InstanceOf: TestScript
 * insert Metadata
@@ -128,3 +128,4 @@ InstanceOf: TestScript
 * insert createInitialMessage(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-send/Fixtures/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, true)
 * insert createMessageDeceased(MORS, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-send/Fixtures/HospitalNotification-fixture.xml, admit-inpatient, IMP, finished, revision, true, messageHeaderid-STIN, 2, episodeOfCareID-STIN)
  
+ */

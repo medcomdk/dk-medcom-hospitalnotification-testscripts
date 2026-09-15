@@ -1,0 +1,39 @@
+---
+---
+{% include fragment-pagebegin.html %}
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+
+  {% include fragment-base-navtabs.html type='Bundle' id='bec4ba50-a0ed-4d98-a618-78ec3c5ed4c3' active='content' %}
+
+  <a name="root"> </a>
+{% if site.data.artifacts[page.path].example %}
+  {% assign example = 'Example ' %}
+{% endif %}
+{% assign prefix = site.data.artifacts[page.path].type %}
+  <h2 id="root">{{example}}{{prefix}}: {{site.data.pages[page.path].title | escape_once}}</h2>
+
+{% include fragment-simpletable.html %}
+{% unless example %}
+  {% if 'Bundle' == 'CapabilityStatement' %}
+      <p>
+      <a href="bec4ba50-a0ed-4d98-a618-78ec3c5ed4c3.openapi.json" no-download="true">Raw OpenAPI-Swagger Definition file</a> | <a href="bec4ba50-a0ed-4d98-a618-78ec3c5ed4c3.openapi.json" download>Download</a>
+      </p>
+  {% endif %}
+{% endunless %}
+
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='Bundle' id='bec4ba50-a0ed-4d98-a618-78ec3c5ed4c3' %}
+
+  {% include Bundle-bec4ba50-a0ed-4d98-a618-78ec3c5ed4c3-html.xhtml %}
+
+  {% if site.data.resources[resource_].contained != nil %}
+  <h4>Contained resources</h4>
+  {% include Bundle-bec4ba50-a0ed-4d98-a618-78ec3c5ed4c3-contained-index.xhtml %}
+  {% endif %}
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='Bundle' id='bec4ba50-a0ed-4d98-a618-78ec3c5ed4c3' %}
+
+</div>
+{% include fragment-pageend.html %}

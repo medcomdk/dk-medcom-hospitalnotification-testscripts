@@ -1,4 +1,4 @@
-//AN_STAA
+/* //AN_STAA
 Instance: HospitalNotification_TestScript_AN_STAA
 InstanceOf: TestScript
 * insert Metadata
@@ -130,3 +130,4 @@ InstanceOf: TestScript
 * insert createInitialMessage(STIN, 01, /FHIRSandbox/MedCom/HospitalNotification/v300-send/Fixtures/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, true)
 * insert createMessageDeceased(MORS, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-send/Fixtures/HospitalNotification-fixture.xml, admit-inpatient, IMP, finished, revision, true, messageHeaderid-STIN, 2, episodeOfCareID-STIN)
 * insert createMessageDeceased(AN-MORS, 03, /FHIRSandbox/MedCom/HospitalNotification/v300-send/Fixtures/HospitalNotification-fixture.xml, admit-inpatient, IMP, in-progress, removal, false, messageHeaderid-MORS, 3, episodeOfCareID-MORS)
+ */

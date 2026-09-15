@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="920d2d1e-8c21-462c-9917-10b18eefba3f"/>
+  <meta>
+    <profile value="http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-hospitalNotification-message"/>
+  </meta>
+  <type value="message"/>
+  <timestamp value="2026-03-01T12:00:00+01:00"/>
+  <entry>
+    <fullUrl value="https://medcomfhir.dk/ig/hospitalnotification/MessageHeader/32b8769d-e945-46d3-b2c0-126095c01932"/>
+    <resource>
+      <MessageHeader>
+        <id value="32b8769d-e945-46d3-b2c0-126095c01932"/>
+        <meta>
+          <profile value="http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-hospitalNotification-messageHeader"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MessageHeader_32b8769d-e945-46d3-b2c0-126095c01932"> </a><p class="res-header-id"><b>Generated Narrative: MessageHeader 32b8769d-e945-46d3-b2c0-126095c01932</b></p><a name="32b8769d-e945-46d3-b2c0-126095c01932"> </a><a name="hc32b8769d-e945-46d3-b2c0-126095c01932"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-medcom-hospitalNotification-messageHeader.html">MedComHospitalNotificationMessageHeader</a></p></div><p><b>MedComReportOfAdmissionExtension</b>: true</p><p><b>MedComReportOfAdmissionRecipientExtension</b>: <a href="Organization-8c3f2c6f-d23e-41de-97a2-8a25bc977084.html">Organization Hjerteafdelingen på Herlev og Gentofte hospital</a></p><p><b>event</b>: <a href="http://medcomfhir.dk/ig/terminology/1.5.0/CodeSystem-medcom-messaging-eventCodes.html#medcom-messaging-eventCodes-hospital-notification-message">MedComMessagingEventCodes: hospital-notification-message</a> (Hospital Notification Message)</p><h3>Destinations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td style="display: none">*</td><td/><td><a href="https://sor2.sum.dsdn.dk/#id=953741000016009">https://sor2.sum.dsdn.dk/#id=953741000016009</a></td><td><a href="Organization-8fc78830-ed1c-4774-917a-0aa460155073.html">Organization Plejecenter Herlev</a></td></tr></table><p><b>sender</b>: <a href="Organization-8c3f2c6f-d23e-41de-97a2-8a25bc977084.html">Organization Hjerteafdelingen på Herlev og Gentofte hospital</a></p><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="https://sor2.sum.dsdn.dk/#id=265161000016000">https://sor2.sum.dsdn.dk/#id=265161000016000</a></td></tr></table><p><b>focus</b>: <a href="Encounter-db7bdb38-ca3a-483a-8553-2a59b7094cbe.html">Encounter: status = in-progress; class = IMP (IMP); period = 2026-03-01 12:00:00+0100 --&gt; (ongoing)</a></p></div>
+        </text>
+        <extension url="http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-messaging-reportOfAdmissionExtension">
+          <valueBoolean value="true"/>
+        </extension>
+        <extension url="http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-messaging-reportOfAdmissionRecipientExtension">
+          <valueReference>
+            <reference value="Organization/8c3f2c6f-d23e-41de-97a2-8a25bc977084"/>
+          </valueReference>
+        </extension>
+        <eventCoding>
+          <system value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"/>
+          <code value="hospital-notification-message"/>
+        </eventCoding>
+        <destination>
+          <extension url="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-destinationUseExtension">
+            <valueCoding>
+              <system value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"/>
+              <code value="primary"/>
+            </valueCoding>
+          </extension>
+          <endpoint value="https://sor2.sum.dsdn.dk/#id=953741000016009"/>
+          <receiver>
+            <reference value="Organization/8fc78830-ed1c-4774-917a-0aa460155073"/>
+          </receiver>
+        </destination>
+        <sender>
+          <reference value="Organization/8c3f2c6f-d23e-41de-97a2-8a25bc977084"/>
+        </sender>
+        <source>
+          <endpoint value="https://sor2.sum.dsdn.dk/#id=265161000016000"/>
+        </source>
+        <focus>
+          <reference value="Encounter/db7bdb38-ca3a-483a-8553-2a59b7094cbe"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://medcomfhir.dk/ig/hospitalnotification/Patient/5f896374-076b-4fc3-862d-dc36f3dfb2fb"/>
+    <resource>
+      <Patient>
+        <id value="5f896374-076b-4fc3-862d-dc36f3dfb2fb"/>
+        <meta>
+          <profile value="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_5f896374-076b-4fc3-862d-dc36f3dfb2fb"> </a><p class="res-header-id"><b>Generated Narrative: Patient 5f896374-076b-4fc3-862d-dc36f3dfb2fb</b></p><a name="5f896374-076b-4fc3-862d-dc36f3dfb2fb"> </a><a name="hc5f896374-076b-4fc3-862d-dc36f3dfb2fb"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://medcomfhir.dk/ig/core/2.3.0/StructureDefinition-medcom-core-patient.html">MedComCorePatient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Elmer (official) (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#DkCoreDanishCivilRegistrationSystem#2509479989)</p><hr/></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:1.2.208.176.1.2"/>
+          <value value="2509479989"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <family value="Elmer"/>
+        </name>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://medcomfhir.dk/ig/hospitalnotification/Encounter/db7bdb38-ca3a-483a-8553-2a59b7094cbe"/>
+    <resource>
+      <Encounter>
+        <id value="db7bdb38-ca3a-483a-8553-2a59b7094cbe"/>
+        <meta>
+          <profile value="http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition/medcom-hospitalNotification-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_db7bdb38-ca3a-483a-8553-2a59b7094cbe"> </a><p class="res-header-id"><b>Generated Narrative: Encounter db7bdb38-ca3a-483a-8553-2a59b7094cbe</b></p><a name="db7bdb38-ca3a-483a-8553-2a59b7094cbe"> </a><a name="hcdb7bdb38-ca3a-483a-8553-2a59b7094cbe"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-medcom-hospitalNotification-encounter.html">MedComHospitalNotificationEncounter</a></p></div><p><b>status</b>: In Progress</p><p><b>class</b>: [not stated]: IMP (IMP)</p><p><b>subject</b>: <a href="Patient-5f896374-076b-4fc3-862d-dc36f3dfb2fb.html">Elmer (official) (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#DkCoreDanishCivilRegistrationSystem#2509479989)</a></p><p><b>episodeOfCare</b>: Identifier: <code>https://sor2.sum.dsdn.dk/#id=265161000016000</code>/e2e8453c-2ad1-4c60-b94e-e69699443e03</p><p><b>period</b>: 2026-03-01 12:00:00+0100 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href="Organization-8c3f2c6f-d23e-41de-97a2-8a25bc977084.html">Organization Hjerteafdelingen på Herlev og Gentofte hospital</a></p></div>
+        </text>
+        <status value="in-progress"/>
+        <subject>
+          <reference value="Patient/5f896374-076b-4fc3-862d-dc36f3dfb2fb"/>
+        </subject>
+        <episodeOfCare>
+          <identifier>
+            <system value="https://sor2.sum.dsdn.dk/#id=265161000016000"/>
+            <value value="e2e8453c-2ad1-4c60-b94e-e69699443e03"/>
+          </identifier>
+        </episodeOfCare>
+        <period>
+          <start value="2026-03-01T12:00:00+01:00"/>
+        </period>
+        <serviceProvider>
+          <reference value="Organization/8c3f2c6f-d23e-41de-97a2-8a25bc977084"/>
+        </serviceProvider>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://medcomfhir.dk/ig/hospitalnotification/Organization/8fc78830-ed1c-4774-917a-0aa460155073"/>
+    <resource>
+      <Organization>
+        <id value="8fc78830-ed1c-4774-917a-0aa460155073"/>
+        <meta>
+          <profile value="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_8fc78830-ed1c-4774-917a-0aa460155073"> </a><p class="res-header-id"><b>Generated Narrative: Organization 8fc78830-ed1c-4774-917a-0aa460155073</b></p><a name="8fc78830-ed1c-4774-917a-0aa460155073"> </a><a name="hc8fc78830-ed1c-4774-917a-0aa460155073"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://medcomfhir.dk/ig/messaging/2.1.0/StructureDefinition-medcom-messaging-organization.html">MedComMessagingOrganization</a></p></div><p><b>identifier</b>: <code>https://www.gs1.org/gln</code>/5790001348120, <code>urn:oid:1.2.208.176.1.1</code>/953741000016009</p><p><b>name</b>: Plejecenter Herlev</p></div>
+        </text>
+        <identifier>
+          <system value="https://www.gs1.org/gln"/>
+          <value value="5790001348120"/>
+        </identifier>
+        <identifier>
+          <system value="urn:oid:1.2.208.176.1.1"/>
+          <value value="953741000016009"/>
+        </identifier>
+        <name value="Plejecenter Herlev"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://medcomfhir.dk/ig/hospitalnotification/Organization/8c3f2c6f-d23e-41de-97a2-8a25bc977084"/>
+    <resource>
+      <Organization>
+        <id value="8c3f2c6f-d23e-41de-97a2-8a25bc977084"/>
+        <meta>
+          <profile value="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_8c3f2c6f-d23e-41de-97a2-8a25bc977084"> </a><p class="res-header-id"><b>Generated Narrative: Organization 8c3f2c6f-d23e-41de-97a2-8a25bc977084</b></p><a name="8c3f2c6f-d23e-41de-97a2-8a25bc977084"> </a><a name="hc8c3f2c6f-d23e-41de-97a2-8a25bc977084"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://medcomfhir.dk/ig/messaging/2.1.0/StructureDefinition-medcom-messaging-organization.html">MedComMessagingOrganization</a></p></div><p><b>identifier</b>: <code>https://www.gs1.org/gln</code>/5790000209354, <code>urn:oid:1.2.208.176.1.1</code>/265161000016000</p><p><b>name</b>: Hjerteafdelingen på Herlev og Gentofte hospital</p></div>
+        </text>
+        <identifier>
+          <system value="https://www.gs1.org/gln"/>
+          <value value="5790000209354"/>
+        </identifier>
+        <identifier>
+          <system value="urn:oid:1.2.208.176.1.1"/>
+          <value value="265161000016000"/>
+        </identifier>
+        <name value="Hjerteafdelingen på Herlev og Gentofte hospital"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://medcomfhir.dk/ig/hospitalnotification/Provenance/86c9cc46-1835-4c30-a028-caf3851f80af"/>
+    <resource>
+      <Provenance>
+        <id value="86c9cc46-1835-4c30-a028-caf3851f80af"/>
+        <meta>
+          <profile value="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-provenance"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Provenance_86c9cc46-1835-4c30-a028-caf3851f80af"> </a><p class="res-header-id"><b>Generated Narrative: Provenance 86c9cc46-1835-4c30-a028-caf3851f80af</b></p><a name="86c9cc46-1835-4c30-a028-caf3851f80af"> </a><a name="hc86c9cc46-1835-4c30-a028-caf3851f80af"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://medcomfhir.dk/ig/messaging/2.1.0/StructureDefinition-medcom-messaging-provenance.html">MedComMessagingProvenance</a></p></div><p>Provenance for <a href="MessageHeader-32b8769d-e945-46d3-b2c0-126095c01932.html">MessageHeader: extension = true,-&gt;Organization Hjerteafdelingen på Herlev og Gentofte hospital; event[x] = Hospital Notification Message (MedComMessagingEventCodes#hospital-notification-message)</a></p><p>Summary</p><table class="grid"><tr><td>Occurrence</td><td>2026-03-01 12:00:00+0100</td></tr><tr><td>Recorded</td><td>2026-03-01 12:00:00+0100</td></tr><tr><td>Activity</td><td><span title="Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes admit-inpatient}">Start hospital stay - admitted</span></td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>who</b></td></tr><tr><td><a href="Organization-8c3f2c6f-d23e-41de-97a2-8a25bc977084.html">Organization Hjerteafdelingen på Herlev og Gentofte hospital</a></td></tr></table></div>
+        </text>
+        <target>
+          <reference value="MessageHeader/32b8769d-e945-46d3-b2c0-126095c01932"/>
+        </target>
+        <occurredDateTime value="2026-03-01T12:00:00+01:00"/>
+        <recorded value="2026-03-01T12:00:00+01:00"/>
+        <activity>
+          <coding>
+            <system value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"/>
+            <code value="admit-inpatient"/>
+          </coding>
+        </activity>
+        <agent>
+          <who>
+            <reference value="Organization/8c3f2c6f-d23e-41de-97a2-8a25bc977084"/>
+          </who>
+        </agent>
+      </Provenance>
+    </resource>
+  </entry>
+</Bundle>

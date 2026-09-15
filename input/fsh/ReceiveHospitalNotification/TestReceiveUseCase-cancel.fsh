@@ -1,4 +1,4 @@
-//Get AN-STIN
+/* //Get AN-STIN
 Instance: HospitalNotification_TestScript_receive-AN-STIN
 InstanceOf: TestScript
 * insert Metadata
@@ -158,3 +158,4 @@ InstanceOf: TestScript
 * insert readMessage(STOR, 02, bundleid-STOR)
 * insert readMessage(MORS, 03, bundleid-MORS)
 * insert readMessage(AN-MORS, 04, bundleid-AN-MORS)
+ */

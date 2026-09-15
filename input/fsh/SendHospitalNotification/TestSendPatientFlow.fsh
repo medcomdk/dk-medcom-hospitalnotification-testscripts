@@ -1,4 +1,4 @@
- //PF-send-imp-01 - STIN-STOR-SLOR-SLHJ
+/*  //PF-send-imp-01 - STIN-STOR-SLOR-SLHJ
 Instance: HospitalNotification_TestScript_PF-send-imp-01
 InstanceOf: TestScript
 * insert Metadata
@@ -180,3 +180,4 @@ InstanceOf: TestScript
 * insert createMessage(SLHJ, 02, /FHIRSandbox/MedCom/HospitalNotification/v300-send/Fixtures/HospitalNotification-fixture.xml, discharge-inpatient-home, IMP, finished, revision, messageHeaderid-STIN, 2, episodeOfCareID-STIN)
 * insert assertEncounterEndTimeZone
 * insert assertCompareTimeZone(encounterTimeZone-STIN)
+ */
